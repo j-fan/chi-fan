@@ -1,12 +1,12 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import logo from './svelte-logo.svg';
+  import { base } from '$app/paths';
 </script>
 
 <header>
   <div class="corner">
     <a href="https://kit.svelte.dev">
-      <img src={logo} alt="SvelteKit" />
+      <img src="{base}/img/svelte-logo.svg" alt="SvelteKit" />
     </a>
   </div>
 
@@ -16,10 +16,10 @@
     </svg>
     <ul>
       <li class:active={$page.url.pathname === '/'}>
-        <a href="/">Home</a>
+        <a href="{base}/">Home</a>
       </li>
       <li class:active={$page.url.pathname === '/about'}>
-        <a href="/about">About</a>
+        <a href="{base}/about">About</a>
       </li>
     </ul>
     <svg viewBox="0 0 2 3" aria-hidden="true">
