@@ -3,7 +3,8 @@
   import Button from '$lib/button/Button.svelte';
   import { fade } from 'svelte/transition';
 
-  export let doorImg = `${base}/img/door-left.jpg`;
+  export let doorImgLeft = `${base}/img/door-left.jpg`;
+  export let doorImgRight = `${base}/img/door-right.jpg`;
   export let link: string | undefined = undefined;
 
   let doorIsOpen = false;
@@ -50,7 +51,7 @@
     class="left-door"
     class:open={doorIsOpen}
     class:hidden={kitchenIsExpanded}
-    src={doorImg}
+    src={doorImgLeft}
     alt="door-left"
     on:click={openDoors}
   />
@@ -58,7 +59,7 @@
     class="right-door"
     class:open={doorIsOpen}
     class:hidden={kitchenIsExpanded}
-    src={doorImg}
+    src={doorImgRight}
     alt="door-right"
     on:click={openDoors}
   />
@@ -157,12 +158,11 @@
   }
 
   .right-door {
-    transform: scaleX(-1) translateX(-100%);
-    transform-origin: left;
+    transform: scaleX(1);
+    transform-origin: right;
   }
 
   .right-door.open {
-    transform: scaleX(-1) translateX(-100%) perspective(1200px) translateZ(0px) translateY(0px)
-      rotateY(-150deg);
+    transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(150deg);
   }
 </style>
