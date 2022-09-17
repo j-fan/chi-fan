@@ -65,7 +65,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--c-pink);
+    background-color: var(--c-teal);
     overflow: hidden;
     border: var(--border-style);
   }
