@@ -1,8 +1,10 @@
 <script lang="ts">
   import { base } from '$app/paths';
+  import Button from '$lib/button/Button.svelte';
   import { fade } from 'svelte/transition';
 
   export let doorImg = `${base}/img/door-left.jpg`;
+  export let link: string | undefined = undefined;
 
   let doorIsOpen = false;
   let width = 0;
@@ -24,6 +26,9 @@
   {/if}
   <div class="door-inside">
     <slot name="doorInside">There's nothing inside this door</slot>
+    <div class="hover-btn">
+      <Button isFullWidth={false} href={link}>Enter this kitchen</Button>
+    </div>
   </div>
   <img class="left-door" class:open={doorIsOpen} src={doorImg} alt="door-left" />
   <img class="right-door" class:open={doorIsOpen} src={doorImg} alt="door-right" />
@@ -47,7 +52,7 @@
   }
 
   .door-bg {
-    background-color: var(--c-pink);
+    background-color: var(--c-white);
     position: fixed;
     inset: 0;
     transition: opacity 500ms ease;
@@ -60,8 +65,19 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--c-white);
+    background-color: var(--c-pink);
     overflow: hidden;
+    border: var(--border-style);
+  }
+
+  .hover-btn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .left-door,
