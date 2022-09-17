@@ -22,7 +22,9 @@
   {#if doorIsOpen}
     <div class="door-bg" transition:fade />
   {/if}
-  <div class="door-inside">Inside the door</div>
+  <div class="door-inside">
+    <slot name="doorInside">There's nothing inside this door</slot>
+  </div>
   <img class="left-door" class:open={doorIsOpen} src={doorImg} alt="door-left" />
   <img class="right-door" class:open={doorIsOpen} src={doorImg} alt="door-right" />
 </div>
@@ -59,6 +61,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--c-white);
+    overflow: hidden;
   }
 
   .left-door,
