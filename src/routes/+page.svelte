@@ -10,6 +10,3 @@
 <section>
   <img src="{base}/img/svelte-welcome.png" alt="Welcome" />
 </section>
-
-<style>
-</style>

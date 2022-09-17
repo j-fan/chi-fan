@@ -6,6 +6,3 @@
 <div class="content">
   <h1>About this app</h1>
 </div>
-
-<style>
-</style>

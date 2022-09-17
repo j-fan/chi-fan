@@ -35,6 +35,11 @@
     list-style: none;
     gap: 1rem;
   }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
   li.active a {
     color: red;
   }
@@ -43,9 +48,5 @@
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
   }
 </style>
