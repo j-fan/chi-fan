@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     padding: 1rem;
-    gap: 16px;
+    gap: 2rem;
     max-width: 100%;
     overflow: auto;
   }

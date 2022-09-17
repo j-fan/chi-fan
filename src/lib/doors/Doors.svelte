@@ -22,9 +22,7 @@
   {#if doorIsOpen}
     <div class="door-bg" transition:fade />
   {/if}
-  {#if doorIsOpen}
-    <div class="door-inside" transition:fade />
-  {/if}
+  <div class="door-inside">Inside the door</div>
   <img class="left-door" class:open={doorIsOpen} src={doorImg} alt="door-left" />
   <img class="right-door" class:open={doorIsOpen} src={doorImg} alt="door-right" />
 </div>
@@ -36,11 +34,13 @@
     height: 70vh;
     flex-shrink: 0;
     transition: height 300ms ease;
+    border: 1px solid black;
   }
 
   .door.open {
     position: absolute;
     height: 80vh;
+    max-width: 80vw;
     z-index: 1;
   }
 
@@ -65,6 +65,8 @@
   .right-door {
     transition: transform 500ms ease-in-out 200ms;
     cursor: pointer;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .left-door {
@@ -73,7 +75,7 @@
   }
 
   .left-door.open {
-    /* transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-150deg); */
+    transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-150deg);
   }
 
   .right-door {
@@ -82,7 +84,7 @@
   }
 
   .right-door.open {
-    /* transform: scaleX(-1) translateX(-100%) perspective(1200px) translateZ(0px) translateY(0px)
-      rotateY(-150deg); */
+    transform: scaleX(-1) translateX(-100%) perspective(1200px) translateZ(0px) translateY(0px)
+      rotateY(-150deg);
   }
 </style>
