@@ -20,6 +20,8 @@
     display: flex;
     align-items: center;
     padding: 1rem;
-    gap: 2rem;
+    gap: 16px;
+    max-width: 100%;
+    overflow: auto;
   }
 </style>
