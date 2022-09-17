@@ -8,10 +8,11 @@
 <style>
   button {
     background-color: var(--c-pink);
-    border-radius: 1rem;
     padding: 0.5rem;
-    border: 1px solid var(--c-black);
     cursor: pointer;
+
+    border: var(--border-style);
+    border-radius: var(--border-radius);
   }
 
   button:hover {

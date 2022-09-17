@@ -12,6 +12,8 @@
   --c-pink: #ea9e8d;
   --c-green: #daefb3;
   --c-light-yellow: #eef4d4;
+  --border-style: 1px solid var(--c-black);
+  --border-radius: 1rem;
 }
 
 /*
@@ -88,4 +90,13 @@ h6 {
 */
 #root {
   isolation: isolate;
+}
+
+/*
+  Global styles
+*/
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--c-red);
 }

@@ -8,9 +8,10 @@
 <style>
   .card-wrapper {
     background-color: var(--c-white);
-    border-radius: 1rem;
     padding: 1rem;
-    border: 1px solid var(--c-black);
+
+    border: var(--border-style);
+    border-radius: var(--border-radius);
 
     display: flex;
     flex-direction: column;

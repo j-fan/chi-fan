@@ -19,16 +19,26 @@
 <style>
   header {
     width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
   }
 
   nav {
     display: flex;
     justify-content: center;
+    background-color: var(--c-white);
+    width: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+
+    border-radius: var(--border-radius);
+    border: var(--border-style);
   }
 
   ul {
     padding: 0;
-    height: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,17 +46,19 @@
     gap: 1rem;
   }
 
-  a:hover {
-    text-decoration: underline;
-  }
-
-  li.active a {
-    color: red;
-  }
-
   a {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+    color: var(--c-pink);
+  }
+
+  a:hover {
+    color: var(--c-red);
+  }
+
+  li.active a {
+    color: var(--c-red);
+    text-decoration: underline;
   }
 </style>
