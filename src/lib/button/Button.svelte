@@ -16,6 +16,6 @@
   }
 
   button:hover {
-    box-shadow: 4px 4px 0px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--drop-shadow);
   }
 </style>

@@ -35,6 +35,7 @@
 
     border-radius: var(--border-radius);
     border: var(--border-style);
+    box-shadow: var(--drop-shadow);
   }
 
   ul {

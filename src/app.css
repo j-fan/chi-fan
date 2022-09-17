@@ -12,8 +12,13 @@
   --c-pink: #ea9e8d;
   --c-green: #daefb3;
   --c-light-yellow: #eef4d4;
+
+  /* Border style */
   --border-style: 1px solid var(--c-black);
   --border-radius: 1rem;
+
+  /* Shadows */
+  --drop-shadow: 2px 3px 0 1px rgba(0, 0, 0, 0.3);
 }
 
 /*
@@ -99,4 +104,8 @@ a {
   font-weight: 700;
   text-decoration: none;
   color: var(--c-red);
+}
+
+a:hover {
+  text-decoration: underline;
 }

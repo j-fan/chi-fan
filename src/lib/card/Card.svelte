@@ -12,6 +12,7 @@
 
     border: var(--border-style);
     border-radius: var(--border-radius);
+    box-shadow: var(--drop-shadow);
 
     display: flex;
     flex-direction: column;
