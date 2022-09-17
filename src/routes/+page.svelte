@@ -8,5 +8,12 @@
 </svelte:head>
 
 <section>
-  <img src="{base}/img/svelte-welcome.png" alt="Welcome" />
+  Welcome
 </section>
+
+<style>
+  section {
+    height: 100%;
+    background-color: var(--c-red);
+  }
+</style>
