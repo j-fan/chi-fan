@@ -1,8 +1,25 @@
+<script>
+  import Doors from '$lib/doors/Doors.svelte';
+</script>
+
 <svelte:head>
   <title>Doors</title>
   <meta name="description" content="About this app" />
 </svelte:head>
 
-<div class="content">
-  <h1>doors</h1>
+<div class="door-list">
+  <Doors />
+  <Doors />
+  <Doors />
+  <Doors />
 </div>
+
+<style>
+  .door-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+  }
+</style>
