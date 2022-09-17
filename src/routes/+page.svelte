@@ -2,6 +2,7 @@
   import { base } from '$app/paths';
   import Button from '$lib/button/Button.svelte';
   import Card from '$lib/card/Card.svelte';
+
   const src = `${base}/img/home-bg.jpg`;
 </script>
 
@@ -13,7 +14,7 @@
 <section style="background-image: url({src})">
   <Card width="400px" isCentered
     ><h1>Welcome to Chi Fan</h1>
-    <Button isFullWidth>Enter</Button></Card
+    <Button isFullWidth href="{base}/doors">Enter</Button></Card
   >
 </section>
 
@@ -26,5 +27,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
   }
 </style>

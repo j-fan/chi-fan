@@ -1,10 +1,21 @@
 <script lang="ts">
   export let isFullWidth = false;
+  export let href: string | undefined = undefined;
+
+  const width = isFullWidth ? '100%' : 'auto';
 </script>
 
-<button type="button" style="width: {isFullWidth ? '100%' : 'auto'}">
-  <slot />
-</button>
+{#if href}
+  <a {href} style="width: {width}">
+    <button type="button" style="width: {width}">
+      <slot />
+    </button>
+  </a>
+{:else}
+  <button type="button" style="width: {width}">
+    <slot />
+  </button>
+{/if}
 
 <style>
   button {

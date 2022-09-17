@@ -96,16 +96,3 @@ h6 {
 #root {
   isolation: isolate;
 }
-
-/*
-  Global styles
-*/
-a {
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--c-red);
-}
-
-a:hover {
-  text-decoration: underline;
-}
