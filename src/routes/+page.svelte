@@ -11,9 +11,9 @@
 </svelte:head>
 
 <section style="background-image: url({src})">
-  <Card
+  <Card width="400px" isCentered
     ><h1>Welcome to Chi Fan</h1>
-    <Button>Enter</Button></Card
+    <Button isFullWidth>Enter</Button></Card
   >
 </section>
 

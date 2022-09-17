@@ -1,7 +1,13 @@
 <script lang="ts">
+  export let width = 'auto';
+  export let height = 'auto';
+  export let isCentered = false;
 </script>
 
-<div class="card-wrapper">
+<div
+  class="card-wrapper"
+  style="width: {width}; height:{height}; align-items:{isCentered ? 'center' : 'left'}"
+>
   <slot />
 </div>
 

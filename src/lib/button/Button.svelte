@@ -1,7 +1,8 @@
 <script lang="ts">
+  export let isFullWidth = false;
 </script>
 
-<button type="button">
+<button type="button" style="width: {isFullWidth ? '100%' : 'auto'}">
   <slot />
 </button>
 
