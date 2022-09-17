@@ -10,7 +10,7 @@
 
 <div class="wrapper">
   <div class="door-list">
-    <Doors link="{base}/">
+    <Doors link="{base}/about">
       <img
         class="interior-img"
         slot="doorInside"
@@ -18,7 +18,7 @@
         alt="the kitchen inside the door"
       />
     </Doors>
-    <Doors link="{base}/">
+    <Doors link="{base}/about">
       <img
         class="interior-img"
         slot="doorInside"
@@ -26,7 +26,7 @@
         alt="the kitchen inside the door"
       />
     </Doors>
-    <Doors link="{base}/">
+    <Doors link="{base}/about">
       <img
         class="interior-img"
         slot="doorInside"
@@ -34,7 +34,7 @@
         alt="the kitchen inside the door"
       />
     </Doors>
-    <Doors link="{base}/" />
+    <Doors link="{base}/about" />
   </div>
 </div>
 
@@ -57,6 +57,7 @@
 
   .interior-img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 </style>

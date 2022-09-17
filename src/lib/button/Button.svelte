@@ -12,7 +12,7 @@
     </button>
   </a>
 {:else}
-  <button type="button" style="width: {width}">
+  <button type="button" style="width: {width}" on:click>
     <slot />
   </button>
 {/if}
@@ -29,5 +29,10 @@
 
   button:hover {
     box-shadow: var(--drop-shadow);
+  }
+
+  a,
+  button {
+    color: var(--c-black);
   }
 </style>
