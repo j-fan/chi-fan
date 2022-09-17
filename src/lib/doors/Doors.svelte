@@ -41,7 +41,7 @@
     height: 70vh;
     flex-shrink: 0;
     transition: height 300ms ease;
-    border: 1px solid black;
+    border: var(--border-style);
   }
 
   .door.open {

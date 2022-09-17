@@ -14,7 +14,7 @@
   --c-light-yellow: #eef4d4;
 
   /* Border style */
-  --border-style: 1px solid var(--c-black);
+  --border-style: 2px solid var(--c-dark-green);
   --border-radius: 1rem;
 
   /* Shadows */
