@@ -1,3 +1,5 @@
+import type PickItemSvelte from './variations/PickItem.svelte';
+
 export type Dialog = {
   characterName: string;
   bodyText: string;
@@ -19,7 +21,7 @@ export type PickItemsSlideType = {
   type: 'pick-items';
   targetCount: number;
   totalItems: number;
-  itemComponent: any; // TODO: figure out type for Svelte component as prop
+  itemComponent: typeof PickItemSvelte;
 } & BaseSlideType;
 
 export type DragSidesSlideType = {

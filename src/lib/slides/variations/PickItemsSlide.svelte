@@ -32,12 +32,11 @@
   {#each Array(props.totalItems) as _, index (index)}
     <div
       class="item-wrapper"
-      class:picked={pickedItems.has(index)}
       on:click={() => {
         handlePickItem(index);
       }}
     >
-      <svelte:component this={props.itemComponent} />
+      <svelte:component this={props.itemComponent} picked={pickedItems.has(index)} />
     </div>
   {/each}
 </BaseSlide>
@@ -48,9 +47,5 @@
     width: fit-content;
     height: fit-content;
     user-select: none;
-  }
-
-  .item-wrapper.picked {
-    transform: scale(1.5);
   }
 </style>
