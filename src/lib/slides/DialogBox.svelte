@@ -1,21 +1,34 @@
 <script lang="ts">
   import Button from '$lib/button/Button.svelte';
-  import type { Dialogs } from './types';
+  import { tick } from 'svelte';
+  import type { Dialog, Dialogs } from './types';
 
   export let dialogs: Dialogs;
+  export let isValid: boolean;
+  export let errorStep: Dialog;
+  export let successStep: Dialog;
 
   let dialogStep = 0;
   if (dialogs.length === 0) {
     throw new Error('You must provide at least 1 dialog option');
   }
   $: currentDialog = dialogs[0];
+  $: {
+    // Ensure currentDialog reacts to the isValid prop
+    if (dialogStep === dialogs.length) {
+      currentDialog = isValid ? successStep : errorStep;
+      tick();
+    }
+  }
 
   const handleClick = () => {
-    dialogStep = dialogStep + 1;
-    currentDialog.nextButton.action?.();
+    currentDialog.nextButton?.action?.();
 
-    if (dialogStep < dialogs.length) {
+    if (dialogStep < dialogs.length - 1) {
+      dialogStep = dialogStep + 1;
       currentDialog = dialogs[dialogStep];
+    } else if (dialogStep === dialogs.length - 1) {
+      dialogStep = dialogStep + 1;
     }
   };
 </script>
@@ -25,7 +38,9 @@
     <h3 class="character-name">{currentDialog.characterName}</h3>
     <p>{currentDialog.bodyText}</p>
     <div class="button-wrapper">
-      <Button on:click={handleClick}>{currentDialog.nextButton.text}</Button>
+      {#if currentDialog.nextButton}
+        <Button on:click={handleClick}>{currentDialog.nextButton.text}</Button>
+      {/if}
     </div>
   </div>
 </div>

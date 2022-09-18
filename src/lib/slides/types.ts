@@ -1,7 +1,7 @@
 export type Dialog = {
   characterName: string;
   bodyText: string;
-  nextButton: {
+  nextButton?: {
     text: string;
     action?: () => void;
   };
