@@ -2,28 +2,55 @@
   import type { PickItemsSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
 
-  export let slideProps: PickItemsSlideType;
-  export let targetCount: number;
-  export let totalItems: number;
+  export let props: PickItemsSlideType;
+
   $: {
-    if (totalItems < targetCount) {
+    if (props.totalItems < props.targetCount) {
       throw new Error('The target count must be less than the total items');
     }
   }
 
-  let currentItemsPicked = 0;
+  let pickedItems = new Set();
+
+  const handlePickItem = (itemId: number) => {
+    if (pickedItems.has(itemId)) {
+      pickedItems.delete(itemId);
+    } else {
+      pickedItems.add(itemId);
+    }
+    pickedItems = pickedItems;
+  };
 </script>
 
 <BaseSlide
-  dialogs={slideProps.dialogs}
-  errorStep={slideProps.errorStep}
-  successStep={slideProps.successStep}
-  isValid={true}
+  dialogs={props.dialogs}
+  errorStep={props.errorStep}
+  successStep={props.successStep}
+  isValid={pickedItems.size >= props.targetCount}
 >
-  {#each Array(totalItems) as _, index (index)}
-    <slot name="item" />
+  <h2>items picked: {pickedItems.size}</h2>
+  {#each Array(props.totalItems) as _, index (index)}
+    <div
+      class="item-wrapper"
+      class:picked={pickedItems.has(index)}
+      on:click={() => {
+        handlePickItem(index);
+      }}
+    >
+      <slot name="item" />
+    </div>
   {/each}
 </BaseSlide>
 
 <style>
+  .item-wrapper {
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    user-select: none;
+  }
+
+  .item-wrapper.picked {
+    transform: scale(1.5);
+  }
 </style>

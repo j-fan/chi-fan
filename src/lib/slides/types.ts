@@ -17,7 +17,8 @@ export type BaseSlideType = {
 };
 export type PickItemsSlideType = {
   type: 'pick-items';
-  isValid: boolean; // todo: remove after isValid is implemented internally
+  targetCount: number;
+  totalItems: number;
 } & BaseSlideType;
 
 export type DragSidesSlideType = {

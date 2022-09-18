@@ -14,7 +14,7 @@
         },
         {
           characterName: 'Grandpa',
-          bodyText: "Let's choose 5-7 canes",
+          bodyText: "Let's choose about 5 canes",
           nextButton: { text: 'Ok I got it!' }
         }
       ],
@@ -26,10 +26,12 @@
         characterName: 'Grandpa',
         bodyText: "These look good. Let's bring them into the kitchen",
         nextButton: { text: 'Sounds good' }
-      }
+      },
+      targetCount: 5,
+      totalItems: 12
     },
     {
-      type: 'pick-items',
+      type: 'drag-sides',
       dialogs: [
         {
           characterName: 'Grandpa',

@@ -8,7 +8,6 @@
 
   export let slides: SlidesType;
 
-  let isValid = false;
   let slideCount = 0;
   $: {
     if (slides.length === 0) {
@@ -40,15 +39,13 @@
 </script>
 
 {#key currentSlide}
-  <h1>Slide count: {slideCount}</h1>
-
   <div
     class="wrapper"
     in:fade={{ duration: SLIDE_EXIT_DURATION, delay: SLIDE_EXIT_DURATION }}
     out:fade={{ duration: SLIDE_EXIT_DURATION }}
   >
     <SlideSwitch
-      slideProps={{
+      props={{
         ...currentSlide,
         successStep
       }}
