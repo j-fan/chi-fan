@@ -9,7 +9,9 @@
 </script>
 
 <div class="wrapper">
-  <slot />
+  <div class="slide-content">
+    <slot />
+  </div>
   <DialogBox {dialogs} {isValid} {errorStep} {successStep} />
 </div>
 
@@ -18,5 +20,10 @@
     width: 100%;
     height: 100%;
     background-color: var(--c-white);
+  }
+
+  .slide-content {
+    width: 100%;
+    height: 100%;
   }
 </style>
