@@ -63,8 +63,6 @@
   .item-wrapper {
     position: absolute;
     cursor: pointer;
-    width: fit-content;
-    height: fit-content;
     user-select: none;
   }
 </style>

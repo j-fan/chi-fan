@@ -1,10 +1,37 @@
 <script lang="ts">
   import Slides from '$lib/slides/Slides.svelte';
+  import PeelingSugarCane from './PeelingSugarCane.svelte';
   import SugarCane from './SugarCane.svelte';
 </script>
 
 <Slides
   slides={[
+    {
+      type: 'drag-sides',
+      dialogs: [
+        {
+          characterName: 'Grandpa',
+          bodyText: 'Now we need to peel the sugar cane with a knife',
+          nextButton: { text: 'Why do we need to do this?' }
+        },
+        {
+          characterName: 'Grandpa',
+          bodyText: 'The outside is tough and not nice to use',
+          nextButton: { text: 'Ok I got it!' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Grandpa',
+        bodyText: 'Keep going, it is almost fully peeled'
+      },
+      successStep: {
+        characterName: 'Grandpa',
+        bodyText: 'The look great now, now we need to scrub it further to clean it.',
+        nextButton: { text: 'Sounds good' }
+      },
+      targetComponent: PeelingSugarCane,
+      dragComponent: SugarCane
+    },
     {
       type: 'pick-items',
       dialogs: [
@@ -31,30 +58,6 @@
       targetCount: 5,
       totalItems: 10,
       itemComponent: SugarCane
-    },
-    {
-      type: 'drag-sides',
-      dialogs: [
-        {
-          characterName: 'Grandpa',
-          bodyText: 'Now we need to peel the sugar cane with a knife',
-          nextButton: { text: 'Why do we need to do this?' }
-        },
-        {
-          characterName: 'Grandpa',
-          bodyText: 'The outside is tough and not nice to use',
-          nextButton: { text: 'Ok I got it!' }
-        }
-      ],
-      errorStep: {
-        characterName: 'Grandpa',
-        bodyText: 'Keep going, it is almost fully peeled'
-      },
-      successStep: {
-        characterName: 'Grandpa',
-        bodyText: 'The look great now, now we need to scrub it further to clean it.',
-        nextButton: { text: 'Sounds good' }
-      }
     }
   ]}
 />

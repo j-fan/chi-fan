@@ -26,6 +26,8 @@ export type PickItemsSlideType = {
 
 export type DragSidesSlideType = {
   type: 'drag-sides';
+  targetComponent: any;
+  dragComponent: any;
 } & BaseSlideType;
 export type Slide = PickItemsSlideType | DragSidesSlideType;
 export type SlidesType = Array<Slide>;

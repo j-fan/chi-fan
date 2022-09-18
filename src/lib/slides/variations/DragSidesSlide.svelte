@@ -3,6 +3,7 @@
   import BaseSlide from './BaseSlide.svelte';
 
   export let props: DragSidesSlideType;
+  let progress = 0.2;
 </script>
 
 <BaseSlide
@@ -10,7 +11,18 @@
   errorStep={props.errorStep}
   successStep={props.successStep}
   isValid={true}
-/>
+>
+  <div class="content">
+    <svelte:component this={props.targetComponent} {progress} />
+  </div>
+</BaseSlide>
 
 <style>
+  .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 </style>

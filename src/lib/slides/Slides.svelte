@@ -4,8 +4,6 @@
   import type { SlidesType } from './types';
   import SlideSwitch from './variations/SlideSwitch.svelte';
 
-  const SLIDE_EXIT_DURATION = 500;
-
   export let slides: SlidesType;
 
   let slideCount = 0;
@@ -39,11 +37,7 @@
 </script>
 
 {#key currentSlide}
-  <div
-    class="wrapper"
-    in:fade={{ duration: SLIDE_EXIT_DURATION, delay: SLIDE_EXIT_DURATION }}
-    out:fade={{ duration: SLIDE_EXIT_DURATION }}
-  >
+  <div class="wrapper" in:fade={{ duration: 500 }}>
     <SlideSwitch
       props={{
         ...currentSlide,

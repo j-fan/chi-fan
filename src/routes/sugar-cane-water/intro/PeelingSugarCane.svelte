@@ -1,8 +1,8 @@
 <script lang="ts">
-  export let picked = false;
+  export let progress = 0;
 </script>
 
-<p class="wrapper" class:picked>sugar cane</p>
+<p class="wrapper" style="filter: brightness({1 - progress})">sugar cane</p>
 
 <style>
   .wrapper {
@@ -11,12 +11,7 @@
     padding: 1rem;
     background-color: var(--c-light-green);
     transition: all 300ms ease;
-    width: 50px;
-    height: 300px;
-  }
-
-  .wrapper.picked {
-    transform: scale(1.3);
-    filter: brightness(0.8);
+    width: 60px;
+    height: 400px;
   }
 </style>
