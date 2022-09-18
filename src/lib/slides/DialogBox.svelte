@@ -10,8 +10,10 @@
   export let successStep: Dialog;
 
   let dialogStep = 0;
-  if (dialogs.length === 0) {
-    throw new Error('You must provide at least 1 dialog option');
+  $: {
+    if (dialogs.length === 0) {
+      throw new Error('You must provide at least 1 dialog option');
+    }
   }
   $: currentDialog = dialogs[0];
   $: {

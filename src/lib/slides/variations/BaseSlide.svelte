@@ -1,6 +1,6 @@
 <script lang="ts">
-  import DialogBox from './DialogBox.svelte';
-  import type { Dialog, Dialogs } from './types';
+  import DialogBox from '../DialogBox.svelte';
+  import type { Dialog, Dialogs } from '../types';
 
   export let dialogs: Dialogs;
   export let isValid: boolean;

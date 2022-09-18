@@ -15,12 +15,13 @@ export type BaseSlideType = {
   errorStep: Dialog;
   successStep: Dialog;
 };
-export type PickItemsSlide = {
+export type PickItemsSlideType = {
   type: 'pick-items';
+  isValid: boolean; // todo: remove after isValid is implemented internally
 } & BaseSlideType;
 
-export type DragSidesSlide = {
+export type DragSidesSlideType = {
   type: 'drag-sides';
 } & BaseSlideType;
-
-export type Slides = Array<PickItemsSlide | DragSidesSlide>;
+export type Slide = PickItemsSlideType | DragSidesSlideType;
+export type SlidesType = Array<Slide>;

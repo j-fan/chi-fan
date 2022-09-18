@@ -1,17 +1,19 @@
 <script lang="ts">
   import Button from '$lib/button/Button.svelte';
   import { fade } from 'svelte/transition';
-  import Slide from './Slide.svelte';
-  import type { Slides } from './types';
+  import type { SlidesType } from './types';
+  import SlideSwitch from './variations/SlideSwitch.svelte';
 
   const SLIDE_EXIT_DURATION = 500;
 
-  export let slides: Slides;
+  export let slides: SlidesType;
 
   let isValid = false;
   let slideCount = 0;
-  if (slides.length === 0) {
-    throw new Error('You must provide at least 1 slide option');
+  $: {
+    if (slides.length === 0) {
+      throw new Error('You must provide at least 1 slide option');
+    }
   }
   $: currentSlide = slides[slideCount];
 
@@ -38,24 +40,19 @@
 </script>
 
 {#key currentSlide}
+  <h1>Slide count: {slideCount}</h1>
+
   <div
     class="wrapper"
     in:fade={{ duration: SLIDE_EXIT_DURATION, delay: SLIDE_EXIT_DURATION }}
     out:fade={{ duration: SLIDE_EXIT_DURATION }}
   >
-    <Slide
-      dialogs={currentSlide.dialogs}
-      errorStep={currentSlide.errorStep}
-      {successStep}
-      {isValid}
-    >
-      <h1>Slide count: {slideCount}</h1>
-      <Button
-        on:click={() => {
-          isValid = !isValid;
-        }}>set isValid: {isValid}</Button
-      >
-    </Slide>
+    <SlideSwitch
+      slideProps={{
+        ...currentSlide,
+        successStep
+      }}
+    />
   </div>
 {/key}
 
