@@ -1,5 +1,6 @@
 <script lang="ts">
   import Slides from '$lib/slides/Slides.svelte';
+  import SugarCane from './SugarCane.svelte';
 </script>
 
 <Slides
@@ -28,7 +29,8 @@
         nextButton: { text: 'Sounds good' }
       },
       targetCount: 5,
-      totalItems: 12
+      totalItems: 12,
+      itemComponent: SugarCane
     },
     {
       type: 'drag-sides',

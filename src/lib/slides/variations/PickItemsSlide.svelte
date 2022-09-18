@@ -37,7 +37,7 @@
         handlePickItem(index);
       }}
     >
-      <slot name="item" />
+      <svelte:component this={props.itemComponent} />
     </div>
   {/each}
 </BaseSlide>

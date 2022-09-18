@@ -7,9 +7,7 @@
 </script>
 
 {#if props.type === 'pick-items'}
-  <PickItemsSlide {props}>
-    <div slot="item">sugar cane</div></PickItemsSlide
-  >
+  <PickItemsSlide {props} />
 {:else if props.type === 'drag-sides'}
   <BaseSlide {...props} isValid={true}>
     <h2>TODO: implement "drag sides" slide type</h2>

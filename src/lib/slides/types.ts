@@ -19,6 +19,7 @@ export type PickItemsSlideType = {
   type: 'pick-items';
   targetCount: number;
   totalItems: number;
+  itemComponent: any; // TODO: figure out type for Svelte component as prop
 } & BaseSlideType;
 
 export type DragSidesSlideType = {
