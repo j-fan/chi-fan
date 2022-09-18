@@ -2,7 +2,7 @@
   export let picked = false;
 </script>
 
-<p class="wrapper" class:picked>sugar cane {picked}</p>
+<p class="wrapper" class:picked>sugar cane</p>
 
 <style>
   .wrapper {

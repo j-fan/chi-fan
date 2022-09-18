@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { randomRange } from '$lib/utils/random';
   import type { PickItemsSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
 
@@ -28,21 +29,39 @@
   successStep={props.successStep}
   isValid={pickedItems.size >= props.targetCount}
 >
-  <h2>items picked: {pickedItems.size}</h2>
-  {#each Array(props.totalItems) as _, index (index)}
-    <div
-      class="item-wrapper"
-      on:click={() => {
-        handlePickItem(index);
-      }}
-    >
-      <svelte:component this={props.itemComponent} picked={pickedItems.has(index)} />
+  <div class="slide-content">
+    <div class="items-container">
+      <h2>items picked: {pickedItems.size}</h2>
+      {#each Array(props.totalItems) as _, index (index)}
+        <div
+          class="item-wrapper"
+          on:click={() => {
+            handlePickItem(index);
+          }}
+          style="left: {randomRange(0, 100)}%; top: {randomRange(0, 100)}%;"
+        >
+          <svelte:component this={props.itemComponent} picked={pickedItems.has(index)} />
+        </div>
+      {/each}
     </div>
-  {/each}
+  </div>
 </BaseSlide>
 
 <style>
+  .slide-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .items-container {
+    position: relative;
+    width: 50%;
+    height: 50%;
+  }
   .item-wrapper {
+    position: absolute;
     cursor: pointer;
     width: fit-content;
     height: fit-content;
