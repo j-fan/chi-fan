@@ -24,9 +24,11 @@
     display: flex;
     justify-content: center;
     z-index: 1;
+    pointer-events: none;
   }
 
   nav {
+    pointer-events: all;
     display: flex;
     justify-content: center;
     background-color: var(--c-white);
