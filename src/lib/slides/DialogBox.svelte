@@ -1,6 +1,5 @@
 <script lang="ts">
   import Button from '$lib/button/Button.svelte';
-  import { tick } from 'svelte';
   import { fly } from 'svelte/transition';
   import type { Dialog, Dialogs } from './types';
 
@@ -18,9 +17,11 @@
   $: currentDialog = dialogs[0];
   $: {
     // Ensure currentDialog reacts to the isValid prop
+    if (dialogStep === dialogs.length - 1 && isValid) {
+      currentDialog = successStep;
+    }
     if (dialogStep === dialogs.length) {
       currentDialog = isValid ? successStep : errorStep;
-      tick();
     }
   }
 

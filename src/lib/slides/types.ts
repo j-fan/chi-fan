@@ -1,4 +1,4 @@
-import type PickItemSvelte from './variations/PickItem.svelte';
+import type PickItemSvelte from './variations/components/PickItem.svelte';
 
 export type Dialog = {
   characterName: string;

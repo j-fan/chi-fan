@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Slide } from '../types';
-  import BaseSlide from './BaseSlide.svelte';
+  import DragSidesSlide from './DragSidesSlide.svelte';
   import PickItemsSlide from './PickItemsSlide.svelte';
 
   export let props: Slide;
@@ -9,9 +9,7 @@
 {#if props.type === 'pick-items'}
   <PickItemsSlide {props} />
 {:else if props.type === 'drag-sides'}
-  <BaseSlide {...props} isValid={true}>
-    <h2>TODO: implement "drag sides" slide type</h2>
-  </BaseSlide>
+  <DragSidesSlide {props} />
 {:else}
   <div>Unknown slide type</div>
 {/if}
