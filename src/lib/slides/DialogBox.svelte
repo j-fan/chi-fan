@@ -1,6 +1,7 @@
 <script lang="ts">
   import Button from '$lib/button/Button.svelte';
   import { tick } from 'svelte';
+  import { fly } from 'svelte/transition';
   import type { Dialog, Dialogs } from './types';
 
   export let dialogs: Dialogs;
@@ -34,15 +35,17 @@
 </script>
 
 <div class="float-bottom-wrapper">
-  <div class="dialog">
-    <h3 class="character-name">{currentDialog.characterName}</h3>
-    <p>{currentDialog.bodyText}</p>
-    <div class="button-wrapper">
-      {#if currentDialog.nextButton}
-        <Button on:click={handleClick}>{currentDialog.nextButton.text}</Button>
-      {/if}
+  {#key currentDialog}
+    <div class="dialog" in:fly={{ y: 20, duration: 400 }}>
+      <h3 class="character-name">{currentDialog.characterName}</h3>
+      <p>{currentDialog.bodyText}</p>
+      <div class="button-wrapper">
+        {#if currentDialog.nextButton}
+          <Button on:click={handleClick}>{currentDialog.nextButton.text}</Button>
+        {/if}
+      </div>
     </div>
-  </div>
+  {/key}
 </div>
 
 <style>
@@ -68,6 +71,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    transition: all 500ms ease;
   }
 
   @media (max-width: 600px) {
