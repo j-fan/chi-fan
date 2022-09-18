@@ -28,7 +28,7 @@
   }
 
   button:hover {
-    box-shadow: var(--drop-shadow);
+    box-shadow: var(--drop-shadow-sm);
   }
 
   a,

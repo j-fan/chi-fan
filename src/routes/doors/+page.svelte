@@ -10,7 +10,7 @@
 
 <div class="wrapper">
   <div class="door-list">
-    <Doors link="{base}/about">
+    <Doors link="{base}/sugar-cane-water/intro">
       <img
         class="interior-img"
         slot="doorInside"
