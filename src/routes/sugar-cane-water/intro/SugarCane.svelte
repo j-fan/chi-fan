@@ -10,9 +10,11 @@
     border-radius: var(--border-radius);
     padding: 1rem;
     background-color: var(--c-light-green);
+    transition: all 300ms ease;
   }
 
   .wrapper.picked {
     transform: scale(1.3);
+    filter: brightness(0.8);
   }
 </style>

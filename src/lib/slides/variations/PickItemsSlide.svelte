@@ -29,37 +29,37 @@
   successStep={props.successStep}
   isValid={pickedItems.size >= props.targetCount}
 >
-  <div class="slide-content">
-    <div class="items-container">
-      <h2>items picked: {pickedItems.size}</h2>
-      {#each Array(props.totalItems) as _, index (index)}
-        <div
-          class="item-wrapper"
-          on:click={() => {
-            handlePickItem(index);
-          }}
-          style="left: {randomRange(0, 100)}%; top: {randomRange(0, 100)}%;"
-        >
-          <svelte:component this={props.itemComponent} picked={pickedItems.has(index)} />
-        </div>
-      {/each}
-    </div>
+  <div class="items-container">
+    <h2>items picked: {pickedItems.size}</h2>
+    {#each Array(props.totalItems) as _, index (index)}
+      <div
+        class="item-wrapper"
+        on:click={() => {
+          handlePickItem(index);
+        }}
+        style="left: {randomRange(0, 90)}%; top: {randomRange(0, 100)}%;"
+      >
+        <svelte:component this={props.itemComponent} picked={pickedItems.has(index)} />
+      </div>
+    {/each}
   </div>
 </BaseSlide>
 
 <style>
-  .slide-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .items-container {
     position: relative;
     width: 50%;
     height: 50%;
+    margin: 0 auto;
+    margin-top: 15vh;
   }
+
+  @media (max-width: 600px) {
+    .items-container {
+      width: 100%;
+    }
+  }
+
   .item-wrapper {
     position: absolute;
     cursor: pointer;

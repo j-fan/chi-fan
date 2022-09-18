@@ -29,7 +29,7 @@
         nextButton: { text: 'Sounds good' }
       },
       targetCount: 5,
-      totalItems: 12,
+      totalItems: 10,
       itemComponent: SugarCane
     },
     {
