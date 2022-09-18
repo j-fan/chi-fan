@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount, tick } from 'svelte';
   import type { DragSidesSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
 
@@ -7,11 +8,34 @@
   let mouseX = 0;
   let mouseY = 0;
   let dragElementWidth = 0;
+  let targetRef: HTMLElement;
+  let dragRef: HTMLElement;
+  let isIntersecting = false;
 
   const handleMousemove = (event: MouseEvent) => {
-    mouseX = event.clientX;
-    mouseY = event.clientY;
+    const targetBoundingBox = targetRef.getBoundingClientRect();
+    mouseX = event.clientX - targetBoundingBox.x - dragElementWidth / 2;
+    mouseY = event.clientY - targetBoundingBox.y;
   };
+
+  onMount(() => {
+    const observerCallback: IntersectionObserverCallback = (entries, observer) => {
+      entries.forEach((entry, i) => {
+        isIntersecting = entry.isIntersecting;
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, {
+      root: targetRef,
+      rootMargin: '0px',
+      threshold: [0, 0.2, 0.4, 0.6, 0.8, 1]
+    });
+    observer.observe(dragRef);
+
+    return () => {
+      observer.disconnect();
+    };
+  });
 </script>
 
 <BaseSlide
@@ -20,14 +44,18 @@
   successStep={props.successStep}
   isValid={true}
 >
+  <p>isIntersecting: {isIntersecting}</p>
   <div class="centered" on:mousemove={handleMousemove}>
-    <svelte:component this={props.targetComponent} {progress} />
-    <div
-      class="follow-mouse"
-      style="left: {mouseX - dragElementWidth / 2}px; top:{mouseY}px;"
-      bind:clientWidth={dragElementWidth}
-    >
-      <svelte:component this={props.dragComponent} />
+    <div class="target" bind:this={targetRef}>
+      <svelte:component this={props.targetComponent} {progress} />
+      <div
+        class="follow-mouse"
+        style="left: {mouseX}px; top:{mouseY}px;"
+        bind:clientWidth={dragElementWidth}
+        bind:this={dragRef}
+      >
+        <svelte:component this={props.dragComponent} />
+      </div>
     </div>
   </div>
 </BaseSlide>
@@ -39,6 +67,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .target {
+    position: relative;
   }
 
   .follow-mouse {
