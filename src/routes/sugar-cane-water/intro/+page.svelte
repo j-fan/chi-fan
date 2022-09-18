@@ -1,5 +1,6 @@
 <script lang="ts">
   import Slides from '$lib/slides/Slides.svelte';
+  import Knife from './Knife.svelte';
   import PeelingSugarCane from './PeelingSugarCane.svelte';
   import SugarCane from './SugarCane.svelte';
 </script>
@@ -30,7 +31,7 @@
         nextButton: { text: 'Sounds good' }
       },
       targetComponent: PeelingSugarCane,
-      dragComponent: SugarCane
+      dragComponent: Knife
     },
     {
       type: 'pick-items',
