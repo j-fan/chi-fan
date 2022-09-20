@@ -8,6 +8,7 @@
   let mouseX = 0;
   let mouseY = 0;
   let dragElementWidth = 0;
+  let dragElementHeight = 0;
   let targetRef: HTMLElement;
   let dragRef: HTMLElement;
   let isIntersecting = false;
@@ -15,7 +16,7 @@
   const handleMousemove = (event: MouseEvent) => {
     const targetBoundingBox = targetRef.getBoundingClientRect();
     mouseX = event.clientX - targetBoundingBox.x - dragElementWidth / 2;
-    mouseY = event.clientY - targetBoundingBox.y;
+    mouseY = event.clientY - targetBoundingBox.y - dragElementHeight / 2;
   };
 
   onMount(() => {
@@ -52,6 +53,7 @@
         class="follow-mouse"
         style="left: {mouseX}px; top:{mouseY}px;"
         bind:clientWidth={dragElementWidth}
+        bind:clientHeight={dragElementHeight}
         bind:this={dragRef}
       >
         <svelte:component this={props.dragComponent} />
