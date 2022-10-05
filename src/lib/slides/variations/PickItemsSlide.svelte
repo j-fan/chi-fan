@@ -1,7 +1,9 @@
 <script lang="ts">
-  import { randomRange } from '$lib/utils/random';
+  import { randomRange, smoothRandomRange } from '$lib/utils/random';
   import type { PickItemsSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
+
+  const seed = 0.2;
 
   export let props: PickItemsSlideType;
 
@@ -37,7 +39,13 @@
         on:click={() => {
           handlePickItem(index);
         }}
-        style="left: {randomRange(0, 90)}%; top: {randomRange(0, 100)}%;"
+        style="left: {smoothRandomRange(-30, 100, index, 0, seed)}%; top: {smoothRandomRange(
+          0,
+          50,
+          index,
+          1,
+          seed
+        )}%;"
       >
         <svelte:component this={props.itemComponent} picked={pickedItems.has(index)} />
       </div>

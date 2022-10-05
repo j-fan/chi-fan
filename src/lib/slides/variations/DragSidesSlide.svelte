@@ -51,13 +51,12 @@
       <svelte:component this={props.targetComponent} {progress} />
       <div
         class="follow-mouse"
-        class:isIntersecting
         style="left: {mouseX}px; top:{mouseY}px;"
         bind:clientWidth={dragElementWidth}
         bind:clientHeight={dragElementHeight}
         bind:this={dragRef}
       >
-        <svelte:component this={props.dragComponent} />
+        <svelte:component this={props.dragComponent} {isIntersecting} />
       </div>
     </div>
   </div>
@@ -78,9 +77,5 @@
 
   .follow-mouse {
     position: absolute;
-  }
-
-  .isIntersecting {
-    transform: scale(1.2);
   }
 </style>
