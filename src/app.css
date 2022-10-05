@@ -48,6 +48,13 @@ body {
   height: 100%;
 }
 
+body.no-scroll {
+  position: fixed;
+  overflow: hidden;
+  overscroll-behavior-y: none;
+  width: 100%;
+}
+
 /*
   Typographic tweaks!
   4. Add accessible line-height

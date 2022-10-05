@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { setNoScrollBody } from '$lib/utils/setNoScrollBody';
   import { onMount } from 'svelte';
   import type { DragSidesSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
@@ -43,6 +44,8 @@
       observer.disconnect();
     };
   });
+
+  setNoScrollBody();
 </script>
 
 <BaseSlide
