@@ -28,6 +28,7 @@ export type DragSidesSlideType = {
   type: 'drag-sides';
   targetComponent: typeof SvelteComponentTyped<{ progress?: number }>;
   dragComponent: typeof SvelteComponentTyped<{ isIntersecting?: boolean }>;
+  targetStrokes: number;
 } & BaseSlideType;
 export type Slide = PickItemsSlideType | DragSidesSlideType;
 export type SlidesType = Array<Slide>;

@@ -10,15 +10,18 @@
 
 <style>
   .wrapper {
+    transition: all 300ms ease;
     user-select: none;
     height: 250px;
     width: 125px;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
+    filter: drop-shadow(15px 15px 6px rgba(0, 0, 0, 0.5));
   }
 
   .wrapper.isIntersecting {
-    transform: scale(1.2);
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+    transform: scale(0.8);
   }
 </style>

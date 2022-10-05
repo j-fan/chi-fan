@@ -6,7 +6,7 @@
   const src = `${base}/img/sugar-cane-water/cut-cane.png`;
 </script>
 
-<div class="wrapper" style="filter: brightness({1 - progress}); background-image: url({src});" />
+<div class="wrapper" style="filter: brightness({progress}); background-image: url({src});" />
 
 <style>
   .wrapper {

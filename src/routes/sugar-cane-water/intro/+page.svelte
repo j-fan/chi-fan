@@ -39,7 +39,8 @@
       dialogs: [
         {
           characterName: 'Grandpa',
-          bodyText: 'Now we need to peel the sugar cane with a knife',
+          bodyText:
+            'Now we need to peel the sugar cane with a knife. Drag your knife across the cane at least three times.',
           nextButton: { text: 'Why do we need to do this?' }
         },
         {
@@ -58,7 +59,8 @@
         nextButton: { text: 'Sounds good' }
       },
       targetComponent: PeelingSugarCane,
-      dragComponent: Knife
+      dragComponent: Knife,
+      targetStrokes: 3
     }
   ]}
 />

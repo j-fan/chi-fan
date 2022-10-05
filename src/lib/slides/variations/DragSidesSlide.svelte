@@ -1,18 +1,35 @@
 <script lang="ts">
+  import { clamp } from '$lib/utils/math';
   import { setNoScrollBody } from '$lib/utils/setNoScrollBody';
   import { onMount } from 'svelte';
   import type { DragSidesSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
 
   export let props: DragSidesSlideType;
+
   let progress = 0.2;
-  let mouseX = 0;
-  let mouseY = 0;
+  let mouseX = -200;
+  let mouseY = -200;
   let dragElementWidth = 0;
   let dragElementHeight = 0;
   let targetRef: HTMLElement;
   let dragRef: HTMLElement;
   let isIntersecting = false;
+  let hoverStartTime: number | undefined;
+  let strokes = 0;
+  let isHolding = false;
+
+  $: {
+    if (isIntersecting || isHolding) {
+      hoverStartTime = new Date().getTime();
+    } else if (!isIntersecting) {
+      const timeNow = new Date().getTime();
+      if (hoverStartTime && timeNow - hoverStartTime > 400) {
+        strokes = clamp(strokes + 1, 0, props.targetStrokes);
+      }
+      hoverStartTime = undefined;
+    }
+  }
 
   const handleMouseMove = (event: MouseEvent) => {
     const targetBoundingBox = targetRef.getBoundingClientRect();
@@ -26,9 +43,16 @@
     mouseY = event.changedTouches[0].clientY - targetBoundingBox.y - dragElementHeight / 2;
   };
 
+  const handleHoldStart = () => {
+    isHolding = true;
+  };
+  const handleHoldEnd = () => {
+    isHolding = false;
+  };
+
   onMount(() => {
-    const observerCallback: IntersectionObserverCallback = (entries, observer) => {
-      entries.forEach((entry, i) => {
+    const observerCallback: IntersectionObserverCallback = (entries) => {
+      entries.forEach((entry) => {
         isIntersecting = entry.isIntersecting;
       });
     };
@@ -52,12 +76,21 @@
   dialogs={props.dialogs}
   errorStep={props.errorStep}
   successStep={props.successStep}
-  isValid={true}
+  isValid={strokes === props.targetStrokes}
 >
+  <p>Progress: {strokes} / {props.targetStrokes}</p>
   <p>isIntersecting: {isIntersecting}</p>
-  <div class="centered" on:mousemove={handleMouseMove} on:touchmove={handleTouchMove}>
+  <div
+    class="centered"
+    on:mousemove={handleMouseMove}
+    on:touchmove={handleTouchMove}
+    on:mouseup={handleHoldStart}
+    on:touchstart={handleHoldStart}
+    on:mousedown={handleHoldEnd}
+    on:touchend={handleHoldEnd}
+  >
     <div class="target" bind:this={targetRef}>
-      <svelte:component this={props.targetComponent} {progress} />
+      <svelte:component this={props.targetComponent} progress={strokes / props.targetStrokes} />
       <div
         class="follow-mouse"
         style="left: {mouseX}px; top:{mouseY}px;"
