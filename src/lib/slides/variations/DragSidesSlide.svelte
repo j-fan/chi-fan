@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount, tick } from 'svelte';
+  import { onMount } from 'svelte';
   import type { DragSidesSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
 
@@ -51,6 +51,7 @@
       <svelte:component this={props.targetComponent} {progress} />
       <div
         class="follow-mouse"
+        class:isIntersecting
         style="left: {mouseX}px; top:{mouseY}px;"
         bind:clientWidth={dragElementWidth}
         bind:clientHeight={dragElementHeight}
@@ -77,5 +78,9 @@
 
   .follow-mouse {
     position: absolute;
+  }
+
+  .isIntersecting {
+    transform: scale(1.2);
   }
 </style>

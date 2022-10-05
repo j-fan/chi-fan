@@ -1,15 +1,18 @@
 <script lang="ts">
+  import { base } from '$app/paths';
+
+  const src = `${base}/img/sugar-cane-water/cleaver2.png`;
 </script>
 
-<p class="wrapper">Knife</p>
+<div class="wrapper" style="background-image: url({src})" />
 
 <style>
   .wrapper {
-    border: var(--border-style);
-    border-radius: var(--border-radius);
-    padding: 1rem;
-    background-color: var(--c-pink);
-    transition: all 300ms ease;
     user-select: none;
+    height: 250px;
+    width: 125px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 </style>

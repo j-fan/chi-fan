@@ -1,4 +1,4 @@
-import type PickItemSvelte from './variations/components/PickItem.svelte';
+import type { SvelteComponentTyped } from 'svelte';
 
 export type Dialog = {
   characterName: string;
@@ -21,13 +21,13 @@ export type PickItemsSlideType = {
   type: 'pick-items';
   targetCount: number;
   totalItems: number;
-  itemComponent: typeof PickItemSvelte;
+  itemComponent: typeof SvelteComponentTyped<{ picked?: boolean }>;
 } & BaseSlideType;
 
 export type DragSidesSlideType = {
   type: 'drag-sides';
-  targetComponent: any;
-  dragComponent: any;
+  targetComponent: typeof SvelteComponentTyped<{ progress?: number }>;
+  dragComponent: typeof SvelteComponentTyped<Record<string, never>>;
 } & BaseSlideType;
 export type Slide = PickItemsSlideType | DragSidesSlideType;
 export type SlidesType = Array<Slide>;

@@ -14,7 +14,7 @@
       <img
         class="interior-img"
         slot="doorInside"
-        src="{base}/img/recipe1/interior.jpg"
+        src="{base}/img/sugar-cane-water/interior.jpg"
         alt="the kitchen inside the door"
       />
     </Doors>
