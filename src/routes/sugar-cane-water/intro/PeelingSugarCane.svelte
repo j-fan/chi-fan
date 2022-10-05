@@ -10,8 +10,8 @@
 
 <style>
   .wrapper {
-    width: 300px;
-    height: 600px;
+    width: 120px;
+    height: 540px;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;

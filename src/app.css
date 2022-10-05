@@ -21,6 +21,7 @@
   /* Shadows */
   --drop-shadow-sm: 2px 3px 0 1px rgba(0, 0, 0, 0.3);
   --drop-shadow-md: 6px 6px 0 1px rgba(0, 0, 0, 0.3);
+  --box-shadow-outline: 0 0 0 var(--border-width) var(--c-dark-green);
 }
 
 /*

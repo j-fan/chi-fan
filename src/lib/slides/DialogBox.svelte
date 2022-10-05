@@ -65,8 +65,7 @@
     background-color: var(--c-white);
     border-radius: var(--border-radius);
     border: 8px solid var(--c-light-green);
-    outline: var(--border-width) solid var(--c-dark-green);
-    box-shadow: var(--drop-shadow-md);
+    box-shadow: var(--drop-shadow-md), var(--box-shadow-outline);
     margin: 2rem;
     padding: 1rem;
     padding-top: 2.5rem;
@@ -87,8 +86,8 @@
   .character-name {
     background-color: var(--c-white);
     border: 8px solid var(--c-light-green);
-    outline: var(--border-width) solid var(--c-dark-green);
     border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-outline);
     width: fit-content;
     padding: 0.5rem;
 

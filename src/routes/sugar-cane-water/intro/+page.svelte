@@ -17,7 +17,7 @@
         },
         {
           characterName: 'Grandpa',
-          bodyText: "Let's choose about 5 canes",
+          bodyText: "Let's choose about 3 canes",
           nextButton: { text: 'Ok I got it!' }
         }
       ],
@@ -30,8 +30,8 @@
         bodyText: "These look good. Let's bring them into the kitchen",
         nextButton: { text: 'Sounds good' }
       },
-      targetCount: 5,
-      totalItems: 10,
+      targetCount: 3,
+      totalItems: 6,
       itemComponent: SugarCane
     },
     {

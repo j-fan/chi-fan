@@ -13,10 +13,16 @@
   let dragRef: HTMLElement;
   let isIntersecting = false;
 
-  const handleMousemove = (event: MouseEvent) => {
+  const handleMouseMove = (event: MouseEvent) => {
     const targetBoundingBox = targetRef.getBoundingClientRect();
     mouseX = event.clientX - targetBoundingBox.x - dragElementWidth / 2;
     mouseY = event.clientY - targetBoundingBox.y - dragElementHeight / 2;
+  };
+
+  const handleTouchMove = (event: TouchEvent) => {
+    const targetBoundingBox = targetRef.getBoundingClientRect();
+    mouseX = event.changedTouches[0].clientX - targetBoundingBox.x - dragElementWidth / 2;
+    mouseY = event.changedTouches[0].clientY - targetBoundingBox.y - dragElementHeight / 2;
   };
 
   onMount(() => {
@@ -46,7 +52,7 @@
   isValid={true}
 >
   <p>isIntersecting: {isIntersecting}</p>
-  <div class="centered" on:mousemove={handleMousemove}>
+  <div class="centered" on:mousemove={handleMouseMove} on:touchmove={handleTouchMove}>
     <div class="target" bind:this={targetRef}>
       <svelte:component this={props.targetComponent} {progress} />
       <div
