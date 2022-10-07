@@ -62,7 +62,7 @@
       successStep: {
         characterName: 'Grandpa',
         bodyText: 'The look great now, now we need to scrub it further to clean it.',
-        nextButton: { text: 'Sounds good', href: `${base}/sugar-cane-water` }
+        nextButton: { text: 'Sounds good', href: '/sugar-cane-water' }
       },
       targetComponent: PeelingSugarCane,
       dragComponent: Knife,

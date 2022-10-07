@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   export let isFullWidth = false;
   export let href: string | undefined = undefined;
 
@@ -6,7 +7,7 @@
 </script>
 
 {#if href}
-  <a {href} style="width: {width}">
+  <a href="{base}{href}" style="width: {width}">
     <button type="button" style="width: {width}">
       <slot />
     </button>
