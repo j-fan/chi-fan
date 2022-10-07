@@ -27,6 +27,10 @@
   };
 </script>
 
+<svelte:head>
+  <link rel="preload" as="image" href={doorImgLeft} />
+  <link rel="preload" as="image" href={doorImgRight} />
+</svelte:head>
 <div
   bind:clientWidth={width}
   class="door"
@@ -141,6 +145,7 @@
     cursor: pointer;
     max-width: 100%;
     max-height: 100%;
+    aspect-ratio: 2.08 / 9;
   }
 
   .left-door.hidden,

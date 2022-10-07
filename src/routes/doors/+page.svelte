@@ -5,7 +5,7 @@
 
 <svelte:head>
   <title>Doors</title>
-  <meta name="description" content="About this app" />
+  <meta name="description" content="Doors" />
 </svelte:head>
 
 <div class="wrapper">

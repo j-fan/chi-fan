@@ -6,6 +6,11 @@
   import SectionWithImage from '$lib/article/SectionWithImage.svelte';
 </script>
 
+<svelte:head>
+  <title>Sugar cane water</title>
+  <meta name="description" content="Sugar cane water" />
+</svelte:head>
+
 <Article gap="4rem">
   <h1>Sugar cane water</h1>
   <Section align="center" width="300px">
