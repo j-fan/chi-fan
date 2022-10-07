@@ -16,7 +16,7 @@
   <FullWidthBanner src="{base}/img/sugar-cane-water/interior.jpg" alt="kitchen interior" />
   <h1>Sugar cane water</h1>
   <SectionGroup gap="4rem">
-    <Section aos="fade-up" align="center" width="100%">
+    <Section align="center" width="100%">
       Nam dui enim, tristique et maximus at, fringilla sed odio. Nullam sollicitudin nunc orci, vel
       volutpat augue lobortis a. Morbi tortor massa, imperdiet iaculis magna eu, laoreet rutrum
       libero. Mauris nunc dui, laoreet ut velit quis, pharetra aliquam nisl. Duis finibus, odio quis

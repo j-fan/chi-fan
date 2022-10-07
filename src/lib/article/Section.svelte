@@ -7,18 +7,21 @@
   export let aos: AosType | undefined = undefined;
   export let aosPlacement: anchorPlacementOptions | undefined = undefined;
   export let aosDelay: number | undefined = undefined;
+  export let aosDuration: number | undefined = undefined;
   export let aosOffset: number | undefined = undefined;
   export let aosEasing: easingOptions | undefined = undefined;
+  export let backgroundColor: string = 'transparent';
 </script>
 
 <section
   class={align}
-  style="width: {width}"
+  style="width: {width}; background: {backgroundColor};"
   data-aos={aos}
   data-aos-anchor-placement={aosPlacement}
   data-aos-delay={aosDelay}
   data-aos-offset={aosOffset}
   data-aos-easing={aosEasing}
+  data-aos-duration={aosDuration}
   data-aos-mirror="true"
   data-aos-once="false"
 >
