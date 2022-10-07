@@ -21,16 +21,23 @@
 <style>
   .wrapper {
     transition: all 300ms ease;
-    width: 120px;
-    height: 300px;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
     filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.3));
+    width: 180px;
+    height: 450px;
   }
 
   .wrapper.picked {
     filter: brightness(0.8);
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.3));
+  }
+
+  @media (max-width: 600px) {
+    .wrapper {
+      width: 120px;
+      height: 300px;
+    }
   }
 </style>

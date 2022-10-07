@@ -32,7 +32,6 @@
   isValid={pickedItems.size >= props.targetCount}
 >
   <div class="items-container">
-    <h2>items picked: {pickedItems.size}</h2>
     {#each Array(props.totalItems) as _, index (index)}
       <div
         class="item-wrapper"

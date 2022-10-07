@@ -77,8 +77,6 @@
   successStep={props.successStep}
   isValid={strokes === props.targetStrokes}
 >
-  <p>Progress: {strokes} / {props.targetStrokes}</p>
-  <p>isIntersecting: {isIntersecting}</p>
   <div
     class="centered"
     on:mousemove={handleMouseMove}
