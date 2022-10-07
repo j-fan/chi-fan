@@ -1,11 +1,15 @@
 <script lang="ts">
   import Button from '$lib/button/Button.svelte';
-  import { fade } from 'svelte/transition';
+  import { bounceOut } from 'svelte/easing';
+  import { fade, fly } from 'svelte/transition';
+  import { onMount } from 'svelte';
   import type { SlidesType } from './types';
   import SlideSwitch from './variations/SlideSwitch.svelte';
 
   export let slides: SlidesType;
+  export let skipButtonUrl: string;
 
+  let showSkip = false;
   let slideCount = 0;
   $: {
     if (slides.length === 0) {
@@ -35,6 +39,10 @@
       }
     };
   }
+
+  onMount(() => {
+    showSkip = true;
+  });
 </script>
 
 {#key currentSlide}
@@ -45,6 +53,11 @@
         successStep
       }}
     />
+    {#if showSkip}
+      <div class="skip-button" in:fly={{ y: -20, easing: bounceOut, delay: 2000, duration: 600 }}>
+        <Button href={skipButtonUrl}>Skip</Button>
+      </div>
+    {/if}
   </div>
 {/key}
 
@@ -53,5 +66,11 @@
     width: 100%;
     height: 100%;
     background-color: var(--c-white);
+  }
+
+  .skip-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
   }
 </style>

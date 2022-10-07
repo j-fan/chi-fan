@@ -4,12 +4,13 @@
   import PeelingSugarCane from './PeelingSugarCane.svelte';
   import SugarCane from './SugarCane.svelte';
 
-  let windowWidth = 0;
+  let windowWidth = 9999;
   $: isMobile = windowWidth < 500;
 </script>
 
 <svelte:window bind:innerWidth={windowWidth} />
 <Slides
+  skipButtonUrl="/sugar-cane-water"
   slides={[
     {
       type: 'pick-items',
