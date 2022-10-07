@@ -3,8 +3,12 @@
   import Knife from './Knife.svelte';
   import PeelingSugarCane from './PeelingSugarCane.svelte';
   import SugarCane from './SugarCane.svelte';
+
+  let windowWidth = 0;
+  $: isMobile = windowWidth < 500;
 </script>
 
+<svelte:window bind:innerWidth={windowWidth} />
 <Slides
   slides={[
     {
@@ -31,7 +35,7 @@
         nextButton: { text: 'Sounds good' }
       },
       targetCount: 3,
-      totalItems: 6,
+      totalItems: isMobile ? 6 : 12,
       itemComponent: SugarCane
     },
     {

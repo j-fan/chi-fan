@@ -7,7 +7,6 @@
 
   export let props: DragSidesSlideType;
 
-  let progress = 0.2;
   let mouseX = -200;
   let mouseY = -200;
   let dragElementWidth = 0;
@@ -17,14 +16,14 @@
   let isIntersecting = false;
   let hoverStartTime: number | undefined;
   let strokes = 0;
-  let isHolding = false;
+  let isHolding = false; // TODO: Decide whether holding the mouse is requirement
 
   $: {
-    if (isIntersecting || isHolding) {
+    if (isIntersecting) {
       hoverStartTime = new Date().getTime();
     } else if (!isIntersecting) {
       const timeNow = new Date().getTime();
-      if (hoverStartTime && timeNow - hoverStartTime > 400) {
+      if (hoverStartTime && timeNow - hoverStartTime > 500) {
         strokes = clamp(strokes + 1, 0, props.targetStrokes);
       }
       hoverStartTime = undefined;

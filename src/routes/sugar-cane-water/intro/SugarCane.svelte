@@ -1,22 +1,15 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import { randomBool, randomRange } from '$lib/utils/random';
-  import { onMount } from 'svelte';
 
   const src = `${base}/img/sugar-cane-water/cane.png`;
 
   export let picked = false;
 
-  let rotation = 0;
-  let scale = 1;
-  let flip = 1;
+  const rotation = randomRange(-10, 10);
+  const scale = randomRange(1, 1.4);
+  const flip = randomBool() ? 1 : -1;
   $: pickedScale = picked ? scale * 1.5 : scale;
-
-  onMount(() => {
-    rotation = randomRange(-10, 10);
-    scale = randomRange(1, 1.4);
-    flip = randomBool() ? 1 : -1;
-  });
 </script>
 
 <div

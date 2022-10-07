@@ -3,7 +3,7 @@
   import type { PickItemsSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
 
-  const seed = 0.2;
+  const seed = 0.23;
 
   export let props: PickItemsSlideType;
 
