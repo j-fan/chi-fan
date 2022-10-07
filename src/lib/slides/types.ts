@@ -6,6 +6,7 @@ export type Dialog = {
   nextButton?: {
     text: string;
     action?: () => void;
+    href?: string;
   };
 };
 export type Dialogs = Array<Dialog>;

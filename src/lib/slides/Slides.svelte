@@ -26,6 +26,7 @@
     successStep = {
       ...currentSlide.successStep,
       nextButton: {
+        ...currentSlide.successStep.nextButton,
         text: successNext?.text || 'Ok',
         action: () => {
           successNext?.action?.();

@@ -26,6 +26,10 @@
   }
 
   const handleClick = () => {
+    if (currentDialog.nextButton?.href) {
+      return;
+    }
+
     currentDialog.nextButton?.action?.();
 
     if (dialogStep < dialogs.length - 1) {
@@ -44,7 +48,9 @@
       <p>{currentDialog.bodyText}</p>
       <div class="button-wrapper">
         {#if currentDialog.nextButton}
-          <Button on:click={handleClick}>{currentDialog.nextButton.text}</Button>
+          <Button on:click={handleClick} href={currentDialog.nextButton.href}
+            >{currentDialog.nextButton.text}</Button
+          >
         {/if}
       </div>
     </div>
