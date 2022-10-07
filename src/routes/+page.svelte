@@ -9,6 +9,7 @@
 <svelte:head>
   <title>Chi Fan</title>
   <meta name="description" content="Chi Fan interactive artwork" />
+  <link rel="preload" as="image" href={src} />
 </svelte:head>
 
 <section style="background-image: url({src})">
