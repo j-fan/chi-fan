@@ -9,7 +9,7 @@
   export let itemsImageSrc: Item[];
 </script>
 
-<Section aos="fade-up">
+<Section aos="fade-up" width="100%">
   <h2>Tools & ingredients</h2>
   <div class="grid-wrapper">
     {#each itemsImageSrc as item}

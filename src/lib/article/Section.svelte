@@ -4,11 +4,10 @@
 
   export let align: 'left' | 'right' | 'center' = 'left';
   export let width: string = 'auto';
-  export let aos: AosType | undefined = 'fade';
+  export let aos: AosType | undefined = undefined;
   export let aosPlacement: anchorPlacementOptions | undefined = undefined;
   export let aosDelay: number | undefined = undefined;
   export let aosOffset: number | undefined = undefined;
-
   export let aosEasing: easingOptions | undefined = undefined;
 </script>
 
@@ -28,12 +27,12 @@
 
 <style>
   section.left {
-    align-self: left;
+    align-self: start;
     text-align: left;
   }
 
   section.right {
-    align-self: right;
+    align-self: end;
     text-align: right;
   }
 

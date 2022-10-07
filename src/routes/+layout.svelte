@@ -5,7 +5,7 @@
   import { onMount } from 'svelte';
 
   onMount(() => {
-    AOS.init({ offset: 150 });
+    AOS.init({ offset: 140 });
   });
 </script>
 

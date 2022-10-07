@@ -2,13 +2,13 @@
   export let gap = '1rem';
 </script>
 
-<article style="gap:{gap};">
+<div style="gap:{gap};">
   <slot />
-</article>
+</div>
 
 <style>
-  article {
-    padding: 6rem 2rem 0; /* Make space for header */
+  div {
+    padding: 0 2rem;
     max-width: 1000px;
     margin: 0 auto;
     min-height: 100%;
@@ -17,7 +17,7 @@
   }
 
   @media (max-width: 600px) {
-    article {
+    div {
       width: 100%;
     }
   }
