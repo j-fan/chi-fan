@@ -8,7 +8,7 @@
 
 <style>
   article {
-    padding: 6rem 1rem 0; /* Make space for header */
+    padding: 6rem 2rem 0; /* Make space for header */
     max-width: 1000px;
     margin: 0 auto;
     min-height: 100%;

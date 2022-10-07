@@ -35,10 +35,41 @@
     pellentesque urna.
   </Section>
 
-  <Inventory itemsImageSrc={[]} />
+  <Inventory
+    itemsImageSrc={[
+      {
+        label: 'Cane',
+        src: `${base}/img/sugar-cane-water/cane3.jpg`
+      },
+      {
+        label: 'Cleaver',
+        src: `${base}/img/sugar-cane-water/cleaver2.png`
+      },
+      {
+        label: 'Chopping board',
+        src: `${base}/img/sugar-cane-water/board.jpg`
+      },
+      {
+        label: 'Carrot',
+        src: `${base}/img/sugar-cane-water/carrot.jpg`
+      },
+      {
+        label: 'Pot',
+        src: `${base}/img/sugar-cane-water/pot.jpg`
+      },
+      {
+        label: 'Scrub',
+        src: `${base}/img/sugar-cane-water/scrub.jpg`
+      },
+      {
+        label: 'Tub',
+        src: `${base}/img/sugar-cane-water/tub.jpg`
+      }
+    ]}
+  />
 
   <SectionWithImage
-    aos="fade-up"
+    aos="fade-right"
     imageAlign="left"
     imageSrc="{base}/img/sugar-cane-water/cutting-cane.jpg"
     alt="Cutting up the cane"

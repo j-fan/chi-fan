@@ -13,7 +13,7 @@
 
 <section style="background-image: url({src})">
   <Card width="400px" isCentered
-    ><h1>Welcome to Chi Fan</h1>
+    ><h2>Welcome to Chi Fan</h2>
     <Button isFullWidth href="{base}/doors">Enter</Button></Card
   >
 </section>

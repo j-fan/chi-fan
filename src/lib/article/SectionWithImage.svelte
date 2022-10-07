@@ -11,7 +11,7 @@
 <Section {aos}>
   <div class="content {imageAlign}">
     <slot />
-    <div class="image-wrapper {imageAlign}">
+    <div class="image-wrapper">
       <img src={imageSrc} {alt} />
     </div>
   </div>
@@ -33,12 +33,14 @@
   }
 
   .image-wrapper {
-    width: 40%;
-    height: 400px;
+    width: 50%;
+    height: 500px;
     flex-shrink: 0;
     position: relative;
     border-radius: 2rem;
     background-color: var(--c-pink);
+    box-shadow: var(--drop-shadow-md);
+    border: 2px solid var(--c-dark-green);
   }
 
   .image-wrapper::before {
@@ -49,16 +51,8 @@
     position: absolute;
     height: 100%;
     width: 100%;
-  }
-
-  .image-wrapper.left::before {
     bottom: 1rem;
     right: 1rem;
-  }
-
-  .image-wrapper.right::before {
-    bottom: 1rem;
-    left: 1rem;
   }
 
   @media (max-width: 700px) {
@@ -68,7 +62,8 @@
     }
 
     .image-wrapper {
-      width: 80%;
+      width: 90%;
+      height: 400px;
     }
   }
 
