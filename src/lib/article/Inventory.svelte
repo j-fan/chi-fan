@@ -76,7 +76,6 @@
     border: 2px solid var(--c-dark-green);
     padding: 0.5rem;
     border-radius: 1rem;
-    font-size: 0.75rem;
     width: min-content;
   }
 
