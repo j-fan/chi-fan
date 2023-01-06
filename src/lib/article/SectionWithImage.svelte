@@ -43,18 +43,6 @@
     border: 2px solid var(--c-dark-green);
   }
 
-  .image-wrapper::before {
-    content: '';
-    border: var(--c-pink) solid 5px;
-    border-radius: 2rem;
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    bottom: 1rem;
-    right: 1rem;
-  }
-
   @media (max-width: 700px) {
     .content.right,
     .content.left {

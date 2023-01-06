@@ -26,10 +26,12 @@
 
     border: var(--border-style);
     border-radius: var(--border-radius);
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
   }
 
   button:hover {
     box-shadow: var(--drop-shadow-sm);
+    transform: translateY(-4px);
   }
 
   a,

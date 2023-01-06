@@ -49,7 +49,7 @@
     background-color: var(--c-white);
 
     border-radius: 1rem;
-    border: 4px solid var(--c-light-green);
+    border: var(--border-style);
   }
 
   .cell:hover {
