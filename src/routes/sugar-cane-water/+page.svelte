@@ -1,5 +1,6 @@
 <script lang="ts">
   import { base } from '$app/paths';
+  import Article from '$lib/article/Article.svelte';
   import FullWidthBanner from '$lib/article/FullWidthBanner.svelte';
   import Inventory from '$lib/article/Inventory.svelte';
   import Section from '$lib/article/Section.svelte';
@@ -12,7 +13,7 @@
   <meta name="description" content="Sugar cane water" />
 </svelte:head>
 
-<article>
+<Article>
   <FullWidthBanner src="{base}/img/sugar-cane-water/interior.jpg" alt="kitchen interior" />
   <h1>Sugar cane water</h1>
   <SectionGroup gap="4rem">
@@ -117,7 +118,7 @@
       Curabitur a tortor volutpat, dignissim libero in, scelerisque neque. Duis ac varius est.
     </Section>
   </SectionGroup>
-</article>
+</Article>
 
 <style>
   h1 {
