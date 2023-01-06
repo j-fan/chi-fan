@@ -4,8 +4,16 @@
     <meta charset="utf-8" />
     <link rel="icon" href="/chi-fan/favicon.png" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="manifest" crossorigin="use-credentials" href="/chi-fan/manifest.json" />
     <meta http-equiv="content-security-policy" content="">
-		<link href="/chi-fan/_app/immutable/assets/_layout-20df1867.css" rel="stylesheet"><title>About</title><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" data-svelte="svelte-gopbcd"><meta name="description" content="About this app" data-svelte="svelte-1tg1fb6">
+		<link href="/chi-fan/_app/immutable/assets/_layout-20df1867.css" rel="stylesheet">
+		<script>
+			if ('serviceWorker' in navigator) {
+				addEventListener('load', function () {
+					navigator.serviceWorker.register('/chi-fan/service-worker.js');
+				});
+			}
+		</script><title>About</title><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" data-svelte="svelte-gopbcd"><meta name="description" content="About this app" data-svelte="svelte-1tg1fb6">
   </head>
   <body>
     
