@@ -21,9 +21,8 @@
 <style>
   button {
     background-color: var(--c-pink);
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     cursor: pointer;
-
     border: var(--border-style);
     border-radius: var(--border-radius);
     transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;

@@ -52,13 +52,16 @@
 
   a {
     font-weight: 700;
-    text-transform: uppercase;
     text-decoration: none;
     color: var(--c-pink);
   }
 
   a:hover {
     color: var(--c-red);
+  }
+
+  li {
+    font-size: 1.5rem;
   }
 
   li.active a {

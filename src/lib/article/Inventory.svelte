@@ -23,7 +23,7 @@
 
 <style>
   h2 {
-    color: var(--c-pink);
+    color: var(--c-red);
     margin-bottom: 1rem;
   }
   .grid-wrapper {
