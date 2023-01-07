@@ -13,9 +13,9 @@
 </svelte:head>
 
 <section style="background-image: url({src})">
-  <Card width="400px" isCentered
-    ><h2>Welcome to Chi Fan</h2>
-    <Button isFullWidth href="/doors">Enter</Button></Card
+  <Card width="800px" isCentered>
+    <img src="{base}/img/home-banner.png" alt="Welcome to Chi Fan" />
+    <Button href="/doors">Enter</Button></Card
   >
 </section>
 
@@ -29,5 +29,17 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0 6rem;
+  }
+
+  @media (max-width: 600px) {
+    img {
+      padding: 0;
+    }
   }
 </style>
