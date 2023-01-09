@@ -1,8 +1,8 @@
 const r = [
-  "/chi-fan/_app/immutable/start-e1a83b82.js",
-  "/chi-fan/_app/immutable/components/pages/_layout.svelte-641cea1a.js",
-  "/chi-fan/_app/immutable/assets/_layout-3e91ff86.css",
-  "/chi-fan/_app/immutable/components/error.svelte-fbd0a887.js",
+  "/chi-fan/_app/immutable/start-1aa7b0ac.js",
+  "/chi-fan/_app/immutable/components/pages/_layout.svelte-ab9e3ecb.js",
+  "/chi-fan/_app/immutable/assets/_layout-a568b42d.css",
+  "/chi-fan/_app/immutable/components/error.svelte-c0d3ecf1.js",
   "/chi-fan/_app/immutable/components/pages/_page.svelte-2680030b.js",
   "/chi-fan/_app/immutable/assets/_page-549026eb.css",
   "/chi-fan/_app/immutable/components/pages/about/_page.svelte-8ab1f50e.js",
@@ -10,26 +10,26 @@ const r = [
   "/chi-fan/_app/immutable/assets/_page-389d1576.css",
   "/chi-fan/_app/immutable/components/pages/sugar-cane-water/_page.svelte-e77b08e9.js",
   "/chi-fan/_app/immutable/assets/_page-464d4bb6.css",
-  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/intro/_page.svelte-8a1af442.js",
-  "/chi-fan/_app/immutable/assets/_page-2c0872ed.css",
+  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/intro/_page.svelte-81edfe9e.js",
+  "/chi-fan/_app/immutable/assets/_page-ebf68709.css",
   "/chi-fan/_app/immutable/modules/pages/_layout.ts-b8ee4d7c.js",
   "/chi-fan/_app/immutable/modules/pages/about/_page.ts-6f405366.js",
-  "/chi-fan/_app/immutable/chunks/singletons-86f77ba6.js",
+  "/chi-fan/_app/immutable/chunks/singletons-39151b58.js",
   "/chi-fan/_app/immutable/chunks/paths-d2a11cad.js",
   "/chi-fan/_app/immutable/chunks/index-eecdb0a3.js",
-  "/chi-fan/_app/immutable/chunks/stores-8cd63089.js",
+  "/chi-fan/_app/immutable/chunks/stores-60cbf474.js",
   "/chi-fan/_app/immutable/chunks/_layout-1daba58d.js",
   "/chi-fan/_app/immutable/chunks/Button-9de61417.js",
   "/chi-fan/_app/immutable/assets/Button-8ca56c60.css",
   "/chi-fan/_app/immutable/chunks/_page-a84837a2.js",
   "/chi-fan/_app/immutable/chunks/index-9f715646.js",
-  "/chi-fan/_app/immutable/chunks/0-dc10ffd8.js",
-  "/chi-fan/_app/immutable/chunks/1-72e96847.js",
+  "/chi-fan/_app/immutable/chunks/0-4a6f2a2c.js",
+  "/chi-fan/_app/immutable/chunks/1-f3fdfeaf.js",
   "/chi-fan/_app/immutable/chunks/2-a440d8e6.js",
   "/chi-fan/_app/immutable/chunks/3-330aaeb8.js",
   "/chi-fan/_app/immutable/chunks/4-1dcb4849.js",
   "/chi-fan/_app/immutable/chunks/5-7369d572.js",
-  "/chi-fan/_app/immutable/chunks/6-6728196b.js"
+  "/chi-fan/_app/immutable/chunks/6-abcb5bd4.js"
 ], m = [
   "/chi-fan/.nojekyll",
   "/chi-fan/favicon.png",
@@ -46,6 +46,7 @@ const r = [
   "/chi-fan/img/sugar-cane-water/board.jpg",
   "/chi-fan/img/sugar-cane-water/cane.png",
   "/chi-fan/img/sugar-cane-water/cane3.jpg",
+  "/chi-fan/img/sugar-cane-water/canes-background.png",
   "/chi-fan/img/sugar-cane-water/carrot.jpg",
   "/chi-fan/img/sugar-cane-water/cleaver2.png",
   "/chi-fan/img/sugar-cane-water/clippers.jpg",
@@ -61,7 +62,7 @@ const r = [
   "/chi-fan/img/sugar-cane-water/tub.jpg",
   "/chi-fan/manifest.json",
   "/chi-fan/robots.txt"
-], p = "1673268044355", t = self, h = `cache${p}`, i = r.concat(
+], p = "1673273133480", t = self, h = `cache${p}`, i = r.concat(
   m.filter((a) => a !== "/.nojekyll")
 ), f = new Set(i);
 t.addEventListener("install", (a) => {
