@@ -14,9 +14,10 @@
     flex-shrink: 0;
     position: relative;
     border-radius: 2rem;
-    background-color: var(--c-pink);
+    background-color: var(--c-black);
     box-shadow: var(--drop-shadow-md);
     border: 2px solid var(--c-dark-green);
+    margin-bottom: 1rem;
   }
 
   @media (max-width: 700px) {
