@@ -2,7 +2,7 @@
   export let gap = '1rem';
 </script>
 
-<div style="gap:{gap};">
+<div style="gap:{gap}; margin-bottom: {gap};">
   <slot />
 </div>
 
@@ -14,6 +14,7 @@
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden; /* TODO: Bit of a hack to hide double scroll. Figure out root cause please */
   }
 
   @media (max-width: 600px) {

@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { AosType } from './aos-types';
   import Section from './Section.svelte';
+  import Image from './Image.svelte';
 
   export let aos: AosType | undefined = 'fade';
   export let imageSrc: string;
@@ -8,12 +9,12 @@
   export let imageAlign: 'left' | 'right' = 'left';
 </script>
 
-<Section {aos}>
+<Section {aos} width="100%">
   <div class="content {imageAlign}">
-    <slot />
-    <div class="image-wrapper">
-      <img src={imageSrc} {alt} />
+    <div>
+      <slot />
     </div>
+    <Image src={imageSrc} {alt} width="auto" />
   </div>
 </Section>
 
@@ -24,6 +25,10 @@
     gap: 2rem;
   }
 
+  .content > * {
+    width: 50%;
+  }
+
   .content.right {
     flex-direction: row;
   }
@@ -32,33 +37,14 @@
     flex-direction: row-reverse;
   }
 
-  .image-wrapper {
-    width: 50%;
-    height: 500px;
-    flex-shrink: 0;
-    position: relative;
-    border-radius: 2rem;
-    background-color: var(--c-pink);
-    box-shadow: var(--drop-shadow-md);
-    border: 2px solid var(--c-dark-green);
-  }
-
   @media (max-width: 700px) {
     .content.right,
     .content.left {
       flex-direction: column;
     }
 
-    .image-wrapper {
-      width: 90%;
-      height: 400px;
+    .content > * {
+      width: 100%;
     }
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2rem;
   }
 </style>

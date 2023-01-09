@@ -7,10 +7,10 @@
   };
 
   export let itemsImageSrc: Item[];
+  export let title: string;
 </script>
 
-<Section aos="fade-up" width="100%">
-  <h2>Tools & ingredients</h2>
+<Section aos="fade-up" width="100%" {title}>
   <div class="grid-wrapper">
     {#each itemsImageSrc as item}
       <div class="cell">
@@ -22,13 +22,9 @@
 </Section>
 
 <style>
-  h2 {
-    color: var(--c-red);
-    margin-bottom: 1rem;
-  }
   .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 150px);
+    grid-template-columns: repeat(auto-fill, 140px);
     gap: 0.5rem;
     padding: 0.5rem;
     border-radius: 1rem;
@@ -37,7 +33,7 @@
   }
 
   .cell {
-    height: 150px;
+    height: 140px;
 
     display: flex;
     position: relative;

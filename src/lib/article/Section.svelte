@@ -11,6 +11,7 @@
   export let aosOffset: number | undefined = undefined;
   export let aosEasing: easingOptions | undefined = undefined;
   export let backgroundColor: string = 'transparent';
+  export let title: string = '';
 </script>
 
 <section
@@ -25,10 +26,18 @@
   data-aos-mirror="true"
   data-aos-once="false"
 >
+  {#if title}
+    <h2>{title}</h2>
+  {/if}
   <slot />
 </section>
 
 <style>
+  h2 {
+    color: var(--c-red);
+    margin-bottom: 1rem;
+  }
+
   section.left {
     align-self: start;
     text-align: left;
