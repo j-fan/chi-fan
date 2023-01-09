@@ -32,7 +32,7 @@
   isValid={pickedItems.size >= props.targetCount}
 >
   <div class="items-container" style="background-image: url({props.bgImage});">
-    <p>Picked: {pickedItems.size}</p>
+    <p>Progress: {pickedItems.size} / {props.targetCount}</p>
     {#each Array(props.totalItems) as _, index (index)}
       <div
         class="item-wrapper"
