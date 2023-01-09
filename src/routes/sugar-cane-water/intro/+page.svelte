@@ -67,7 +67,7 @@
       },
       targetComponent: PeelingSugarCane,
       dragComponent: Knife,
-      targetStrokes: 3,
+      targetClicks: 3,
       bgImage: `${base}/img/sugar-cane-water/canes-background.png`
     }
   ]}

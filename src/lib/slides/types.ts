@@ -30,7 +30,7 @@ export type ClickTimesSlideType = {
   type: 'click-times';
   targetComponent: typeof SvelteComponentTyped<{ progress?: number }>;
   dragComponent: typeof SvelteComponentTyped<{ isIntersecting?: boolean }>;
-  targetStrokes: number;
+  targetClicks: number;
 } & BaseSlideType;
 export type Slide = PickItemsSlideType | ClickTimesSlideType;
 export type SlidesType = Array<Slide>;

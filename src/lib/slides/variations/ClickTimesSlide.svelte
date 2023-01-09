@@ -14,7 +14,7 @@
   let targetRef: HTMLElement;
   let dragRef: HTMLElement;
   let isIntersecting = false;
-  let strokes = 0;
+  let clicks = 0;
 
   const handleMouseMove = (event: MouseEvent) => {
     const targetBoundingBox = targetRef.getBoundingClientRect();
@@ -54,19 +54,19 @@
   dialogs={props.dialogs}
   errorStep={props.errorStep}
   successStep={props.successStep}
-  isValid={strokes === props.targetStrokes}
+  isValid={clicks === props.targetClicks}
   bgImage={props.bgImage}
 >
   <div
     class="centered"
     on:click={() => {
-      strokes = clamp(strokes + 1, 0, props.targetStrokes);
+      clicks = clamp(clicks + 1, 0, props.targetClicks);
     }}
     on:mousemove={handleMouseMove}
     on:touchmove={handleTouchMove}
   >
     <div class="target" bind:this={targetRef}>
-      <svelte:component this={props.targetComponent} progress={strokes / props.targetStrokes} />
+      <svelte:component this={props.targetComponent} progress={clicks / props.targetClicks} />
       <div
         class="follow-mouse"
         style="left: {mouseX}px; top:{mouseY}px;"
