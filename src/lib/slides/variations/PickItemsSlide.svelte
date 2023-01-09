@@ -31,9 +31,10 @@
   successStep={props.successStep}
   isValid={pickedItems.size >= props.targetCount}
   bgImage={props.bgImage}
+  progressNum={pickedItems.size}
+  progressTotal={props.targetCount}
 >
   <div class="items-container">
-    <p>Progress: {pickedItems.size} / {props.targetCount}</p>
     {#each Array(props.totalItems) as _, index (index)}
       <div
         class="item-wrapper"

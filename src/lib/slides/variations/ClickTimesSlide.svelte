@@ -56,6 +56,8 @@
   successStep={props.successStep}
   isValid={clicks === props.targetClicks}
   bgImage={props.bgImage}
+  progressNum={clicks}
+  progressTotal={props.targetClicks}
 >
   <div
     class="centered"
