@@ -1,8 +1,8 @@
 const r = [
-  "/chi-fan/_app/immutable/start-8106c6c2.js",
-  "/chi-fan/_app/immutable/components/pages/_layout.svelte-b40fb878.js",
+  "/chi-fan/_app/immutable/start-e8ab501d.js",
+  "/chi-fan/_app/immutable/components/pages/_layout.svelte-d7e1bad1.js",
   "/chi-fan/_app/immutable/assets/_layout-a568b42d.css",
-  "/chi-fan/_app/immutable/components/error.svelte-d348b47d.js",
+  "/chi-fan/_app/immutable/components/error.svelte-64295a2d.js",
   "/chi-fan/_app/immutable/components/pages/_page.svelte-2680030b.js",
   "/chi-fan/_app/immutable/assets/_page-549026eb.css",
   "/chi-fan/_app/immutable/components/pages/about/_page.svelte-8ab1f50e.js",
@@ -10,26 +10,26 @@ const r = [
   "/chi-fan/_app/immutable/assets/_page-389d1576.css",
   "/chi-fan/_app/immutable/components/pages/sugar-cane-water/_page.svelte-e77b08e9.js",
   "/chi-fan/_app/immutable/assets/_page-464d4bb6.css",
-  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/intro/_page.svelte-72268591.js",
-  "/chi-fan/_app/immutable/assets/_page-ebf68709.css",
+  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/intro/_page.svelte-83c0ff7c.js",
+  "/chi-fan/_app/immutable/assets/_page-ceb021c6.css",
   "/chi-fan/_app/immutable/modules/pages/_layout.ts-b8ee4d7c.js",
   "/chi-fan/_app/immutable/modules/pages/about/_page.ts-6f405366.js",
-  "/chi-fan/_app/immutable/chunks/singletons-15f6ab5a.js",
+  "/chi-fan/_app/immutable/chunks/singletons-ccad5925.js",
   "/chi-fan/_app/immutable/chunks/paths-d2a11cad.js",
   "/chi-fan/_app/immutable/chunks/index-eecdb0a3.js",
-  "/chi-fan/_app/immutable/chunks/stores-bc432879.js",
+  "/chi-fan/_app/immutable/chunks/stores-71ca60b9.js",
   "/chi-fan/_app/immutable/chunks/_layout-1daba58d.js",
   "/chi-fan/_app/immutable/chunks/Button-9de61417.js",
   "/chi-fan/_app/immutable/assets/Button-8ca56c60.css",
   "/chi-fan/_app/immutable/chunks/_page-a84837a2.js",
   "/chi-fan/_app/immutable/chunks/index-9f715646.js",
-  "/chi-fan/_app/immutable/chunks/0-600528b0.js",
-  "/chi-fan/_app/immutable/chunks/1-be28414c.js",
+  "/chi-fan/_app/immutable/chunks/0-eb40300c.js",
+  "/chi-fan/_app/immutable/chunks/1-340c1afe.js",
   "/chi-fan/_app/immutable/chunks/2-a440d8e6.js",
   "/chi-fan/_app/immutable/chunks/3-330aaeb8.js",
   "/chi-fan/_app/immutable/chunks/4-1dcb4849.js",
   "/chi-fan/_app/immutable/chunks/5-7369d572.js",
-  "/chi-fan/_app/immutable/chunks/6-725ab685.js"
+  "/chi-fan/_app/immutable/chunks/6-672e87f9.js"
 ], m = [
   "/chi-fan/.nojekyll",
   "/chi-fan/favicon.png",
@@ -62,7 +62,7 @@ const r = [
   "/chi-fan/img/sugar-cane-water/tub.jpg",
   "/chi-fan/manifest.json",
   "/chi-fan/robots.txt"
-], p = "1673274035710", t = self, h = `cache${p}`, i = r.concat(
+], p = "1673275418428", t = self, h = `cache${p}`, i = r.concat(
   m.filter((a) => a !== "/.nojekyll")
 ), g = new Set(i);
 t.addEventListener("install", (a) => {
