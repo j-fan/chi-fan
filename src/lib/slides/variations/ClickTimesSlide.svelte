@@ -55,6 +55,7 @@
   errorStep={props.errorStep}
   successStep={props.successStep}
   isValid={strokes === props.targetStrokes}
+  bgImage={props.bgImage}
 >
   <div
     class="centered"

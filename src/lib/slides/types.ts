@@ -17,13 +17,13 @@ export type BaseSlideType = {
   dialogs: Dialogs;
   errorStep: Dialog;
   successStep: Dialog;
+  bgImage?: string;
 };
 export type PickItemsSlideType = {
   type: 'pick-items';
   targetCount: number;
   totalItems: number;
   itemComponent: typeof SvelteComponentTyped<{ picked?: boolean }>;
-  bgImage: string | undefined;
 } & BaseSlideType;
 
 export type ClickTimesSlideType = {

@@ -30,8 +30,9 @@
   errorStep={props.errorStep}
   successStep={props.successStep}
   isValid={pickedItems.size >= props.targetCount}
+  bgImage={props.bgImage}
 >
-  <div class="items-container" style="background-image: url({props.bgImage});">
+  <div class="items-container">
     <p>Progress: {pickedItems.size} / {props.targetCount}</p>
     {#each Array(props.totalItems) as _, index (index)}
       <div
@@ -54,9 +55,6 @@
     height: 70%;
     margin: 0 auto;
     margin-top: 15vh;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
   }
 
   @media (max-width: 600px) {
