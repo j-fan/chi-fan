@@ -26,7 +26,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 140px);
     gap: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 1rem;
     border: 8px solid var(--c-light-green);
     box-shadow: var(--drop-shadow-md), var(--box-shadow-outline);
@@ -46,6 +46,7 @@
 
     border-radius: 1rem;
     border: var(--border-style);
+    border-color: var(--c-light-green);
   }
 
   .cell:hover {

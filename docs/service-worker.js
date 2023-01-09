@@ -1,34 +1,34 @@
 const r = [
-  "/chi-fan/_app/immutable/start-e8ab501d.js",
-  "/chi-fan/_app/immutable/components/pages/_layout.svelte-d7e1bad1.js",
+  "/chi-fan/_app/immutable/start-1a822ca5.js",
+  "/chi-fan/_app/immutable/components/pages/_layout.svelte-f2f9754d.js",
   "/chi-fan/_app/immutable/assets/_layout-a568b42d.css",
-  "/chi-fan/_app/immutable/components/error.svelte-64295a2d.js",
+  "/chi-fan/_app/immutable/components/error.svelte-8b46944f.js",
   "/chi-fan/_app/immutable/components/pages/_page.svelte-2680030b.js",
   "/chi-fan/_app/immutable/assets/_page-549026eb.css",
   "/chi-fan/_app/immutable/components/pages/about/_page.svelte-8ab1f50e.js",
   "/chi-fan/_app/immutable/components/pages/doors/_page.svelte-469a6f58.js",
   "/chi-fan/_app/immutable/assets/_page-389d1576.css",
-  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/_page.svelte-e77b08e9.js",
-  "/chi-fan/_app/immutable/assets/_page-464d4bb6.css",
+  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/_page.svelte-7156139c.js",
+  "/chi-fan/_app/immutable/assets/_page-2a5d9d09.css",
   "/chi-fan/_app/immutable/components/pages/sugar-cane-water/intro/_page.svelte-83c0ff7c.js",
   "/chi-fan/_app/immutable/assets/_page-ceb021c6.css",
   "/chi-fan/_app/immutable/modules/pages/_layout.ts-b8ee4d7c.js",
   "/chi-fan/_app/immutable/modules/pages/about/_page.ts-6f405366.js",
-  "/chi-fan/_app/immutable/chunks/singletons-ccad5925.js",
+  "/chi-fan/_app/immutable/chunks/singletons-a22bed5b.js",
   "/chi-fan/_app/immutable/chunks/paths-d2a11cad.js",
   "/chi-fan/_app/immutable/chunks/index-eecdb0a3.js",
-  "/chi-fan/_app/immutable/chunks/stores-71ca60b9.js",
+  "/chi-fan/_app/immutable/chunks/stores-73ec2561.js",
   "/chi-fan/_app/immutable/chunks/_layout-1daba58d.js",
   "/chi-fan/_app/immutable/chunks/Button-9de61417.js",
   "/chi-fan/_app/immutable/assets/Button-8ca56c60.css",
   "/chi-fan/_app/immutable/chunks/_page-a84837a2.js",
   "/chi-fan/_app/immutable/chunks/index-9f715646.js",
-  "/chi-fan/_app/immutable/chunks/0-eb40300c.js",
-  "/chi-fan/_app/immutable/chunks/1-340c1afe.js",
+  "/chi-fan/_app/immutable/chunks/0-6e0f817d.js",
+  "/chi-fan/_app/immutable/chunks/1-8d78554f.js",
   "/chi-fan/_app/immutable/chunks/2-a440d8e6.js",
   "/chi-fan/_app/immutable/chunks/3-330aaeb8.js",
   "/chi-fan/_app/immutable/chunks/4-1dcb4849.js",
-  "/chi-fan/_app/immutable/chunks/5-7369d572.js",
+  "/chi-fan/_app/immutable/chunks/5-2930cf9e.js",
   "/chi-fan/_app/immutable/chunks/6-672e87f9.js"
 ], m = [
   "/chi-fan/.nojekyll",
@@ -62,9 +62,9 @@ const r = [
   "/chi-fan/img/sugar-cane-water/tub.jpg",
   "/chi-fan/manifest.json",
   "/chi-fan/robots.txt"
-], p = "1673275418428", t = self, h = `cache${p}`, i = r.concat(
+], p = "1673275782561", t = self, h = `cache${p}`, i = r.concat(
   m.filter((a) => a !== "/.nojekyll")
-), g = new Set(i);
+), f = new Set(i);
 t.addEventListener("install", (a) => {
   a.waitUntil(
     caches.open(h).then(async (e) => {
@@ -93,7 +93,7 @@ t.addEventListener("activate", (a) => {
     })
   );
 });
-async function f(a) {
+async function g(a) {
   const e = await caches.open(`offline${p}`);
   try {
     const c = await fetch(a);
@@ -108,8 +108,8 @@ async function f(a) {
 t.addEventListener("fetch", (a) => {
   if (a.request.method !== "GET" || a.request.headers.has("range"))
     return;
-  const e = new URL(a.request.url), c = e.protocol.startsWith("http"), n = e.hostname === self.location.hostname && e.port !== self.location.port, s = e.host === self.location.host && g.has(e.pathname), o = a.request.cache === "only-if-cached" && !s;
+  const e = new URL(a.request.url), c = e.protocol.startsWith("http"), n = e.hostname === self.location.hostname && e.port !== self.location.port, s = e.host === self.location.host && f.has(e.pathname), o = a.request.cache === "only-if-cached" && !s;
   c && !n && !o && a.respondWith(
-    (async () => s && await caches.match(a.request) || f(a.request))()
+    (async () => s && await caches.match(a.request) || g(a.request))()
   );
 });
