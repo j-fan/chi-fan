@@ -11,7 +11,7 @@ export type Dialog = {
 };
 export type Dialogs = Array<Dialog>;
 
-export type SlideType = 'pick-items' | 'drag-sides';
+export type SlideType = 'pick-items' | 'click-times';
 export type BaseSlideType = {
   type: SlideType;
   dialogs: Dialogs;
@@ -26,11 +26,11 @@ export type PickItemsSlideType = {
   bgImage: string | undefined;
 } & BaseSlideType;
 
-export type DragSidesSlideType = {
-  type: 'drag-sides';
+export type ClickTimesSlideType = {
+  type: 'click-times';
   targetComponent: typeof SvelteComponentTyped<{ progress?: number }>;
   dragComponent: typeof SvelteComponentTyped<{ isIntersecting?: boolean }>;
   targetStrokes: number;
 } & BaseSlideType;
-export type Slide = PickItemsSlideType | DragSidesSlideType;
+export type Slide = PickItemsSlideType | ClickTimesSlideType;
 export type SlidesType = Array<Slide>;

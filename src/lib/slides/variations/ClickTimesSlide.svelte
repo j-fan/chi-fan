@@ -2,10 +2,10 @@
   import { clamp } from '$lib/utils/math';
   import { setNoScrollBody } from '$lib/utils/setNoScrollBody';
   import { onMount } from 'svelte';
-  import type { DragSidesSlideType } from '../types';
+  import type { ClickTimesSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
 
-  export let props: DragSidesSlideType;
+  export let props: ClickTimesSlideType;
 
   let mouseX = -200;
   let mouseY = -200;
@@ -14,21 +14,7 @@
   let targetRef: HTMLElement;
   let dragRef: HTMLElement;
   let isIntersecting = false;
-  let hoverStartTime: number | undefined;
   let strokes = 0;
-  let isHolding = false; // TODO: Decide whether holding the mouse is requirement
-
-  $: {
-    if (isIntersecting) {
-      hoverStartTime = new Date().getTime();
-    } else if (!isIntersecting) {
-      const timeNow = new Date().getTime();
-      if (hoverStartTime && timeNow - hoverStartTime > 500) {
-        strokes = clamp(strokes + 1, 0, props.targetStrokes);
-      }
-      hoverStartTime = undefined;
-    }
-  }
 
   const handleMouseMove = (event: MouseEvent) => {
     const targetBoundingBox = targetRef.getBoundingClientRect();
@@ -40,13 +26,6 @@
     const targetBoundingBox = targetRef.getBoundingClientRect();
     mouseX = event.changedTouches[0].clientX - targetBoundingBox.x - dragElementWidth / 2;
     mouseY = event.changedTouches[0].clientY - targetBoundingBox.y - dragElementHeight / 2;
-  };
-
-  const handleHoldStart = () => {
-    isHolding = true;
-  };
-  const handleHoldEnd = () => {
-    isHolding = false;
   };
 
   onMount(() => {
@@ -79,12 +58,11 @@
 >
   <div
     class="centered"
+    on:click={() => {
+      strokes = clamp(strokes + 1, 0, props.targetStrokes);
+    }}
     on:mousemove={handleMouseMove}
     on:touchmove={handleTouchMove}
-    on:mouseup={handleHoldStart}
-    on:touchstart={handleHoldStart}
-    on:mousedown={handleHoldEnd}
-    on:touchend={handleHoldEnd}
   >
     <div class="target" bind:this={targetRef}>
       <svelte:component this={props.targetComponent} progress={strokes / props.targetStrokes} />

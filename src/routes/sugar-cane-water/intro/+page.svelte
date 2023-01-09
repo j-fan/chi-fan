@@ -42,12 +42,12 @@
       bgImage: `${base}/img/sugar-cane-water/canes-background.png`
     },
     {
-      type: 'drag-sides',
+      type: 'click-times',
       dialogs: [
         {
           characterName: 'Grandpa',
           bodyText:
-            'Now we need to peel the sugar cane with a knife. Drag your knife across the cane at least three times.',
+            'Now we need to peel the sugar cane with a knife. Tap the knife across the cane at least three times.',
           nextButton: { text: 'Why do we need to do this?' }
         },
         {
