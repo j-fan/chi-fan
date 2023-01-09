@@ -23,7 +23,7 @@
     top: 0;
     display: flex;
     justify-content: center;
-    z-index: 1;
+    z-index: 99;
     pointer-events: none;
   }
 

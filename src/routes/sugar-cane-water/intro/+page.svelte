@@ -37,8 +37,9 @@
         nextButton: { text: 'Sounds good' }
       },
       targetCount: 3,
-      totalItems: isMobile ? 6 : 12,
-      itemComponent: SugarCane
+      totalItems: isMobile ? 3 : 8,
+      itemComponent: SugarCane,
+      bgImage: `${base}/img/sugar-cane-water/canes-background.png`
     },
     {
       type: 'drag-sides',

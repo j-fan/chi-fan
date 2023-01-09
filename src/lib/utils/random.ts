@@ -8,7 +8,7 @@ export const randomRange = (min = 0, max = 100) => {
   let rand = Math.random();
 
   // multiply with difference
-  rand = Math.floor(rand * difference);
+  rand = rand * difference;
 
   // add with min value
   rand = rand + min;

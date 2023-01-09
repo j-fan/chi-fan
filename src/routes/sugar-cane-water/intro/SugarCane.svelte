@@ -9,7 +9,7 @@
   const rotation = randomRange(-10, 10);
   const scale = randomRange(1, 1.4);
   const flip = randomBool() ? 1 : -1;
-  $: pickedScale = picked ? scale * 1.5 : scale;
+  $: pickedScale = picked ? scale * 1.2 : scale;
 </script>
 
 <div
@@ -24,20 +24,23 @@
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.3));
-    width: 180px;
-    height: 450px;
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 1));
+    width: calc(217px * 0.4);
+    height: calc(986px * 0.4);
+    z-index: 1;
+    position: relative;
+    transform-origin: bottom;
   }
 
   .wrapper.picked {
-    filter: brightness(0.8);
-    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+    z-index: 2;
   }
 
   @media (max-width: 600px) {
     .wrapper {
-      width: 120px;
-      height: 300px;
+      width: calc(217px * 0.4);
+      height: calc(986px * 0.4);
     }
   }
 </style>

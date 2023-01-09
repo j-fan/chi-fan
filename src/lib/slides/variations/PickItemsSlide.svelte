@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { randomRange, smoothRandomRange } from '$lib/utils/random';
+  import { smoothRandomRange } from '$lib/utils/random';
   import type { PickItemsSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
 
-  const seed = 0.23;
+  const seed = 0.34987;
 
   export let props: PickItemsSlideType;
 
@@ -31,20 +31,15 @@
   successStep={props.successStep}
   isValid={pickedItems.size >= props.targetCount}
 >
-  <div class="items-container">
+  <div class="items-container" style="background-image: url({props.bgImage});">
+    <p>Picked: {pickedItems.size}</p>
     {#each Array(props.totalItems) as _, index (index)}
       <div
         class="item-wrapper"
         on:click={() => {
           handlePickItem(index);
         }}
-        style="left: {smoothRandomRange(-30, 100, index, 0, seed)}%; top: {smoothRandomRange(
-          0,
-          50,
-          index,
-          1,
-          seed
-        )}%;"
+        style="left: {smoothRandomRange(-20, 100, index, 0, seed)}%; bottom: 12%;"
       >
         <svelte:component this={props.itemComponent} picked={pickedItems.has(index)} />
       </div>
@@ -55,10 +50,13 @@
 <style>
   .items-container {
     position: relative;
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 70%;
     margin: 0 auto;
     margin-top: 15vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 
   @media (max-width: 600px) {

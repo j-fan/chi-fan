@@ -23,6 +23,7 @@ export type PickItemsSlideType = {
   targetCount: number;
   totalItems: number;
   itemComponent: typeof SvelteComponentTyped<{ picked?: boolean }>;
+  bgImage: string | undefined;
 } & BaseSlideType;
 
 export type DragSidesSlideType = {
