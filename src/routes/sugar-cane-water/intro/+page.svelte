@@ -9,6 +9,7 @@
   import WashingSugarCane from './WashingSugarCane.svelte';
   import ChoppingKnife from './ChoppingKnife.svelte';
   import PeelingKnife from './PeelingKnife.svelte';
+  import SplittingSugarCane from './SplittingSugarCane.svelte';
 
   let windowWidth = 9999;
   $: isMobile = windowWidth < 500;
@@ -44,7 +45,9 @@
       targetCount: 3,
       totalItems: isMobile ? 3 : 8,
       itemComponent: SugarCane,
-      bgImage: `${base}/img/sugar-cane-water/canes-background.png`
+      bgImage: `${base}/img/sugar-cane-water/canes-background.png`,
+      bottomPosition: 5,
+      allowToggle: true
     },
     {
       type: 'click-times',
@@ -137,7 +140,7 @@
       targetComponent: CuttingSugarCane,
       toolComponent: Shears,
       targetClicks: 3,
-      bgImage: `${base}/img/sugar-cane-water/canes-background.png`,
+      bgImage: `${base}/img/sugar-cane-water/board-bg.jpg`,
       confettiProps: {
         colorArray: ['#B6C48F', '#627620'],
         size: 20,
@@ -169,13 +172,14 @@
       successStep: {
         characterName: 'Grandpa',
         bodyText: 'Thank you, now we can assemble the final ingredients for boiling',
-        nextButton: { text: 'Sounds good' }
+        nextButton: { text: 'Sounds good', href: '/sugar-cane-water' }
       },
       targetCount: 4,
       totalItems: 4,
-      itemComponent: SugarCane,
-      bgImage: `${base}/img/sugar-cane-water/canes-background.png`,
-      toolComponent: ChoppingKnife
+      itemComponent: SplittingSugarCane,
+      bgImage: `${base}/img/sugar-cane-water/board-bg.jpg`,
+      toolComponent: ChoppingKnife,
+      bottomPosition: 50
     }
   ]}
 />

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { smoothRandomRange } from '$lib/utils/random';
+  import { randomRange, smoothRandomRange } from '$lib/utils/random';
   import type { PickItemsSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
 
@@ -21,7 +21,9 @@
 
   const handlePickItem = (itemId: number) => {
     if (pickedItems.has(itemId)) {
-      pickedItems.delete(itemId);
+      if (props.allowToggle) {
+        pickedItems.delete(itemId);
+      }
     } else {
       pickedItems.add(itemId);
     }
@@ -80,7 +82,8 @@
         on:mouseup={setActiveFalse}
         on:touchstart={setActiveTrue}
         on:touchend={setActiveFalse}
-        style="left: {smoothRandomRange(-20, 100, index, 0, seed)}%; bottom: 12%;"
+        style="left: {smoothRandomRange(-20, 100, index, 0, seed)}%; bottom: {props.bottomPosition +
+          randomRange(-10, 10)}%"
       >
         <svelte:component this={props.itemComponent} picked={pickedItems.has(index)} />
       </div>

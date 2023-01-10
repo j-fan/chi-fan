@@ -12,8 +12,8 @@
   .wrapper {
     transition: all 300ms ease;
     user-select: none;
-    height: 250px;
-    width: 125px;
+    height: calc(250px * 1.5);
+    width: calc(125px * 1.5);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -27,6 +27,6 @@
   }
 
   .wrapper:active {
-    transform: scale(0.8);
+    transform: scale(0.9) rotate(35deg);
   }
 </style>

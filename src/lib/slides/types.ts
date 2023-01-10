@@ -26,6 +26,15 @@ export type PickItemsSlideType = {
   totalItems: number;
   itemComponent: typeof SvelteComponentTyped<{ picked?: boolean }>;
   toolComponent?: typeof SvelteComponentTyped<{ isIntersecting?: boolean; isActive?: boolean }>;
+  /**
+   * How far from the bottom to render the itemComponents
+   * Measured in %
+   */
+  bottomPosition: number;
+  /**
+   * Whether to allow items to be "unpicked"
+   */
+  allowToggle?: boolean;
 } & BaseSlideType;
 
 export type ClickTimesSlideType = {
