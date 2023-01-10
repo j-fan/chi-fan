@@ -12,8 +12,8 @@
   .wrapper {
     transition: all 300ms ease;
     user-select: none;
-    height: 230px;
-    width: 150px;
+    height: 150px;
+    width: 230px;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -23,5 +23,9 @@
   .wrapper.isIntersecting {
     filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.5));
     transform: scale(0.8);
+  }
+
+  .wrapper:active {
+    transform: scale(0.6);
   }
 </style>

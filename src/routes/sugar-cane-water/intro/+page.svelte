@@ -70,7 +70,15 @@
       targetComponent: PeelingSugarCane,
       dragComponent: Knife,
       targetClicks: 3,
-      bgImage: `${base}/img/sugar-cane-water/canes-background.png`
+      bgImage: `${base}/img/sugar-cane-water/canes-background.png`,
+      confettiProps: {
+        colorArray: ['#B6C48F', '#627620'],
+        size: 15,
+        amount: 25,
+        duration: 800,
+        x: [-1, 1],
+        y: [-1, 1]
+      }
     },
     {
       type: 'click-times',
@@ -94,7 +102,16 @@
       targetComponent: WashingSugarCane,
       dragComponent: Scrub,
       targetClicks: 5,
-      bgImage: `${base}/img/sugar-cane-water/canes-background.png`
+      bgImage: `${base}/img/sugar-cane-water/canes-background.png`,
+      confettiProps: {
+        colorArray: ['#B6C48F', '#6A4E48'],
+        rounded: true,
+        size: 15,
+        amount: 25,
+        duration: 800,
+        x: [-0.25, 0.25],
+        y: [-0.75, 0]
+      }
     }
   ]}
 />

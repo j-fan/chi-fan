@@ -1,3 +1,4 @@
+import type { ConfettiProps } from '$lib/confetti/types';
 import type { SvelteComponentTyped } from 'svelte';
 
 export type Dialog = {
@@ -31,6 +32,7 @@ export type ClickTimesSlideType = {
   targetComponent: typeof SvelteComponentTyped<{ progress?: number }>;
   dragComponent: typeof SvelteComponentTyped<{ isIntersecting?: boolean }>;
   targetClicks: number;
+  confettiProps?: ConfettiProps;
 } & BaseSlideType;
 export type Slide = PickItemsSlideType | ClickTimesSlideType;
 export type SlidesType = Array<Slide>;

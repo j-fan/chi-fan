@@ -5,7 +5,6 @@
   import { onMount } from 'svelte';
   import type { ClickTimesSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
-  import ToggleConfetti from '$lib/animations/ToggleConfetti.svelte';
 
   export let props: ClickTimesSlideType;
 
@@ -83,14 +82,7 @@
         <svelte:component this={props.dragComponent} {isIntersecting} />
         {#key clicks}
           {#if clicks > 0}
-            <Confetti
-              colorArray={['#B6C48F', '#627620']}
-              size={15}
-              amount={25}
-              duration={800}
-              x={[-1, 1]}
-              y={[-1, 1]}
-            />
+            <Confetti {...props.confettiProps} />
           {/if}
         {/key}
       </div>
