@@ -26,6 +26,6 @@
   }
 
   .wrapper:active {
-    transform: scale(0.6);
+    transform: scale(0.7);
   }
 </style>

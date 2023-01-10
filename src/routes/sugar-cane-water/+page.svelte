@@ -83,7 +83,7 @@
         },
         {
           label: 'Hedge shears',
-          src: `${base}/img/sugar-cane-water/clippers.jpg`
+          src: `${base}/img/sugar-cane-water/clippers.png`
         },
         {
           label: '20L pot',

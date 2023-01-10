@@ -1,9 +1,11 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import Slides from '$lib/slides/Slides.svelte';
+  import CuttingSugarCane from './CuttingSugarCane.svelte';
   import Knife from './Knife.svelte';
   import PeelingSugarCane from './PeelingSugarCane.svelte';
   import Scrub from './Scrub.svelte';
+  import Shears from './Shears.svelte';
   import SugarCane from './SugarCane.svelte';
   import WashingSugarCane from './WashingSugarCane.svelte';
 
@@ -97,7 +99,7 @@
       successStep: {
         characterName: 'Grandpa',
         bodyText: 'That looks nice and clean now',
-        nextButton: { text: "What's next", href: '/sugar-cane-water' }
+        nextButton: { text: "What's next" }
       },
       targetComponent: WashingSugarCane,
       dragComponent: Scrub,
@@ -111,6 +113,37 @@
         duration: 800,
         x: [-0.25, 0.25],
         y: [-0.75, 0]
+      }
+    },
+    {
+      type: 'click-times',
+      dialogs: [
+        {
+          characterName: 'Grandpa',
+          bodyText: 'Use the hedge shears to trim the sugar cane into 15cm lengths',
+          nextButton: { text: 'Got it' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Grandpa',
+        bodyText: 'The pieces need to be a little smaller'
+      },
+      successStep: {
+        characterName: 'Grandpa',
+        bodyText: 'Good job, those pieces look small enough',
+        nextButton: { text: "What's next", href: '/sugar-cane-water' }
+      },
+      targetComponent: CuttingSugarCane,
+      dragComponent: Shears,
+      targetClicks: 3,
+      bgImage: `${base}/img/sugar-cane-water/canes-background.png`,
+      confettiProps: {
+        colorArray: ['#B6C48F', '#627620'],
+        size: 20,
+        amount: 10,
+        duration: 800,
+        x: [-1, 1],
+        y: [-1, 1]
       }
     }
   ]}
