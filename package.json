@@ -13,7 +13,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "1.0.0-next.42",
-		"@sveltejs/kit": "next",
+		"@sveltejs/kit": "1.0.0-next.589",
 		"@types/aos": "^3.0.4",
 		"@types/cookie": "^0.5.1",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
@@ -28,17 +28,18 @@
 		"stylelint-config-html": "^1.1.0",
 		"stylelint-config-prettier": "^9.0.3",
 		"stylelint-config-standard": "^28.0.0",
-		"svelte": "^3.46.0",
+		"svelte": "^3.55.0",
 		"svelte-check": "^2.7.1",
 		"svelte-preprocess": "^4.10.6",
 		"tslib": "^2.3.1",
 		"typescript": "^4.7.4",
-		"vite": "^3.1.0"
+		"vite": "^4.0.4"
 	},
 	"type": "module",
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
 		"aos": "^2.3.4",
-		"simplex-noise": "^4.0.0"
+		"simplex-noise": "^4.0.0",
+		"svelte-confetti": "^1.2.2"
 	}
 }

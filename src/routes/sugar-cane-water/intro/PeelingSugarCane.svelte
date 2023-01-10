@@ -3,7 +3,7 @@
   import { clamp } from '$lib/utils/math';
 
   export let progress = 0;
-  $: brightness = clamp(progress + 0.2, 0, 1);
+  $: brightness = clamp(progress / 3 + 0.7, 0, 1);
 
   const src = `${base}/img/sugar-cane-water/cut-cane.png`;
 </script>

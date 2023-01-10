@@ -33,7 +33,7 @@
       },
       successStep: {
         characterName: 'Grandpa',
-        bodyText: "These look good. Let's bring them into the kitchen",
+        bodyText: "These look good. Let's wash and peel them now.",
         nextButton: { text: 'Sounds good' }
       },
       targetCount: 3,
@@ -46,19 +46,19 @@
       dialogs: [
         {
           characterName: 'Grandpa',
-          bodyText:
-            'Now we need to peel the sugar cane with a knife. Tap the knife across the cane at least three times.',
-          nextButton: { text: 'Why do we need to do this?' }
+          bodyText: 'Use a cleaver to shave the stalk to eliminate bumps.',
+          nextButton: { text: 'Continue' }
         },
         {
           characterName: 'Grandpa',
-          bodyText: 'The outside is tough and not nice to use',
+          bodyText:
+            'Ensure you are seated on a low stool and the stalk is firmly implanted into the ground.',
           nextButton: { text: 'Ok I got it!' }
         }
       ],
       errorStep: {
         characterName: 'Grandpa',
-        bodyText: 'Keep going, it is almost fully peeled'
+        bodyText: 'Keep going, it is almost ready'
       },
       successStep: {
         characterName: 'Grandpa',

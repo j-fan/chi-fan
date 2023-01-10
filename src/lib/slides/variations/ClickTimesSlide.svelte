@@ -1,9 +1,11 @@
 <script lang="ts">
+  import { Confetti } from 'svelte-confetti';
   import { clamp } from '$lib/utils/math';
   import { setNoScrollBody } from '$lib/utils/setNoScrollBody';
   import { onMount } from 'svelte';
   import type { ClickTimesSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
+  import ToggleConfetti from '$lib/animations/ToggleConfetti.svelte';
 
   export let props: ClickTimesSlideType;
 
@@ -62,7 +64,9 @@
   <div
     class="centered"
     on:click={() => {
-      clicks = clamp(clicks + 1, 0, props.targetClicks);
+      if (isIntersecting) {
+        clicks = clamp(clicks + 1, 0, props.targetClicks);
+      }
     }}
     on:mousemove={handleMouseMove}
     on:touchmove={handleTouchMove}
@@ -77,6 +81,18 @@
         bind:this={dragRef}
       >
         <svelte:component this={props.dragComponent} {isIntersecting} />
+        {#key clicks}
+          {#if clicks > 0}
+            <Confetti
+              colorArray={['#B6C48F', '#627620']}
+              size={15}
+              amount={25}
+              duration={800}
+              x={[-1, 1]}
+              y={[-1, 1]}
+            />
+          {/if}
+        {/key}
       </div>
     </div>
   </div>
@@ -97,5 +113,7 @@
 
   .follow-mouse {
     position: absolute;
+    display: grid;
+    place-items: center;
   }
 </style>
