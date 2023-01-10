@@ -1,8 +1,4 @@
 {
-  "Button.css": {
-    "file": "_app/immutable/assets/Button-8ca56c60.css",
-    "src": "Button.css"
-  },
   "src/routes/+page.css": {
     "file": "_app/immutable/assets/_page-549026eb.css",
     "src": "src/routes/+page.css"
@@ -11,78 +7,21 @@
     "file": "_app/immutable/assets/_page-2a5d9d09.css",
     "src": "src/routes/sugar-cane-water/+page.css"
   },
-  "src/routes/sugar-cane-water/intro/+page.css": {
-    "file": "_app/immutable/assets/_page-38e4c183.css",
-    "src": "src/routes/sugar-cane-water/intro/+page.css"
+  "src/routes/doors/+page.css": {
+    "file": "_app/immutable/assets/_page-389d1576.css",
+    "src": "src/routes/doors/+page.css"
   },
   "src/routes/+layout.css": {
     "file": "_app/immutable/assets/_layout-a568b42d.css",
     "src": "src/routes/+layout.css"
   },
-  "src/routes/doors/+page.css": {
-    "file": "_app/immutable/assets/_page-389d1576.css",
-    "src": "src/routes/doors/+page.css"
+  "Button.css": {
+    "file": "_app/immutable/assets/Button-8ca56c60.css",
+    "src": "Button.css"
   },
-  ".svelte-kit/generated/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-fbc4c8b2.js",
-    "src": ".svelte-kit/generated/nodes/5.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/sugar-cane-water/+page.svelte"
-    ]
-  },
-  "__layout-da46b06b.js": {
-    "file": "_app/immutable/chunks/_layout-da46b06b.js"
-  },
-  ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-416ecd4d.js",
-    "src": ".svelte-kit/generated/nodes/2.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/+page.svelte"
-    ]
-  },
-  "src/routes/about/+page.svelte": {
-    "file": "_app/immutable/components/pages/about/_page.svelte-380391fc.js",
-    "src": "src/routes/about/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-a33fa324.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-06ac33ca.js",
-    "src": ".svelte-kit/generated/nodes/0.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__layout-da46b06b.js",
-      "src/routes/+layout.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-eaa0f01c.js",
-    "src": ".svelte-kit/generated/nodes/1.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.4/node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-c9b37feb.js",
-    "src": ".svelte-kit/generated/nodes/3.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-3afc52e2.js",
-      "src/routes/about/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/6.js": {
-    "file": "_app/immutable/chunks/6-d9e2b70c.js",
-    "src": ".svelte-kit/generated/nodes/6.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/sugar-cane-water/intro/+page.svelte"
-    ]
+  "src/routes/sugar-cane-water/intro/+page.css": {
+    "file": "_app/immutable/assets/_page-38e4c183.css",
+    "src": "src/routes/sugar-cane-water/intro/+page.css"
   },
   ".svelte-kit/generated/nodes/4.js": {
     "file": "_app/immutable/chunks/4-2b790709.js",
@@ -90,16 +29,6 @@
     "isDynamicEntry": true,
     "imports": [
       "src/routes/doors/+page.svelte"
-    ]
-  },
-  "_paths-b4419565.js": {
-    "file": "_app/immutable/chunks/paths-b4419565.js"
-  },
-  "_stores-e5fde2bb.js": {
-    "file": "_app/immutable/chunks/stores-e5fde2bb.js",
-    "imports": [
-      "_index-a33fa324.js",
-      "_singletons-df472dcd.js"
     ]
   },
   "src/routes/about/+page.ts": {
@@ -110,12 +39,12 @@
       "__page-3afc52e2.js"
     ]
   },
-  "src/routes/+layout.ts": {
-    "file": "_app/immutable/modules/pages/_layout.ts-9cbb603b.js",
-    "src": "src/routes/+layout.ts",
-    "isEntry": true,
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-416ecd4d.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
     "imports": [
-      "__layout-da46b06b.js"
+      "src/routes/+page.svelte"
     ]
   },
   "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.4/node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
@@ -127,20 +56,13 @@
       "_stores-e5fde2bb.js"
     ]
   },
-  "__page-3afc52e2.js": {
-    "file": "_app/immutable/chunks/_page-3afc52e2.js"
-  },
-  "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-ce97ee2a.js",
-    "src": "src/routes/+page.svelte",
-    "isEntry": true,
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-06ac33ca.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
     "imports": [
-      "_index-a33fa324.js",
-      "_paths-b4419565.js",
-      "_Button-730b59c7.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-549026eb.css"
+      "__layout-da46b06b.js",
+      "src/routes/+layout.svelte"
     ]
   },
   "_index-6188c6ed.js": {
@@ -149,14 +71,36 @@
       "_index-a33fa324.js"
     ]
   },
-  "_index-a33fa324.js": {
-    "file": "_app/immutable/chunks/index-a33fa324.js"
-  },
-  "_singletons-df472dcd.js": {
-    "file": "_app/immutable/chunks/singletons-df472dcd.js",
+  "_stores-e5fde2bb.js": {
+    "file": "_app/immutable/chunks/stores-e5fde2bb.js",
     "imports": [
       "_index-a33fa324.js",
-      "_paths-b4419565.js"
+      "_singletons-df472dcd.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/3.js": {
+    "file": "_app/immutable/chunks/3-c9b37feb.js",
+    "src": ".svelte-kit/generated/nodes/3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-3afc52e2.js",
+      "src/routes/about/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/5.js": {
+    "file": "_app/immutable/chunks/5-fbc4c8b2.js",
+    "src": ".svelte-kit/generated/nodes/5.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/sugar-cane-water/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/6.js": {
+    "file": "_app/immutable/chunks/6-d9e2b70c.js",
+    "src": ".svelte-kit/generated/nodes/6.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/sugar-cane-water/intro/+page.svelte"
     ]
   },
   "_Button-730b59c7.js": {
@@ -169,24 +113,34 @@
       "_app/immutable/assets/Button-8ca56c60.css"
     ]
   },
-  "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.4/node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-e4f47291.js",
-    "src": "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.4/node_modules/@sveltejs/kit/src/runtime/client/start.js",
+  "__layout-da46b06b.js": {
+    "file": "_app/immutable/chunks/_layout-da46b06b.js"
+  },
+  "src/routes/about/+page.svelte": {
+    "file": "_app/immutable/components/pages/about/_page.svelte-380391fc.js",
+    "src": "src/routes/about/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-a33fa324.js",
-      "_singletons-df472dcd.js",
-      "_paths-b4419565.js"
-    ],
-    "dynamicImports": [
-      ".svelte-kit/generated/nodes/0.js",
-      ".svelte-kit/generated/nodes/1.js",
-      ".svelte-kit/generated/nodes/2.js",
-      ".svelte-kit/generated/nodes/3.js",
-      ".svelte-kit/generated/nodes/4.js",
-      ".svelte-kit/generated/nodes/5.js",
-      ".svelte-kit/generated/nodes/6.js"
+      "_index-a33fa324.js"
     ]
+  },
+  "_singletons-df472dcd.js": {
+    "file": "_app/immutable/chunks/singletons-df472dcd.js",
+    "imports": [
+      "_index-a33fa324.js",
+      "_paths-b4419565.js"
+    ]
+  },
+  "src/routes/+layout.ts": {
+    "file": "_app/immutable/modules/pages/_layout.ts-9cbb603b.js",
+    "src": "src/routes/+layout.ts",
+    "isEntry": true,
+    "imports": [
+      "__layout-da46b06b.js"
+    ]
+  },
+  "__page-3afc52e2.js": {
+    "file": "_app/immutable/chunks/_page-3afc52e2.js"
   },
   "src/routes/doors/+page.svelte": {
     "file": "_app/immutable/components/pages/doors/_page.svelte-66b00ab9.js",
@@ -200,6 +154,30 @@
     ],
     "css": [
       "_app/immutable/assets/_page-389d1576.css"
+    ]
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-eaa0f01c.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.4/node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
+  },
+  "_paths-b4419565.js": {
+    "file": "_app/immutable/chunks/paths-b4419565.js"
+  },
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-ce97ee2a.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-a33fa324.js",
+      "_paths-b4419565.js",
+      "_Button-730b59c7.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-549026eb.css"
     ]
   },
   "src/routes/+layout.svelte": {
@@ -225,6 +203,28 @@
     ],
     "css": [
       "_app/immutable/assets/_page-2a5d9d09.css"
+    ]
+  },
+  "_index-a33fa324.js": {
+    "file": "_app/immutable/chunks/index-a33fa324.js"
+  },
+  "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.4/node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "_app/immutable/start-e4f47291.js",
+    "src": "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.4/node_modules/@sveltejs/kit/src/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-a33fa324.js",
+      "_singletons-df472dcd.js",
+      "_paths-b4419565.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/nodes/0.js",
+      ".svelte-kit/generated/nodes/1.js",
+      ".svelte-kit/generated/nodes/2.js",
+      ".svelte-kit/generated/nodes/3.js",
+      ".svelte-kit/generated/nodes/4.js",
+      ".svelte-kit/generated/nodes/5.js",
+      ".svelte-kit/generated/nodes/6.js"
     ]
   },
   "src/routes/sugar-cane-water/intro/+page.svelte": {
