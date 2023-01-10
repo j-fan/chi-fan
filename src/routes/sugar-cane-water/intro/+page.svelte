@@ -3,7 +3,9 @@
   import Slides from '$lib/slides/Slides.svelte';
   import Knife from './Knife.svelte';
   import PeelingSugarCane from './PeelingSugarCane.svelte';
+  import Scrub from './Scrub.svelte';
   import SugarCane from './SugarCane.svelte';
+  import WashingSugarCane from './WashingSugarCane.svelte';
 
   let windowWidth = 9999;
   $: isMobile = windowWidth < 500;
@@ -63,11 +65,35 @@
       successStep: {
         characterName: 'Grandpa',
         bodyText: 'The look great now, now we need to scrub it further to clean it.',
-        nextButton: { text: 'Sounds good', href: '/sugar-cane-water' }
+        nextButton: { text: "Let's do it" }
       },
       targetComponent: PeelingSugarCane,
       dragComponent: Knife,
       targetClicks: 3,
+      bgImage: `${base}/img/sugar-cane-water/canes-background.png`
+    },
+    {
+      type: 'click-times',
+      dialogs: [
+        {
+          characterName: 'Grandpa',
+          bodyText:
+            'Place the shaved stalks into a bucket of water and scratch away the remaining dirt from the stalks with steel wool.',
+          nextButton: { text: 'I will do it!' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Grandpa',
+        bodyText: "It's almost clean, please continue scrubbing!"
+      },
+      successStep: {
+        characterName: 'Grandpa',
+        bodyText: 'That looks nice and clean now',
+        nextButton: { text: "What's next", href: '/sugar-cane-water' }
+      },
+      targetComponent: WashingSugarCane,
+      dragComponent: Scrub,
+      targetClicks: 5,
       bgImage: `${base}/img/sugar-cane-water/canes-background.png`
     }
   ]}

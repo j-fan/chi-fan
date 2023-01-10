@@ -85,7 +85,7 @@
 
   @media (max-width: 600px) {
     .dialog {
-      margin: 1rem;
+      margin: 2rem 1.5rem;
       width: 100%;
     }
   }

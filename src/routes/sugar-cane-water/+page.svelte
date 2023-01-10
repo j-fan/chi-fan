@@ -91,7 +91,7 @@
         },
         {
           label: 'Steel wool',
-          src: `${base}/img/sugar-cane-water/scrub.jpg`
+          src: `${base}/img/sugar-cane-water/scrub.png`
         },
         {
           label: 'Tub',
