@@ -18,10 +18,15 @@
     background-position: center center;
     background-repeat: no-repeat;
     filter: drop-shadow(15px 15px 6px rgba(0, 0, 0, 0.5));
+    cursor: none;
   }
 
   .wrapper.isIntersecting {
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+    transform: scale(0.9);
+  }
+
+  .wrapper:active {
     transform: scale(0.8);
   }
 </style>

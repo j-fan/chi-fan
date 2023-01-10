@@ -18,6 +18,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.5));
+    cursor: none;
   }
 
   .wrapper.isIntersecting {

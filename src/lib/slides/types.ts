@@ -25,12 +25,13 @@ export type PickItemsSlideType = {
   targetCount: number;
   totalItems: number;
   itemComponent: typeof SvelteComponentTyped<{ picked?: boolean }>;
+  toolComponent?: typeof SvelteComponentTyped<{ isIntersecting?: boolean; isActive?: boolean }>;
 } & BaseSlideType;
 
 export type ClickTimesSlideType = {
   type: 'click-times';
   targetComponent: typeof SvelteComponentTyped<{ progress?: number }>;
-  dragComponent: typeof SvelteComponentTyped<{ isIntersecting?: boolean }>;
+  toolComponent: typeof SvelteComponentTyped<{ isIntersecting?: boolean }>;
   targetClicks: number;
   confettiProps?: ConfettiProps;
 } & BaseSlideType;

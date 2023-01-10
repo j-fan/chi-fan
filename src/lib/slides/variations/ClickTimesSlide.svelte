@@ -79,7 +79,7 @@
         bind:clientHeight={dragElementHeight}
         bind:this={dragRef}
       >
-        <svelte:component this={props.dragComponent} {isIntersecting} />
+        <svelte:component this={props.toolComponent} {isIntersecting} />
         {#key clicks}
           {#if clicks > 0}
             <Confetti {...props.confettiProps} />

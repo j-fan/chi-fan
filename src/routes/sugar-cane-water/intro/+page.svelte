@@ -2,12 +2,13 @@
   import { base } from '$app/paths';
   import Slides from '$lib/slides/Slides.svelte';
   import CuttingSugarCane from './CuttingSugarCane.svelte';
-  import Knife from './Knife.svelte';
   import PeelingSugarCane from './PeelingSugarCane.svelte';
   import Scrub from './Scrub.svelte';
   import Shears from './Shears.svelte';
   import SugarCane from './SugarCane.svelte';
   import WashingSugarCane from './WashingSugarCane.svelte';
+  import ChoppingKnife from './ChoppingKnife.svelte';
+  import PeelingKnife from './PeelingKnife.svelte';
 
   let windowWidth = 9999;
   $: isMobile = windowWidth < 500;
@@ -70,7 +71,7 @@
         nextButton: { text: "Let's do it" }
       },
       targetComponent: PeelingSugarCane,
-      dragComponent: Knife,
+      toolComponent: PeelingKnife,
       targetClicks: 3,
       bgImage: `${base}/img/sugar-cane-water/canes-background.png`,
       confettiProps: {
@@ -102,7 +103,7 @@
         nextButton: { text: "What's next" }
       },
       targetComponent: WashingSugarCane,
-      dragComponent: Scrub,
+      toolComponent: Scrub,
       targetClicks: 5,
       bgImage: `${base}/img/sugar-cane-water/canes-background.png`,
       confettiProps: {
@@ -131,10 +132,10 @@
       successStep: {
         characterName: 'Grandpa',
         bodyText: 'Good job, those pieces look small enough',
-        nextButton: { text: "What's next", href: '/sugar-cane-water' }
+        nextButton: { text: 'Is it ready to cook it yet?' }
       },
       targetComponent: CuttingSugarCane,
-      dragComponent: Shears,
+      toolComponent: Shears,
       targetClicks: 3,
       bgImage: `${base}/img/sugar-cane-water/canes-background.png`,
       confettiProps: {
@@ -145,6 +146,36 @@
         x: [-1, 1],
         y: [-1, 1]
       }
+    },
+    {
+      type: 'pick-items',
+      dialogs: [
+        {
+          characterName: 'Grandpa',
+          bodyText: "It's not quite ready to cook yet. We need to split it to release more flavour",
+          nextButton: { text: 'How do I do that?' }
+        },
+        {
+          characterName: 'Grandpa',
+          bodyText:
+            'Slam the sugarcane onto a well-supported chopping board to split the sugarcane into halves. Repeat to split into quarters.',
+          nextButton: { text: 'Ok I got it!' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Grandpa',
+        bodyText: 'Keep going, we need the sugar cane nicely split open.'
+      },
+      successStep: {
+        characterName: 'Grandpa',
+        bodyText: 'Thank you, now we can assemble the final ingredients for boiling',
+        nextButton: { text: 'Sounds good' }
+      },
+      targetCount: 4,
+      totalItems: 4,
+      itemComponent: SugarCane,
+      bgImage: `${base}/img/sugar-cane-water/canes-background.png`,
+      toolComponent: ChoppingKnife
     }
   ]}
 />

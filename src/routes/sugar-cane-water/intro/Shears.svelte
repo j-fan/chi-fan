@@ -24,6 +24,7 @@
     background-repeat: no-repeat;
     background-image: var(--open-shears);
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+    cursor: none;
   }
 
   .wrapper:active {

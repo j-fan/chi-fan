@@ -4,6 +4,10 @@
   import BaseSlide from './BaseSlide.svelte';
 
   const seed = 0.34987;
+  let mouseX = 200;
+  let mouseY = 200;
+  let isIntersecting = false;
+  let isActive = false;
 
   export let props: PickItemsSlideType;
 
@@ -23,8 +27,35 @@
     }
     pickedItems = pickedItems;
   };
+
+  const handleMouseMove = (event: MouseEvent) => {
+    mouseX = event.clientX;
+    mouseY = event.clientY;
+  };
+
+  const handleTouchMove = (event: TouchEvent) => {
+    mouseX = event.touches[0].clientX;
+    mouseY = event.touches[0].clientY;
+  };
+
+  const setIntersectingTrue = () => {
+    isIntersecting = true;
+  };
+
+  const setIntersectingFalse = () => {
+    isIntersecting = false;
+  };
+
+  const setActiveTrue = () => {
+    isActive = true;
+  };
+
+  const setActiveFalse = () => {
+    isActive = false;
+  };
 </script>
 
+<svelte:body on:mousemove={handleMouseMove} on:touchmove={handleTouchMove} />
 <BaseSlide
   dialogs={props.dialogs}
   errorStep={props.errorStep}
@@ -41,11 +72,22 @@
         on:click={() => {
           handlePickItem(index);
         }}
+        on:focus={setIntersectingTrue}
+        on:blur={setIntersectingFalse}
+        on:mouseover={setIntersectingTrue}
+        on:mouseleave={setIntersectingFalse}
+        on:mousedown={setActiveTrue}
+        on:mouseup={setActiveFalse}
+        on:touchstart={setActiveTrue}
+        on:touchend={setActiveFalse}
         style="left: {smoothRandomRange(-20, 100, index, 0, seed)}%; bottom: 12%;"
       >
         <svelte:component this={props.itemComponent} picked={pickedItems.has(index)} />
       </div>
     {/each}
+  </div>
+  <div class="follow-mouse" style="left: {mouseX}px; top:{mouseY}px;">
+    <svelte:component this={props.toolComponent} {isIntersecting} {isActive} />
   </div>
 </BaseSlide>
 
@@ -68,5 +110,12 @@
     position: absolute;
     cursor: pointer;
     user-select: none;
+  }
+
+  .follow-mouse {
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 99;
+    pointer-events: none;
   }
 </style>
