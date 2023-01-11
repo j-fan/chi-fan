@@ -174,7 +174,7 @@
     //   successStep: {
     //     characterName: 'Grandpa',
     //     bodyText: 'Thank you, now we can assemble the final ingredients for boiling',
-    //     nextButton: { text: 'Sounds good', href: '/sugar-cane-water' }
+    //     nextButton: { text: 'Sounds good' }
     //   },
     //   targetCount: 4,
     //   totalItems: 4,
@@ -188,24 +188,33 @@
       dialogs: [
         {
           characterName: 'Grandpa',
-          bodyText: "It's not quite ready to cook yet. We need to split it to release more flavour",
-          nextButton: { text: 'How do I do that?' }
+          bodyText: 'Now we need to boil a pot of water and add the ingredients.',
+          nextButton: { text: 'What ingredients?' }
         },
         {
           characterName: 'Grandpa',
-          bodyText:
-            'Slam the sugarcane onto a well-supported chopping board to split the sugarcane into halves. Repeat to split into quarters.',
-          nextButton: { text: 'Ok I got it!' }
+          bodyText: 'We need the sugar cane pieces, 4 carrots chopped into chunks...',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Grandpa',
+          bodyText: '...a handful of chinese almonds, and 10 Chinese figs for added sweetness...',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Grandpa',
+          bodyText: 'Finally we will have a taste and add yellow rock sugar as needed',
+          nextButton: { text: 'Ok, I will add them' }
         }
       ],
       errorStep: {
         characterName: 'Grandpa',
-        bodyText: 'Keep going, we need the sugar cane nicely split open.'
+        bodyText: "Let's add all the ingredients"
       },
       successStep: {
         characterName: 'Grandpa',
-        bodyText: 'Thank you, now we can assemble the final ingredients for boiling',
-        nextButton: { text: 'Sounds good', href: '/sugar-cane-water' }
+        bodyText: 'Looks good. Let it boil for 40 minutes and it will be ready to serve.',
+        nextButton: { text: 'Keen to try it!', href: '/sugar-cane-water' }
       },
       dropZone: BoilingPot,
       dragItems: [Carrot, Carrot],

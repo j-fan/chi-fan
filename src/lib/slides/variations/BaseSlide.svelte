@@ -7,13 +7,15 @@
   export let errorStep: Dialog;
   export let successStep: Dialog;
   export let bgImage: string | undefined = undefined;
-  export let progressNum: number;
-  export let progressTotal: number;
+  export let progressNum: number | undefined = undefined;
+  export let progressTotal: number | undefined = undefined;
 </script>
 
 <div class="wrapper">
   <div class="slide-content" style="background-image: url({bgImage});">
-    <p class="progress">Progress: {progressNum} / {progressTotal}</p>
+    {#if progressNum !== undefined && progressTotal !== undefined}
+      <p class="progress">Progress: {progressNum} / {progressTotal}</p>
+    {/if}
     <slot />
   </div>
   <DialogBox {dialogs} {isValid} {errorStep} {successStep} />
