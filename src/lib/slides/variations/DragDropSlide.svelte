@@ -1,19 +1,22 @@
 <script lang="ts">
   import { setNoScrollBody } from '$lib/utils/setNoScrollBody';
+  import type { SvelteComponent } from 'svelte';
+  import { backIn } from 'svelte/easing';
+  import { fly } from 'svelte/transition';
   import type { DragIntoSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
 
   export let props: DragIntoSlideType;
 
-  let itemsMoved = 0;
-  let sourceRef: HTMLElement | null = null;
-  let destinationRef: HTMLElement | null = null;
-  let currentlyDraggedItem: HTMLElement | null = null;
+  let currentDragItem: typeof SvelteComponent | null = null;
+
+  let pendingItems: Array<typeof SvelteComponent> = [...props.dragItems];
+  let movedItems: Array<typeof SvelteComponent> = [];
 
   setNoScrollBody();
 
-  const handleDragStart = (event: DragEvent) => {
-    currentlyDraggedItem = event.currentTarget as HTMLElement;
+  const handleDragStart = (currentItem: typeof SvelteComponent) => () => {
+    currentDragItem = currentItem;
   };
 
   const handleDragOver = (event: DragEvent) => {
@@ -27,26 +30,26 @@
     // move dragged element to the selected drop target
     const currentTarget = event?.currentTarget as HTMLElement;
 
-    if (!currentlyDraggedItem || !sourceRef || !destinationRef) {
+    if (!currentTarget || currentDragItem === null) {
       return;
     }
 
     if (currentTarget.id === 'dropzone') {
-      sourceRef.removeChild(currentlyDraggedItem);
-      destinationRef.children[0].appendChild(currentlyDraggedItem);
-      itemsMoved++;
+      const indexToRemove = pendingItems.indexOf(currentDragItem);
+      pendingItems.splice(indexToRemove, 1);
+      pendingItems = pendingItems;
+
+      movedItems = [...movedItems, currentDragItem];
     }
   };
 
   // Ditch drag and drop for mobile because if UX issues, use taps instead
-  const handleTouch = (event: TouchEvent) => {
-    const touchedItem = event.currentTarget as HTMLElement;
-    if (!touchedItem || !sourceRef || !destinationRef) {
-      return;
-    }
-    sourceRef.removeChild(touchedItem);
-    destinationRef.children[0].appendChild(touchedItem);
-    itemsMoved++;
+  const handleTouch = (currentItem: typeof SvelteComponent) => (event: TouchEvent) => {
+    const indexToRemove = pendingItems.indexOf(currentItem);
+    pendingItems.splice(indexToRemove, 1);
+    pendingItems = pendingItems;
+
+    movedItems = [...movedItems, currentItem];
   };
 </script>
 
@@ -54,24 +57,31 @@
   dialogs={props.dialogs}
   errorStep={props.errorStep}
   successStep={props.successStep}
-  isValid={itemsMoved === props.dragItems.length}
+  isValid={movedItems.length === props.dragItems.length}
   bgImage={props.bgImage}
 >
   <div class="slide-contents">
-    <div bind:this={sourceRef} class="drag-items-source">
-      {#each props.dragItems as dragItem}
+    <div class="drag-items-source">
+      {#each pendingItems as dragItem}
         <div
           class="drag-item"
           draggable={true}
-          on:dragstart={handleDragStart}
-          on:touchend={handleTouch}
+          on:dragstart={handleDragStart(dragItem)}
+          on:touchend={handleTouch(dragItem)}
+          out:fly={{ y: 50, duration: 500 }}
         >
           <svelte:component this={dragItem} />
         </div>
       {/each}
     </div>
-    <div bind:this={destinationRef} id="dropzone" on:dragover={handleDragOver} on:drop={handleDrop}>
-      <svelte:component this={props.dropZone} />
+    <div id="dropzone" on:dragover={handleDragOver} on:drop={handleDrop}>
+      <svelte:component this={props.dropZone}>
+        {#each movedItems as item}
+          <div in:fly={{ y: -50, easing: backIn, duration: 600 }}>
+            <svelte:component this={item} />
+          </div>
+        {/each}
+      </svelte:component>
     </div>
   </div>
 </BaseSlide>

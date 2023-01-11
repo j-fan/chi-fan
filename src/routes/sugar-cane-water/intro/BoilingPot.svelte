@@ -2,7 +2,9 @@
   import { base } from '$app/paths';
 </script>
 
-<div class="wrapper" style="background-image: url({base}/img/sugar-cane-water/pot.jpg)" />
+<div class="wrapper" style="background-image: url({base}/img/sugar-cane-water/pot.jpg)">
+  <slot />
+</div>
 
 <style>
   .wrapper {
