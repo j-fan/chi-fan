@@ -1,12 +1,12 @@
 <script lang="ts">
   import { setNoScrollBody } from '$lib/utils/setNoScrollBody';
   import type { SvelteComponent } from 'svelte';
-  import { backIn } from 'svelte/easing';
+  import { Confetti } from 'svelte-confetti';
   import { fly } from 'svelte/transition';
-  import type { DragIntoSlideType } from '../types';
+  import type { DragDropSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
 
-  export let props: DragIntoSlideType;
+  export let props: DragDropSlideType;
 
   let currentDragItem: typeof SvelteComponent | null = null;
 
@@ -61,24 +61,29 @@
   bgImage={props.bgImage}
 >
   <div class="slide-contents">
-    <div class="drag-items-source">
-      {#each pendingItems as dragItem}
+    <div class="pending-items-container">
+      {#each pendingItems as pendingItem}
         <div
-          class="drag-item"
+          class="pending-item"
           draggable={true}
-          on:dragstart={handleDragStart(dragItem)}
-          on:touchend={handleTouch(dragItem)}
+          on:dragstart={handleDragStart(pendingItem)}
+          on:touchend={handleTouch(pendingItem)}
           out:fly={{ y: 50, duration: 500 }}
         >
-          <svelte:component this={dragItem} />
+          <svelte:component this={pendingItem} />
         </div>
       {/each}
     </div>
     <div id="dropzone" on:dragover={handleDragOver} on:drop={handleDrop}>
       <svelte:component this={props.dropZone}>
-        {#each movedItems as item}
-          <div in:fly={{ y: -50, easing: backIn, duration: 600 }}>
-            <svelte:component this={item} />
+        {#each movedItems as movedItem}
+          <div class="item-in-dropzone">
+            <svelte:component this={movedItem} />
+          </div>
+          <div class="splash">
+            {#if props.confettiProps}
+              <Confetti {...props.confettiProps} />
+            {/if}
           </div>
         {/each}
       </svelte:component>
@@ -96,7 +101,7 @@
     height: 100%;
   }
 
-  .drag-items-source {
+  .pending-items-container {
     display: flex;
     min-height: 150px;
     width: 600px;
@@ -109,8 +114,47 @@
     box-shadow: var(--drop-shadow-md), var(--box-shadow-outline);
   }
 
-  .drag-item {
+  .pending-item {
     cursor: move;
     width: fit-content;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(-50px);
+    }
+    33% {
+      transform: translateY(25px);
+      opacity: 1;
+    }
+    66% {
+      transform: translateY(-25px);
+    }
+    100% {
+      transform: translateY(25px);
+      opacity: 0;
+    }
+  }
+
+  .item-in-dropzone {
+    animation: bounce 0.7s ease-in;
+    animation-fill-mode: both;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+  }
+
+  #dropzone {
+    position: relative;
+  }
+
+  .splash {
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
   }
 </style>

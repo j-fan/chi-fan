@@ -45,12 +45,13 @@ export type ClickTimesSlideType = {
   confettiProps?: ConfettiProps;
 } & BaseSlideType;
 
-export type DragIntoSlideType = {
+export type DragDropSlideType = {
   type: 'drag-drop';
   dropZone: typeof SvelteComponentTyped<{ progress?: number }>;
   dropZoneOverlay?: typeof SvelteComponentTyped<{ progress?: number }>;
   dragItems: Array<typeof SvelteComponent>;
+  confettiProps?: ConfettiProps;
 } & BaseSlideType;
 
-export type Slide = PickItemsSlideType | ClickTimesSlideType | DragIntoSlideType;
+export type Slide = PickItemsSlideType | ClickTimesSlideType | DragDropSlideType;
 export type SlidesType = Array<Slide>;

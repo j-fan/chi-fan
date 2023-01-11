@@ -81,7 +81,7 @@
       >
         <svelte:component this={props.toolComponent} {isIntersecting} />
         {#key clicks}
-          {#if clicks > 0}
+          {#if clicks > 0 && props.confettiProps}
             <Confetti {...props.confettiProps} />
           {/if}
         {/key}

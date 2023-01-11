@@ -218,7 +218,15 @@
       },
       dropZone: BoilingPot,
       dragItems: [Carrot, Carrot],
-      dropZoneOverlay: BoilingPot
+      dropZoneOverlay: BoilingPot,
+      confettiProps: {
+        rounded: true,
+        amount: 10,
+        cone: true,
+        delay: [500, 500],
+        duration: 800,
+        colorArray: ['#cbc7b7', '#dadec2']
+      }
     }
   ]}
 />
