@@ -1,8 +1,10 @@
-<script>
+<script lang="ts">
   import { base } from '$app/paths';
+
+  export let imageSrc: string;
 </script>
 
-<div style="background-image: url({base}/img/sugar-cane-water/carrot.jpg)" />
+<div style="background-image: url({imageSrc})" />
 
 <style>
   div {

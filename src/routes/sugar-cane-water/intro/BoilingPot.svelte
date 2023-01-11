@@ -8,10 +8,17 @@
 
 <style>
   .wrapper {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  @media (max-width: 600px) {
+    .wrapper {
+      width: 300px;
+      height: 300px;
+    }
   }
 </style>

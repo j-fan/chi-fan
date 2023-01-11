@@ -48,7 +48,7 @@
 
         {
           label: 'Carrot',
-          src: `${base}/img/sugar-cane-water/carrot.jpg`
+          src: `${base}/img/sugar-cane-water/carrot.png`
         }
       ]}
     />

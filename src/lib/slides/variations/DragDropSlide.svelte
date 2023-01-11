@@ -2,13 +2,13 @@
   import { setNoScrollBody } from '$lib/utils/setNoScrollBody';
   import type { SvelteComponent } from 'svelte';
   import { Confetti } from 'svelte-confetti';
-  import { fly } from 'svelte/transition';
   import type { DragDropSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
 
   export let props: DragDropSlideType;
 
   let currentDragItem: typeof SvelteComponent | null = null;
+  let movedItem: typeof SvelteComponent | null = null;
 
   let pendingItems: Array<typeof SvelteComponent> = [...props.dragItems];
   let movedItems: Array<typeof SvelteComponent> = [];
@@ -40,6 +40,7 @@
       pendingItems = pendingItems;
 
       movedItems = [...movedItems, currentDragItem];
+      movedItem = currentDragItem;
     }
   };
 
@@ -50,6 +51,7 @@
     pendingItems = pendingItems;
 
     movedItems = [...movedItems, currentItem];
+    movedItem = currentItem;
   };
 </script>
 
@@ -68,7 +70,6 @@
           draggable={true}
           on:dragstart={handleDragStart(pendingItem)}
           on:touchend={handleTouch(pendingItem)}
-          out:fly={{ y: 50, duration: 500 }}
         >
           <svelte:component this={pendingItem} />
         </div>
@@ -76,7 +77,7 @@
     </div>
     <div id="dropzone" on:dragover={handleDragOver} on:drop={handleDrop}>
       <svelte:component this={props.dropZone}>
-        {#each movedItems as movedItem}
+        {#key movedItem}
           <div class="item-in-dropzone">
             <svelte:component this={movedItem} />
           </div>
@@ -85,7 +86,7 @@
               <Confetti {...props.confettiProps} />
             {/if}
           </div>
-        {/each}
+        {/key}
       </svelte:component>
     </div>
   </div>
@@ -103,6 +104,7 @@
 
   .pending-items-container {
     display: flex;
+    flex-wrap: wrap;
     min-height: 150px;
     width: 600px;
     max-width: calc(100% - 3rem);
@@ -124,14 +126,14 @@
       transform: translateY(-50px);
     }
     33% {
-      transform: translateY(25px);
+      transform: translateY(40px);
       opacity: 1;
     }
     66% {
       transform: translateY(-25px);
     }
     100% {
-      transform: translateY(25px);
+      transform: translateY(40px);
       opacity: 0;
     }
   }
