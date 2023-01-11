@@ -97,8 +97,12 @@
       dialogs: [
         {
           characterName: 'Grandpa',
-          bodyText:
-            'Place the shaved stalks into a bucket of water and scratch away the remaining dirt from the stalks with steel wool.',
+          bodyText: "Let's place the stalks in a bucket of water",
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Grandpa',
+          bodyText: 'Scratch off any dirt with the steel wool',
           nextButton: { text: 'I will do it!' }
         }
       ],

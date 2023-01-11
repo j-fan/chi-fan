@@ -15,8 +15,15 @@
 <style>
   .wrapper {
     position: relative;
-    width: calc(500px * 0.4);
-    height: calc(1500px * 0.4);
+    width: calc(500px * 0.45);
+    height: calc(1500px * 0.45);
+  }
+
+  @media (max-width: 600px) {
+    .wrapper {
+      width: calc(500px * 0.3);
+      height: calc(1500px * 0.3);
+    }
   }
 
   .image {
