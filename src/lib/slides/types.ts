@@ -1,5 +1,5 @@
 import type { ConfettiProps } from '$lib/confetti/types';
-import type { SvelteComponentTyped } from 'svelte';
+import type { SvelteComponent, SvelteComponentTyped } from 'svelte';
 
 export type Dialog = {
   characterName: string;
@@ -12,7 +12,7 @@ export type Dialog = {
 };
 export type Dialogs = Array<Dialog>;
 
-export type SlideType = 'pick-items' | 'click-times';
+export type SlideType = 'pick-items' | 'click-times' | 'drag-drop';
 export type BaseSlideType = {
   type: SlideType;
   dialogs: Dialogs;
@@ -44,5 +44,13 @@ export type ClickTimesSlideType = {
   targetClicks: number;
   confettiProps?: ConfettiProps;
 } & BaseSlideType;
-export type Slide = PickItemsSlideType | ClickTimesSlideType;
+
+export type DragIntoSlideType = {
+  type: 'drag-drop';
+  dropZone: typeof SvelteComponentTyped<{ progress?: number }>;
+  dropZoneOverlay?: typeof SvelteComponentTyped<{ progress?: number }>;
+  dragItems: Array<typeof SvelteComponent>;
+} & BaseSlideType;
+
+export type Slide = PickItemsSlideType | ClickTimesSlideType | DragIntoSlideType;
 export type SlidesType = Array<Slide>;
