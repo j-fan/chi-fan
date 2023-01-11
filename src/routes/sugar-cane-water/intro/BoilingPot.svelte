@@ -6,8 +6,8 @@
 
 <style>
   .wrapper {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

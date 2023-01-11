@@ -7,6 +7,7 @@
 
   let itemsMoved = 0;
   let sourceRef: HTMLElement | null = null;
+  let destinationRef: HTMLElement | null = null;
   let currentlyDraggedItem: HTMLElement | null = null;
 
   setNoScrollBody();
@@ -25,19 +26,27 @@
     event.preventDefault();
     // move dragged element to the selected drop target
     const currentTarget = event?.currentTarget as HTMLElement;
-    const destination = event?.target as HTMLElement;
 
-    console.log(destination, currentlyDraggedItem);
-
-    if (!destination || !currentlyDraggedItem || !sourceRef) {
+    if (!currentlyDraggedItem || !sourceRef || !destinationRef) {
       return;
     }
 
     if (currentTarget.id === 'dropzone') {
       sourceRef.removeChild(currentlyDraggedItem);
-      destination.appendChild(currentlyDraggedItem);
+      destinationRef.children[0].appendChild(currentlyDraggedItem);
       itemsMoved++;
     }
+  };
+
+  // Ditch drag and drop for mobile because if UX issues, use taps instead
+  const handleTouch = (event: TouchEvent) => {
+    const touchedItem = event.currentTarget as HTMLElement;
+    if (!touchedItem || !sourceRef || !destinationRef) {
+      return;
+    }
+    sourceRef.removeChild(touchedItem);
+    destinationRef.children[0].appendChild(touchedItem);
+    itemsMoved++;
   };
 </script>
 
@@ -51,12 +60,17 @@
   <div class="slide-contents">
     <div bind:this={sourceRef} class="drag-items-source">
       {#each props.dragItems as dragItem}
-        <div class="drag-item" draggable={true} on:dragstart={handleDragStart}>
+        <div
+          class="drag-item"
+          draggable={true}
+          on:dragstart={handleDragStart}
+          on:touchend={handleTouch}
+        >
           <svelte:component this={dragItem} />
         </div>
       {/each}
     </div>
-    <div id="dropzone" on:dragover={handleDragOver} on:drop={handleDrop}>
+    <div bind:this={destinationRef} id="dropzone" on:dragover={handleDragOver} on:drop={handleDrop}>
       <svelte:component this={props.dropZone} />
     </div>
   </div>
