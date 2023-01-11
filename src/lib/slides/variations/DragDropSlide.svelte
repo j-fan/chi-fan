@@ -6,12 +6,13 @@
   export let props: DragIntoSlideType;
 
   let itemsMoved = 0;
+  let sourceRef: HTMLElement | null = null;
   let currentlyDraggedItem: HTMLElement | null = null;
 
   setNoScrollBody();
 
   const handleDragStart = (event: DragEvent) => {
-    currentlyDraggedItem = event.target as HTMLElement;
+    currentlyDraggedItem = event.currentTarget as HTMLElement;
   };
 
   const handleDragOver = (event: DragEvent) => {
@@ -26,12 +27,14 @@
     const currentTarget = event?.currentTarget as HTMLElement;
     const destination = event?.target as HTMLElement;
 
-    if (!destination || !currentlyDraggedItem) {
+    console.log(destination, currentlyDraggedItem);
+
+    if (!destination || !currentlyDraggedItem || !sourceRef) {
       return;
     }
 
     if (currentTarget.id === 'dropzone') {
-      currentlyDraggedItem.parentNode?.removeChild(currentlyDraggedItem);
+      sourceRef.removeChild(currentlyDraggedItem);
       destination.appendChild(currentlyDraggedItem);
       itemsMoved++;
     }
@@ -47,9 +50,9 @@
   progressNum={itemsMoved}
   progressTotal={props.dragItems.length}
 >
-  <div class="drag-items">
+  <div bind:this={sourceRef} class="drag-item-source">
     {#each props.dragItems as dragItem}
-      <div draggable={true} on:dragstart={handleDragStart}>
+      <div class="drag-item" draggable={true} on:dragstart={handleDragStart}>
         <svelte:component this={dragItem} />
       </div>
     {/each}
@@ -60,4 +63,7 @@
 </BaseSlide>
 
 <style>
+  .drag-item {
+    cursor: move;
+  }
 </style>
