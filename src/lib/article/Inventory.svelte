@@ -34,7 +34,6 @@
 
   .cell {
     height: 140px;
-
     display: flex;
     position: relative;
     justify-content: center;

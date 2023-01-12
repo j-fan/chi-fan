@@ -105,20 +105,31 @@
   .pending-items-container {
     display: flex;
     flex-wrap: wrap;
-    min-height: 150px;
-    width: 600px;
+    width: 700px;
     max-width: calc(100% - 3rem);
     gap: 0.5rem;
     padding: 1rem;
+    min-height: 168px;
 
     border-radius: 1rem;
     border: 8px solid var(--c-light-green);
     box-shadow: var(--drop-shadow-md), var(--box-shadow-outline);
   }
 
+  /* Hacky... but needed to preserve empty box height */
+  @media (max-width: 600px) {
+    .pending-items-container {
+      min-height: 128px;
+    }
+  }
+
   .pending-item {
     cursor: move;
     width: fit-content;
+    height: fit-content;
+    border-radius: 1rem;
+    border: var(--border-style);
+    border-color: var(--c-light-green);
   }
 
   @keyframes bounce {

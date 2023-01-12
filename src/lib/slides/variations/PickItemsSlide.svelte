@@ -16,7 +16,7 @@
     }
   }
   let windowWidth = 9999;
-  $: isMobile = windowWidth < 500;
+  $: isMobile = windowWidth < 700;
 
   let pickedItems = new Set();
 
@@ -57,9 +57,9 @@
     isActive = false;
   };
 
-  const getItemSpacing = (index: number) => {
+  $: getItemSpacing = (index: number) => {
     if (isMobile) {
-      index * (100 / props.totalItems);
+      return index * (100 / props.totalItems);
     }
     return index * (50 / props.totalItems) + 25;
   };
