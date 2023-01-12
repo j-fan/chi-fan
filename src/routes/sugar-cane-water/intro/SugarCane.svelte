@@ -6,7 +6,6 @@
 
   export let picked = false;
 
-  const rotation = randomRange(-10, 10);
   const scale = randomRange(1, 1.4);
   const flip = randomBool() ? 1 : -1;
   $: pickedScale = picked ? scale * 1.2 : scale;
@@ -15,7 +14,7 @@
 <div
   class="wrapper"
   class:picked
-  style="background-image: url({src}); transform: rotate({rotation}deg) scale({pickedScale}) scaleX({flip});"
+  style="background-image: url({src}); transform: scale({pickedScale}) scaleX({flip});"
 />
 
 <style>

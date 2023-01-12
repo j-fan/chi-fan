@@ -15,6 +15,8 @@
       throw new Error('The target count must be less than the total items');
     }
   }
+  let windowWidth = 9999;
+  $: isMobile = windowWidth < 500;
 
   let pickedItems = new Set();
 
@@ -54,8 +56,16 @@
   const setActiveFalse = () => {
     isActive = false;
   };
+
+  const getItemSpacing = (index: number) => {
+    if (isMobile) {
+      index * (100 / props.totalItems);
+    }
+    return index * (50 / props.totalItems) + 25;
+  };
 </script>
 
+<svelte:window bind:innerWidth={windowWidth} />
 <svelte:body on:mousemove={handleMouseMove} on:touchmove={handleTouchMove} />
 <BaseSlide
   dialogs={props.dialogs}
@@ -81,7 +91,7 @@
         on:mouseup={setActiveFalse}
         on:touchstart={setActiveTrue}
         on:touchend={setActiveFalse}
-        style="left: {index * (50 / props.totalItems) + 25}%; bottom: {props.bottomPosition +
+        style="left: {getItemSpacing(index)}%; bottom: {props.bottomPosition +
           randomRange(-10, 10)}%"
       >
         <svelte:component this={props.itemComponent} picked={pickedItems.has(index)} />

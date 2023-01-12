@@ -7,7 +7,7 @@
 
   export let picked = false;
 
-  const rotation = randomRange(-10, 10);
+  const rotation = randomRange(-40, 40);
   const flip = randomBool() ? 1 : -1;
 </script>
 
