@@ -45,10 +45,21 @@
           label: 'Cane',
           src: `${base}/img/sugar-cane-water/cane3.jpg`
         },
-
         {
-          label: 'Carrot',
+          label: 'Carrots',
           src: `${base}/img/sugar-cane-water/carrot.png`
+        },
+        {
+          label: 'Figs',
+          src: `${base}/img/sugar-cane-water/figs.png`
+        },
+        {
+          label: 'Almonds',
+          src: `${base}/img/sugar-cane-water/almond-bowl.png`
+        },
+        {
+          label: 'Rock sugar',
+          src: `${base}/img/sugar-cane-water/rock-sugar.png`
         }
       ]}
     />
@@ -63,7 +74,6 @@
         <li>3kg x fresh sugarcane</li>
         <li>12L x water</li>
         <li>4 x carrots</li>
-        <li>10 x Mut jo – Chinese figs/dates</li>
         <li>Handful of yellow rock sugar</li>
         <li>Handful of Chinese almonds (lam bak (north) ham)</li>
         <li>10 x Mut jo – Chinese figs/dates – add natural sweetness</li>
@@ -95,7 +105,7 @@
         },
         {
           label: 'Tub',
-          src: `${base}/img/sugar-cane-water/tub.jpg`
+          src: `${base}/img/sugar-cane-water/tub.png`
         }
       ]}
     />
