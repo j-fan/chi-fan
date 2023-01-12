@@ -3,7 +3,6 @@
   import type { PickItemsSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
 
-  const seed = 0.34987;
   let mouseX = 200;
   let mouseY = 200;
   let isIntersecting = false;
@@ -82,7 +81,7 @@
         on:mouseup={setActiveFalse}
         on:touchstart={setActiveTrue}
         on:touchend={setActiveFalse}
-        style="left: {smoothRandomRange(-20, 100, index, 0, seed)}%; bottom: {props.bottomPosition +
+        style="left: {index * (50 / props.totalItems) + 25}%; bottom: {props.bottomPosition +
           randomRange(-10, 10)}%"
       >
         <svelte:component this={props.itemComponent} picked={pickedItems.has(index)} />
