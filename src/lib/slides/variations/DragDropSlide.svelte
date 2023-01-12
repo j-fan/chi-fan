@@ -82,7 +82,7 @@
             <svelte:component this={movedItem} />
           </div>
           <div class="splash">
-            {#if props.confettiProps}
+            {#if props.confettiProps && movedItem !== null}
               <Confetti {...props.confettiProps} />
             {/if}
           </div>
