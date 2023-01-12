@@ -11,7 +11,7 @@
   let kitchenIsExpanded = false;
   let width = 0;
 
-  const openDoors = () => {
+  const toggleDoors = () => {
     doorIsOpen = !doorIsOpen;
     kitchenIsExpanded = false;
   };
@@ -57,7 +57,7 @@
     class:hidden={kitchenIsExpanded}
     src={doorImgLeft}
     alt="door-left"
-    on:click={openDoors}
+    on:click={toggleDoors}
   />
   <img
     class="right-door"
@@ -65,7 +65,7 @@
     class:hidden={kitchenIsExpanded}
     src={doorImgRight}
     alt="door-right"
-    on:click={openDoors}
+    on:click={toggleDoors}
   />
 
   {#if kitchenIsExpanded}
@@ -82,14 +82,22 @@
     display: flex;
     position: relative;
     height: 70vh;
-    /* TODO: fix width animtion */
+
     width: auto;
+
     flex-shrink: 0;
     border: var(--border-style);
 
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: height 400ms ease, width 400ms ease;
+  }
+
+  @media (max-width: 600px) {
+    /* Hide open doors on mobile due to side scroll issues */
+    .door {
+      overflow: hidden;
+    }
   }
 
   .door.open {
@@ -145,7 +153,7 @@
     cursor: pointer;
     max-width: 100%;
     max-height: 100%;
-    aspect-ratio: 2.08 / 9;
+    aspect-ratio: 400 / 985;
   }
 
   .left-door.hidden,
