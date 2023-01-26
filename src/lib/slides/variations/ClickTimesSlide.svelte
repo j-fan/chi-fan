@@ -16,6 +16,8 @@
   let dragRef: HTMLElement;
   let isIntersecting = false;
   let clicks = 0;
+  let isHolding = false; // TODO: Decide whether holding the mouse is requirement
+  let holdStartTime: number | undefined;
 
   const handleMouseMove = (event: MouseEvent) => {
     const targetBoundingBox = targetRef.getBoundingClientRect();
@@ -27,6 +29,14 @@
     const targetBoundingBox = targetRef.getBoundingClientRect();
     mouseX = event.changedTouches[0].clientX - targetBoundingBox.x - dragElementWidth / 2;
     mouseY = event.changedTouches[0].clientY - targetBoundingBox.y - dragElementHeight / 2;
+
+    if (isIntersecting && isHolding) {
+      const timeNow = new Date().getTime();
+      if (holdStartTime && timeNow - holdStartTime > 700) {
+        clicks = clamp(clicks + 1, 0, props.targetClicks);
+        holdStartTime = timeNow;
+      }
+    }
   };
 
   onMount(() => {
@@ -47,6 +57,15 @@
       observer.disconnect();
     };
   });
+
+  const handleHoldStart = () => {
+    isHolding = true;
+    holdStartTime = new Date().getTime();
+  };
+  const handleHoldEnd = () => {
+    isHolding = false;
+    holdStartTime = undefined;
+  };
 
   setNoScrollBody();
 </script>
@@ -69,6 +88,10 @@
     }}
     on:mousemove={handleMouseMove}
     on:touchmove={handleTouchMove}
+    on:touchstart={handleHoldStart}
+    on:mousedown={handleHoldStart}
+    on:touchend={handleHoldEnd}
+    on:mouseup={handleHoldEnd}
   >
     <div class="target" bind:this={targetRef}>
       <svelte:component this={props.targetComponent} progress={clicks / props.targetClicks} />
