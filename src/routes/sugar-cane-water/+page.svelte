@@ -146,7 +146,7 @@
 
     <Section align="center" width="100%" aos="fade-up">
       <Image
-        src="{base}/img/sugar-cane-water/cutting-cane-together.jpg"
+        src="{base}/img/sugar-cane-water/cane-cutting-equipment.jpg"
         alt="Cutting sugar cane together"
       />
     </Section>
