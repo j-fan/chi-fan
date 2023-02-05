@@ -14,7 +14,9 @@
     <div>
       <slot />
     </div>
-    <Image src={imageSrc} {alt} width="auto" />
+    <div>
+      <Image src={imageSrc} {alt} width="auto" />
+    </div>
   </div>
 </Section>
 
@@ -27,19 +29,11 @@
 
   .content > * {
     width: 50%;
-  }
-
-  .content.right {
-    flex-direction: row;
-  }
-
-  .content.left {
-    flex-direction: row-reverse;
+    flex-grow: 0;
   }
 
   @media (max-width: 700px) {
-    .content.right,
-    .content.left {
+    .content {
       flex-direction: column;
     }
 
