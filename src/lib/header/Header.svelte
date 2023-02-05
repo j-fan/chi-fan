@@ -25,6 +25,7 @@
     justify-content: center;
     z-index: 99;
     pointer-events: none;
+    transform: translateZ(1000px);
   }
 
   nav {

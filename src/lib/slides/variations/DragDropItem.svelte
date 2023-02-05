@@ -41,10 +41,5 @@
     background-color: var(--c-white);
     font-size: small;
     transition: all 0.3s ease;
-    opacity: 0;
-  }
-
-  .wrapper:hover .label {
-    opacity: 1;
   }
 </style>
