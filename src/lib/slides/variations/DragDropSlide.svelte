@@ -45,7 +45,7 @@
   };
 
   // Ditch drag and drop for mobile because if UX issues, use taps instead
-  const handleTouch = (currentItem: typeof SvelteComponent) => (event: TouchEvent) => {
+  const handleTouch = (currentItem: typeof SvelteComponent) => () => {
     const indexToRemove = pendingItems.indexOf(currentItem);
     pendingItems.splice(indexToRemove, 1);
     pendingItems = pendingItems;
@@ -70,6 +70,7 @@
           draggable={true}
           on:dragstart={handleDragStart(pendingItem)}
           on:touchend={handleTouch(pendingItem)}
+          on:click={handleTouch(pendingItem)}
         >
           <svelte:component this={pendingItem} />
         </div>

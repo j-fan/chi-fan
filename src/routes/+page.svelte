@@ -35,6 +35,8 @@
     width: 100%;
     margin-bottom: 1rem;
     padding: 0 6rem;
+    object-fit: contain;
+    height: min-content;
   }
 
   @media (max-width: 600px) {
