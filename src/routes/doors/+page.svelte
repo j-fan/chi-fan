@@ -18,23 +18,6 @@
         alt="the kitchen inside the door"
       />
     </Doors>
-    <Doors link="{base}/about">
-      <img
-        class="interior-img"
-        slot="doorInside"
-        src="{base}/img/recipe2/interior.jpg"
-        alt="the kitchen inside the door"
-      />
-    </Doors>
-    <Doors link="{base}/about">
-      <img
-        class="interior-img"
-        slot="doorInside"
-        src="{base}/img/recipe3/interior.jpg"
-        alt="the kitchen inside the door"
-      />
-    </Doors>
-    <Doors link="{base}/about" />
   </div>
 </div>
 
