@@ -1,35 +1,35 @@
 const h = [
-  "/chi-fan/_app/immutable/assets/Button-8ca56c60.css",
   "/chi-fan/_app/immutable/assets/_page-f8c4be9b.css",
-  "/chi-fan/_app/immutable/assets/_page-9270ebd8.css",
+  "/chi-fan/_app/immutable/assets/Button-8ca56c60.css",
   "/chi-fan/_app/immutable/assets/_page-0474a705.css",
+  "/chi-fan/_app/immutable/assets/_page-9270ebd8.css",
   "/chi-fan/_app/immutable/assets/_layout-1b75bc95.css",
-  "/chi-fan/_app/immutable/assets/_page-c6131e37.css",
-  "/chi-fan/_app/immutable/chunks/4-8365757d.js",
-  "/chi-fan/_app/immutable/chunks/paths-b4419565.js",
-  "/chi-fan/_app/immutable/modules/pages/_layout.ts-9cbb603b.js",
-  "/chi-fan/_app/immutable/chunks/stores-eae1ee91.js",
+  "/chi-fan/_app/immutable/assets/_page-543ee0e7.css",
+  "/chi-fan/_app/immutable/components/pages/about/_page.svelte-7fcf4298.js",
+  "/chi-fan/_app/immutable/chunks/3-bcd510a7.js",
+  "/chi-fan/_app/immutable/chunks/5-98a34d71.js",
   "/chi-fan/_app/immutable/modules/pages/about/_page.ts-08c78b37.js",
-  "/chi-fan/_app/immutable/chunks/3-4afc747e.js",
-  "/chi-fan/_app/immutable/components/pages/_page.svelte-59ab13b5.js",
-  "/chi-fan/_app/immutable/chunks/1-25da7940.js",
-  "/chi-fan/_app/immutable/components/error.svelte-19874d42.js",
-  "/chi-fan/_app/immutable/components/pages/about/_page.svelte-36882516.js",
-  "/chi-fan/_app/immutable/chunks/Button-56f11305.js",
-  "/chi-fan/_app/immutable/chunks/2-8b763159.js",
-  "/chi-fan/_app/immutable/chunks/5-f59a8473.js",
-  "/chi-fan/_app/immutable/chunks/singletons-98408e58.js",
-  "/chi-fan/_app/immutable/chunks/0-dcf9bd1f.js",
-  "/chi-fan/_app/immutable/chunks/_layout-da46b06b.js",
-  "/chi-fan/_app/immutable/chunks/index-0d1e6808.js",
-  "/chi-fan/_app/immutable/chunks/6-9d8cac0e.js",
+  "/chi-fan/_app/immutable/chunks/stores-fc6bd72c.js",
+  "/chi-fan/_app/immutable/chunks/2-fa5fe84d.js",
+  "/chi-fan/_app/immutable/chunks/4-7a39f6f0.js",
+  "/chi-fan/_app/immutable/chunks/6-850d230b.js",
+  "/chi-fan/_app/immutable/chunks/0-0815e176.js",
+  "/chi-fan/_app/immutable/components/error.svelte-85d67817.js",
+  "/chi-fan/_app/immutable/chunks/index-8aaa977a.js",
   "/chi-fan/_app/immutable/chunks/_page-3afc52e2.js",
-  "/chi-fan/_app/immutable/chunks/index-ab16b1b5.js",
-  "/chi-fan/_app/immutable/start-05e7bd24.js",
-  "/chi-fan/_app/immutable/components/pages/doors/_page.svelte-e0f1cd59.js",
-  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/_page.svelte-d37be9e0.js",
-  "/chi-fan/_app/immutable/components/pages/_layout.svelte-f00c78b5.js",
-  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/intro/_page.svelte-734b9ebf.js"
+  "/chi-fan/_app/immutable/chunks/paths-b4419565.js",
+  "/chi-fan/_app/immutable/components/pages/_page.svelte-3b884f29.js",
+  "/chi-fan/_app/immutable/chunks/singletons-ee5d0f7d.js",
+  "/chi-fan/_app/immutable/chunks/_layout-da46b06b.js",
+  "/chi-fan/_app/immutable/chunks/1-4200a692.js",
+  "/chi-fan/_app/immutable/modules/pages/_layout.ts-9cbb603b.js",
+  "/chi-fan/_app/immutable/chunks/Button-815f03c7.js",
+  "/chi-fan/_app/immutable/components/pages/_layout.svelte-5a14b05e.js",
+  "/chi-fan/_app/immutable/chunks/index-39773980.js",
+  "/chi-fan/_app/immutable/components/pages/doors/_page.svelte-5aa9d312.js",
+  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/_page.svelte-70ec9767.js",
+  "/chi-fan/_app/immutable/start-de9375a2.js",
+  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/intro/_page.svelte-22785f81.js"
 ], o = [
   "/chi-fan/.nojekyll",
   "/chi-fan/favicon.png",
@@ -41,6 +41,8 @@ const h = [
   "/chi-fan/img/door-right.jpg",
   "/chi-fan/img/home-banner.png",
   "/chi-fan/img/home-bg.jpg",
+  "/chi-fan/img/speaker-off.png",
+  "/chi-fan/img/speaker-on.png",
   "/chi-fan/img/sugar-cane-water/almond-bowl.png",
   "/chi-fan/img/sugar-cane-water/almond-flake.png",
   "/chi-fan/img/sugar-cane-water/board-bg.jpg",
@@ -75,56 +77,57 @@ const h = [
   "/chi-fan/img/sugar-cane-water/washing-cane-clean.png",
   "/chi-fan/img/sugar-cane-water/washing-cane-dirty.png",
   "/chi-fan/manifest.json",
-  "/chi-fan/robots.txt"
-], p = "1675766478316", t = self, g = `cache${p}`, s = h.concat(
+  "/chi-fan/robots.txt",
+  "/chi-fan/sound/sugar-cane.mp3"
+], p = "1676592336804", i = self, g = `cache${p}`, t = h.concat(
   // Exclude this github pages related file, breaks the service worker
   o.filter((a) => a !== "/.nojekyll")
-), m = new Set(s);
-t.addEventListener("install", (a) => {
+), f = new Set(t);
+i.addEventListener("install", (a) => {
   a.waitUntil(
-    caches.open(g).then(async (e) => {
+    caches.open(g).then(async (n) => {
       try {
-        await e.addAll(s);
+        await n.addAll(t);
       } catch {
         console.warn("cache.addAll failed, attempting to add files individually");
-        for await (const c of s)
+        for await (const c of t)
           try {
-            await e.add(c);
+            await n.add(c);
           } catch {
             console.warn("This file could not be added:", c);
           }
       }
     }).then(() => {
-      t.skipWaiting();
+      i.skipWaiting();
     })
   );
 });
-t.addEventListener("activate", (a) => {
+i.addEventListener("activate", (a) => {
   a.waitUntil(
-    caches.keys().then(async (e) => {
-      for (const n of e)
-        n !== g && await caches.delete(n);
-      t.clients.claim();
+    caches.keys().then(async (n) => {
+      for (const e of n)
+        e !== g && await caches.delete(e);
+      i.clients.claim();
     })
   );
 });
-async function u(a) {
-  const e = await caches.open(`offline${p}`);
+async function m(a) {
+  const n = await caches.open(`offline${p}`);
   try {
-    const n = await fetch(a);
-    return e.put(a, n.clone()), n;
-  } catch (n) {
-    const c = await e.match(a);
+    const e = await fetch(a);
+    return n.put(a, e.clone()), e;
+  } catch (e) {
+    const c = await n.match(a);
     if (c)
       return c;
-    throw n;
+    throw e;
   }
 }
-t.addEventListener("fetch", (a) => {
+i.addEventListener("fetch", (a) => {
   if (a.request.method !== "GET" || a.request.headers.has("range"))
     return;
-  const e = new URL(a.request.url), n = e.protocol.startsWith("http"), c = e.hostname === self.location.hostname && e.port !== self.location.port, i = e.host === self.location.host && m.has(e.pathname), r = a.request.cache === "only-if-cached" && !i;
-  n && !c && !r && a.respondWith(
-    (async () => i && await caches.match(a.request) || u(a.request))()
+  const n = new URL(a.request.url), e = n.protocol.startsWith("http"), c = n.hostname === self.location.hostname && n.port !== self.location.port, s = n.host === self.location.host && f.has(n.pathname), r = a.request.cache === "only-if-cached" && !s;
+  e && !c && !r && a.respondWith(
+    (async () => s && await caches.match(a.request) || m(a.request))()
   );
 });
