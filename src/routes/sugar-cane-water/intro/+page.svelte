@@ -16,12 +16,14 @@
   import Almonds from './DragDropItems/Almonds.svelte';
   import Figs from './DragDropItems/Figs.svelte';
   import RockSugar from './DragDropItems/RockSugar.svelte';
+  import SoundControls from '$lib/sound/SoundControls.svelte';
 
   let windowWidth = 9999;
   $: isMobile = windowWidth < 500;
 </script>
 
 <svelte:window bind:innerWidth={windowWidth} />
+<SoundControls src="{base}/sound/sugar-cane.mp3" />
 <Slides
   skipButtonUrl="/sugar-cane-water"
   slides={[

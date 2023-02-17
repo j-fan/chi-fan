@@ -1,0 +1,76 @@
+<script lang="ts">
+  import { base } from '$app/paths';
+  import { onMount } from 'svelte';
+
+  export let src = '';
+  let audio: HTMLAudioElement | null = null;
+  let interactionStarted = false;
+
+  $: {
+    if (interactionStarted) {
+      playSound();
+      audioUpdated();
+    }
+  }
+
+  const playSound = () => {
+    if (audio) {
+      audio.play();
+    }
+  };
+
+  const pauseSound = () => {
+    if (audio) {
+      audio.pause();
+    }
+  };
+
+  const audioUpdated = () => {
+    audio = audio;
+  };
+
+  const setInteractionStarted = () => {
+    interactionStarted = true;
+  };
+</script>
+
+<svelte:window on:click={setInteractionStarted} on:touchstart={setInteractionStarted} />
+<audio
+  bind:this={audio}
+  on:pause={audioUpdated}
+  on:play={audioUpdated}
+  on:ended={audioUpdated}
+  loop
+  {src}
+/>
+<div class="sound-controls">
+  {#if audio?.paused}
+    <button on:click|stopPropagation={playSound}>
+      <img src="{base}/img/speaker-off.png" alt="sound off" />
+    </button>
+  {:else}
+    <button on:click|stopPropagation={pauseSound}>
+      <img src="{base}/img/speaker-on.png" alt="sound on" />
+    </button>
+  {/if}
+</div>
+
+<style>
+  .sound-controls {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+</style>
