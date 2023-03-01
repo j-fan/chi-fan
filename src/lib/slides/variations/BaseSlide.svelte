@@ -1,5 +1,6 @@
 <script lang="ts">
   import DialogBox from '../DialogBox.svelte';
+  import ProgressBar from '../ProgressBar.svelte';
   import type { Dialog, Dialogs } from '../types';
 
   export let dialogs: Dialogs;
@@ -14,7 +15,9 @@
 <div class="wrapper">
   <div class="slide-content" style="background-image: url({bgImage});">
     {#if progressNum !== undefined && progressTotal !== undefined}
-      <p class="progress">Progress: {progressNum} / {progressTotal}</p>
+      <div class="progress">
+        <ProgressBar {progressNum} {progressTotal} />
+      </div>
     {/if}
     <slot />
   </div>
@@ -43,5 +46,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
+    width: 500px;
+    max-width: 90%;
   }
 </style>
