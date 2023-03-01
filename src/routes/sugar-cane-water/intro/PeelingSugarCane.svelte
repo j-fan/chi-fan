@@ -1,19 +1,35 @@
 <script lang="ts">
   import { base } from '$app/paths';
-  import { clamp } from '$lib/utils/math';
 
   export let progress = 0;
-  $: brightness = clamp(progress / 3 + 0.7, 0, 1);
 
-  const src = `${base}/img/sugar-cane-water/cut-cane.png`;
+  const cleanImg = `${base}/img/sugar-cane-water/cut-cane-knobbly.png`;
+  const dirtyImg = `${base}/img/sugar-cane-water/cut-cane-peeled.png`;
 </script>
 
-<div class="wrapper" style="filter: brightness({brightness}); background-image: url({src});" />
+<div class="wrapper">
+  <div class="image" style="background-image: url({cleanImg});" />
+  <div class="image" style="opacity: {progress}; background-image: url({dirtyImg});" />
+</div>
 
 <style>
   .wrapper {
-    width: 57px;
-    height: 540px;
+    position: relative;
+    width: calc(57px * 1);
+    height: calc(540px * 1);
+  }
+
+  @media (max-width: 600px) {
+    .wrapper {
+      width: calc(57px * 1);
+      height: calc(540px * 1);
+    }
+  }
+
+  .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
