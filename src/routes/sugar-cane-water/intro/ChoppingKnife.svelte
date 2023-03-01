@@ -20,15 +20,16 @@
     background-repeat: no-repeat;
     filter: drop-shadow(15px 15px 6px rgba(0, 0, 0, 0.5));
     cursor: none;
+    transform: translateY(30%);
   }
 
   .wrapper.isIntersecting {
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
-    transform: scale(0.9);
+    transform: scale(0.9) translateY(30%);
   }
 
   .wrapper.isActive {
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
-    transform: scale(0.9) rotate(75deg);
+    transform: scale(0.9) rotate(75deg) translateY(30%);
   }
 </style>
