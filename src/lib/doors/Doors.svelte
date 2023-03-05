@@ -3,8 +3,8 @@
   import Button from '$lib/button/Button.svelte';
   import { fade } from 'svelte/transition';
 
-  export let doorImgLeft = `${base}/img/door-left.jpg`;
-  export let doorImgRight = `${base}/img/door-right.jpg`;
+  export let doorImgLeft = `${base}/img/sugar-cane-water/door-left.jpg`;
+  export let doorImgRight = `${base}/img/sugar-cane-water/door-right.jpg`;
   export let link: string | undefined = undefined;
 
   let doorIsOpen = false;
