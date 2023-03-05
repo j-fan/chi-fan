@@ -92,7 +92,7 @@
   }
 
   img {
-    width: 50%;
+    width: 40%;
     aspect-ratio: 900 / 769;
     z-index: 2;
     animation: bounce 1.5s ease;
@@ -110,7 +110,18 @@
     opacity: 0;
   }
 
-  @media (max-width: 820px) {
+  @media (max-width: 1600px) {
+    .content {
+      width: 70%;
+      height: 70%;
+    }
+
+    img {
+      width: 55%;
+    }
+  }
+
+  @media (max-width: 600px) {
     .content {
       width: 90vw;
       height: 90vw;

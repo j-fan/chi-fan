@@ -6,6 +6,7 @@
   export let doorImgLeft = `${base}/img/sugar-cane-water/door-left.jpg`;
   export let doorImgRight = `${base}/img/sugar-cane-water/door-right.jpg`;
   export let link: string | undefined = undefined;
+  export let aspectRatio = '513 / 900';
 
   let doorIsOpen = false;
   let kitchenIsExpanded = false;
@@ -36,7 +37,7 @@
   class="door"
   class:open={doorIsOpen}
   class:expanded={kitchenIsExpanded}
-  style="left: {doorIsOpen ? `calc(50vw - ${width / 2}px)` : '0px'}"
+  style="left: {doorIsOpen ? `calc(50vw - ${width / 2}px)` : '0px'}; --aspectRatio={aspectRatio}"
 >
   {#if doorIsOpen}
     <div class="door-bg" transition:fade />
@@ -153,7 +154,7 @@
     cursor: pointer;
     max-width: 100%;
     max-height: 100%;
-    aspect-ratio: 400 / 985;
+    aspect-ratio: var(--aspect-ratio);
   }
 
   .left-door.hidden,

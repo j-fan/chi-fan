@@ -4,6 +4,7 @@
   import DragDropSlide from './DragDropSlide.svelte';
   import FinishedSlide from './FinishedSlide.svelte';
   import PickItemsSlide from './PickItemsSlide.svelte';
+  import StaticSlide from './StaticSlide.svelte';
 
   export let props: Slide;
 </script>
@@ -16,6 +17,8 @@
   <DragDropSlide {props} />
 {:else if props.type === 'finished'}
   <FinishedSlide {props} />
+{:else if props.type === 'static'}
+  <StaticSlide {props} />
 {:else}
   <div>Unknown slide type</div>
 {/if}

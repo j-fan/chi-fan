@@ -12,7 +12,7 @@ export type Dialog = {
 };
 export type Dialogs = Array<Dialog>;
 
-export type SlideType = 'pick-items' | 'click-times' | 'drag-drop' | 'finished';
+export type SlideType = 'pick-items' | 'click-times' | 'drag-drop' | 'finished' | 'static';
 export type BaseSlideType = {
   type: SlideType;
   dialogs: Dialogs;
@@ -59,10 +59,17 @@ export type FinishedSlideType = {
   title: string;
 } & Omit<BaseSlideType, 'dialogs' | 'errorStep'>;
 
+export type StaticSlideType = {
+  type: 'static';
+  heroImage: string;
+  alt: string;
+} & Omit<BaseSlideType, 'dialogs' | 'errorStep'>;
+
 export type Slide =
   | PickItemsSlideType
   | ClickTimesSlideType
   | DragDropSlideType
-  | FinishedSlideType;
+  | FinishedSlideType
+  | StaticSlideType;
 
 export type SlidesType = Array<Slide>;

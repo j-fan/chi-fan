@@ -22,6 +22,7 @@
       link="{base}/taro-rice/intro"
       doorImgLeft="{base}/img/taro-rice/door-left.jpg"
       doorImgRight="{base}/img/taro-rice/door-right.jpg"
+      aspectRatio="500 / 847"
     >
       <img
         class="interior-img"
