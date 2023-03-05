@@ -104,20 +104,25 @@
     color: var(--c-pink);
     /* -webkit-text-stroke: 2px white; */
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 3px 0 #000;
+    text-align: center;
   }
 
   h1.title-placeholder {
     opacity: 0;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
     .content {
-      width: 90%;
-      height: 90%;
+      width: 90vw;
+      height: 90vw;
     }
 
     img {
       width: 80%;
+    }
+
+    h1 {
+      font-size: 3rem;
     }
   }
 </style>
