@@ -7,6 +7,7 @@
   import Section from '$lib/article/Section.svelte';
   import SectionGroup from '$lib/article/SectionGroup.svelte';
   import SectionWithImage from '$lib/article/SectionWithImage.svelte';
+  import RedTitle from '$lib/text/RedTitle.svelte';
 </script>
 
 <svelte:head>
@@ -16,7 +17,7 @@
 
 <Article>
   <FullWidthBanner src="{base}/img/sugar-cane-water/interior.jpg" alt="kitchen interior" />
-  <h1>Sugar cane water</h1>
+  <RedTitle>Sugar cane water</RedTitle>
   <SectionGroup gap="4rem">
     <Section align="center" width="100%">By Dylan Goh</Section>
     <SectionWithImage
@@ -190,11 +191,3 @@
     </Section>
   </SectionGroup>
 </Article>
-
-<style>
-  h1 {
-    color: var(--c-red);
-    text-align: center;
-    margin: 1rem 0;
-  }
-</style>

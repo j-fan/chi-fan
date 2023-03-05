@@ -22,6 +22,9 @@
   $: isMobile = windowWidth < 500;
 </script>
 
+<svelte:head>
+  <title>Sugar cane water</title>
+</svelte:head>
 <svelte:window bind:innerWidth={windowWidth} />
 <SoundControls src="{base}/sound/sugar-cane.mp3" />
 <Slides

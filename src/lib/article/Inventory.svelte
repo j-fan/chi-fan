@@ -49,7 +49,7 @@
   }
 
   .cell:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: var(--drop-shadow-sm);
     z-index: 1;
   }
