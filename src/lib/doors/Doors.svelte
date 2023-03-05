@@ -86,7 +86,7 @@
     width: auto;
 
     flex-shrink: 0;
-    border: var(--border-style);
+    border: 3px solid var(--c-black);
 
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;

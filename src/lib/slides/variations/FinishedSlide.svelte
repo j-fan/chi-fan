@@ -102,7 +102,6 @@
   h1 {
     z-index: 2;
     color: var(--c-pink);
-    /* -webkit-text-stroke: 2px white; */
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 3px 0 #000;
     text-align: center;
   }

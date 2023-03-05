@@ -15,7 +15,19 @@
         class="interior-img"
         slot="doorInside"
         src="{base}/img/sugar-cane-water/interior.jpg"
-        alt="the kitchen inside the door"
+        alt="kitchen of the sugar cane water recipe"
+      />
+    </Doors>
+    <Doors
+      link="{base}/taro-rice/intro"
+      doorImgLeft="{base}/img/taro-rice/door-left.jpg"
+      doorImgRight="{base}/img/taro-rice/door-right.jpg"
+    >
+      <img
+        class="interior-img"
+        slot="doorInside"
+        src="{base}/img/sugar-cane-water/interior.jpg"
+        alt="kitchen of the taro fried rice recipe"
       />
     </Doors>
   </div>
