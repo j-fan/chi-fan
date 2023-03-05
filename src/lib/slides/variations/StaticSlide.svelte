@@ -40,9 +40,13 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
+    padding-bottom: 5%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   img {
-    height: 50%;
+    height: 40%;
+    object-fit: contain;
   }
 </style>
