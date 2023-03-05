@@ -32,16 +32,15 @@
   }
 
   img {
-    width: 100%;
     margin-bottom: 1rem;
-    padding: 0 6rem;
-    object-fit: contain;
-    height: min-content;
+    width: 70%;
+    aspect-ratio: 92 / 72;
   }
 
   @media (max-width: 600px) {
     img {
       padding: 0;
+      width: 90%;
     }
   }
 </style>
