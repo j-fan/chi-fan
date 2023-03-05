@@ -7,7 +7,7 @@
   import Shears from './Shears.svelte';
   import SugarCane from './SugarCane.svelte';
   import WashingSugarCane from './WashingSugarCane.svelte';
-  import ChoppingKnife from './ChoppingKnife.svelte';
+  import ChoppingKnife from '../../../lib/tools/ChoppingKnife.svelte';
   import PeelingKnife from './PeelingKnife.svelte';
   import SplittingSugarCane from './SplittingSugarCane.svelte';
   import BoilingPot from './BoilingPot.svelte';
@@ -155,7 +155,7 @@
       targetComponent: CuttingSugarCane,
       toolComponent: Shears,
       targetClicks: 3,
-      bgImage: `${base}/img/sugar-cane-water/board-bg.jpg`,
+      bgImage: `${base}/img/board-bg.jpg`,
       confettiProps: {
         colorArray: ['#B6C48F', '#627620'],
         size: 20,
@@ -192,7 +192,7 @@
       targetCount: 4,
       totalItems: 4,
       itemComponent: SplittingSugarCane,
-      bgImage: `${base}/img/sugar-cane-water/board-bg.jpg`,
+      bgImage: `${base}/img/board-bg.jpg`,
       toolComponent: ChoppingKnife,
       bottomPosition: 50
     },

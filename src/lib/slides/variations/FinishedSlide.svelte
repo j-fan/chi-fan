@@ -52,6 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10%;
   }
 
   @keyframes rotate {
@@ -132,7 +133,7 @@
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
 </style>

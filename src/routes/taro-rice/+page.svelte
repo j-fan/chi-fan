@@ -60,7 +60,7 @@
         },
         {
           label: 'Taro',
-          src: `${base}/img/taro-rice/taro 1.png`
+          src: `${base}/img/taro-rice/taro-1.png`
         },
         {
           label: 'Spring onion',

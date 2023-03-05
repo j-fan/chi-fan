@@ -91,8 +91,11 @@
         on:mouseup={setActiveFalse}
         on:touchstart={setActiveTrue}
         on:touchend={setActiveFalse}
-        style="left: {getItemSpacing(index)}%; bottom: {props.bottomPosition +
-          randomRange(-10, 10)}%"
+        style={props.totalItems > 1
+          ? `left: ${getItemSpacing(index)}%; bottom: ${
+              props.bottomPosition + randomRange(-20, 10)
+            }%`
+          : 'left: 50%; transform: translate(-50%, -50%); top: 50%;'}
       >
         <svelte:component this={props.itemComponent} picked={pickedItems.has(index)} />
       </div>
