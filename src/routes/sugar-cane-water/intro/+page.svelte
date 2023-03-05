@@ -224,7 +224,7 @@
       successStep: {
         characterName: 'Grandpa',
         bodyText: 'Looks good. Let it boil for 40 minutes and it will be ready to serve.',
-        nextButton: { text: 'Keen to try it!', href: '/sugar-cane-water' }
+        nextButton: { text: 'Keen to try it!' }
       },
       dropZone: BoilingPot,
       dragItems: [Carrot, SugarCanePiece, Almonds, Figs, RockSugar],
@@ -236,6 +236,16 @@
         delay: [500, 500],
         duration: 800,
         colorArray: ['#cbc7b7', '#dadec2']
+      }
+    },
+    {
+      type: 'finished',
+      heroImage: `${base}/img/sugar-cane-water/completed.png`,
+      title: '✨ Sugar cane water ✨',
+      successStep: {
+        characterName: 'Grandpa',
+        bodyText: "Well done, you've made sugar cane water!",
+        nextButton: { text: 'Done!', href: '/sugar-cane-water' }
       }
     }
   ]}

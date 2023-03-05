@@ -12,7 +12,7 @@ export type Dialog = {
 };
 export type Dialogs = Array<Dialog>;
 
-export type SlideType = 'pick-items' | 'click-times' | 'drag-drop';
+export type SlideType = 'pick-items' | 'click-times' | 'drag-drop' | 'finished';
 export type BaseSlideType = {
   type: SlideType;
   dialogs: Dialogs;
@@ -53,5 +53,16 @@ export type DragDropSlideType = {
   confettiProps?: ConfettiProps;
 } & BaseSlideType;
 
-export type Slide = PickItemsSlideType | ClickTimesSlideType | DragDropSlideType;
+export type FinishedSlideType = {
+  type: 'finished';
+  heroImage: string;
+  title: string;
+} & Omit<BaseSlideType, 'dialogs' | 'errorStep'>;
+
+export type Slide =
+  | PickItemsSlideType
+  | ClickTimesSlideType
+  | DragDropSlideType
+  | FinishedSlideType;
+
 export type SlidesType = Array<Slide>;
