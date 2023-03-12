@@ -34,7 +34,7 @@
     justify-content: center;
     background-color: var(--c-white);
     width: fit-content;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     margin: 1rem;
 
     border-radius: var(--border-radius);

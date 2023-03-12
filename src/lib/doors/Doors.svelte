@@ -108,7 +108,7 @@
   }
 
   .door.expanded {
-    height: 102%;
+    height: 120%;
     width: 102%;
   }
 
