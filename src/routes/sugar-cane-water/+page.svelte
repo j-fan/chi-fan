@@ -60,7 +60,7 @@
         },
         {
           label: 'Rock sugar',
-          src: `${base}/img/sugar-cane-water/rock-sugar.png`
+          src: `${base}/img/sugar-cane-water/rock-sugar-box.png`
         }
       ]}
     />
