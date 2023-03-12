@@ -1,23 +1,22 @@
 <script lang="ts">
   import { base } from '$app/paths';
+  import { randomBool, randomRange } from '$lib/utils/random';
 
-  export let beforeChop = '';
-  export let afterChop = '';
-  export let itemWidth: string;
+  const beforeSplit = `${base}/img/taro-rice/single-mushroom.png`;
+  const afterSplit = `${base}/img/taro-rice/sliced-mushroom.png`;
+
   export let picked = false;
+
+  const rotation = randomRange(-40, 40);
+  const flip = randomBool() ? 1 : -1;
 </script>
 
-<!-- <div
+<div
   class="wrapper"
   class:picked
-  style="background-image: url({picked ? afterSplit : beforeChop}); --item-width:{width};"
-/> -->
-<img
-  class="wrapper"
-  class:picked
-  src={picked ? afterChop : beforeChop}
-  alt="chopped item"
-  style="--item-width:{itemWidth};"
+  style="background-image: url({picked
+    ? afterSplit
+    : beforeSplit}); transform: rotate({rotation}deg) scaleX({flip});"
 />
 
 <style>
@@ -27,8 +26,8 @@
     background-position: center center;
     background-repeat: no-repeat;
     filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 1));
-    width: var(--item-width);
-    max-width: 100%;
+    width: 250px;
+    height: 250px;
     z-index: 1;
     position: relative;
   }
