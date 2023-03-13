@@ -206,7 +206,7 @@
       successStep: {
         characterName: 'Mum',
         bodyText: "Well done, you've made taro fried rice!",
-        nextButton: { text: 'Done!', href: '/sugar-cane-water' }
+        nextButton: { text: 'Done!', href: '/taro-rice' }
       }
     }
   ]}
