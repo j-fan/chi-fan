@@ -69,7 +69,7 @@
     object-fit: cover;
   }
 
-  @media (max-height: 820px) {
+  @media (max-height: 750px) {
     .message {
       border: var(--border-style);
     }
