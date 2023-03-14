@@ -244,7 +244,7 @@
     {
       type: 'finished',
       heroImage: `${base}/img/sugar-cane-water/completed.png`,
-      title: '✨ Sugar cane water ✨',
+      title: '☆ Sugar cane water ☆',
       successStep: {
         characterName: 'Grandpa',
         bodyText: "Well done, you've made sugar cane water!",

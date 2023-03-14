@@ -202,7 +202,7 @@
     {
       type: 'finished',
       heroImage: `${base}/img/taro-rice/completed.png`,
-      title: '✨ Taro fried rice ✨',
+      title: '☆ Taro fried rice ☆',
       successStep: {
         characterName: 'Mum',
         bodyText: "Well done, you've made taro fried rice!",
