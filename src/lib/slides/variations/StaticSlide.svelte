@@ -46,7 +46,7 @@
   }
 
   img {
-    height: 40%;
+    height: 45%;
     object-fit: contain;
   }
 </style>

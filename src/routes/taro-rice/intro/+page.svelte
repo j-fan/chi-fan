@@ -22,7 +22,7 @@
   slides={[
     {
       type: 'static',
-      heroImage: `${base}/img/taro-rice/rice bowl.png`,
+      heroImage: `${base}/img/taro-rice/wash-rice.png`,
       alt: 'washing rice',
       successStep: {
         characterName: 'Mum',
@@ -63,7 +63,7 @@
     },
     {
       type: 'static',
-      heroImage: `${base}/img/taro-rice/rice bowl.png`,
+      heroImage: `${base}/img/taro-rice/rice-cooker.png`,
       alt: 'washing rice',
       successStep: {
         characterName: 'Mum',
