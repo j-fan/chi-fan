@@ -1,43 +1,43 @@
 const o = [
   "/chi-fan/_app/immutable/assets/_page-ac211827.css",
-  "/chi-fan/_app/immutable/assets/_page-2f5d92e8.css",
+  "/chi-fan/_app/immutable/assets/Button-8ca56c60.css",
   "/chi-fan/_app/immutable/assets/RedTitle-438b38bb.css",
   "/chi-fan/_app/immutable/assets/_page-539ad827.css",
-  "/chi-fan/_app/immutable/assets/_page-366e7762.css",
-  "/chi-fan/_app/immutable/assets/Button-8ca56c60.css",
   "/chi-fan/_app/immutable/assets/_layout-35ea8028.css",
-  "/chi-fan/_app/immutable/assets/ChoppingKnife-9798ffe1.css",
-  "/chi-fan/_app/immutable/chunks/_layout-da46b06b.js",
-  "/chi-fan/_app/immutable/chunks/6-c25a204d.js",
-  "/chi-fan/_app/immutable/chunks/7-6e5b4e83.js",
-  "/chi-fan/_app/immutable/components/pages/about/_page.svelte-2225ee29.js",
-  "/chi-fan/_app/immutable/chunks/singletons-644264c1.js",
-  "/chi-fan/_app/immutable/chunks/4-f029d902.js",
-  "/chi-fan/_app/immutable/modules/pages/about/_page.ts-08c78b37.js",
-  "/chi-fan/_app/immutable/chunks/paths-b4419565.js",
-  "/chi-fan/_app/immutable/chunks/_page-3afc52e2.js",
-  "/chi-fan/_app/immutable/chunks/5-148984dd.js",
+  "/chi-fan/_app/immutable/assets/_page-2f5d92e8.css",
+  "/chi-fan/_app/immutable/assets/_page-366e7762.css",
+  "/chi-fan/_app/immutable/assets/ChoppingKnife-88415d14.css",
+  "/chi-fan/_app/immutable/chunks/6-01a803e1.js",
   "/chi-fan/_app/immutable/chunks/1-7bb59b42.js",
-  "/chi-fan/_app/immutable/modules/pages/_layout.ts-9cbb603b.js",
-  "/chi-fan/_app/immutable/chunks/8-c5abac11.js",
-  "/chi-fan/_app/immutable/chunks/3-1f6a807a.js",
   "/chi-fan/_app/immutable/chunks/2-a6e40a4d.js",
+  "/chi-fan/_app/immutable/chunks/8-d96c83fb.js",
+  "/chi-fan/_app/immutable/modules/pages/_layout.ts-9cbb603b.js",
+  "/chi-fan/_app/immutable/chunks/7-4c21d35e.js",
+  "/chi-fan/_app/immutable/chunks/4-f029d902.js",
   "/chi-fan/_app/immutable/chunks/index-eb690f35.js",
-  "/chi-fan/_app/immutable/components/pages/_page.svelte-b5eadb59.js",
-  "/chi-fan/_app/immutable/components/error.svelte-dc94067c.js",
-  "/chi-fan/_app/immutable/chunks/index-183e008f.js",
-  "/chi-fan/_app/immutable/components/pages/taro-rice/_page.svelte-cc307a0e.js",
-  "/chi-fan/_app/immutable/components/pages/taro-rice/intro/_page.svelte-a8bf53ce.js",
-  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/_page.svelte-674af8b8.js",
-  "/chi-fan/_app/immutable/chunks/RedTitle-87fa3a8d.js",
-  "/chi-fan/_app/immutable/chunks/Button-d8ad3a44.js",
+  "/chi-fan/_app/immutable/chunks/_page-3afc52e2.js",
   "/chi-fan/_app/immutable/chunks/stores-e0b2d1ad.js",
+  "/chi-fan/_app/immutable/components/error.svelte-dc94067c.js",
+  "/chi-fan/_app/immutable/modules/pages/about/_page.ts-08c78b37.js",
+  "/chi-fan/_app/immutable/chunks/3-1f6a807a.js",
+  "/chi-fan/_app/immutable/chunks/singletons-644264c1.js",
+  "/chi-fan/_app/immutable/components/pages/about/_page.svelte-2225ee29.js",
+  "/chi-fan/_app/immutable/chunks/5-7c46592f.js",
   "/chi-fan/_app/immutable/chunks/0-04e86885.js",
-  "/chi-fan/_app/immutable/start-f8a8f54e.js",
-  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/intro/_page.svelte-13471edd.js",
+  "/chi-fan/_app/immutable/chunks/paths-b4419565.js",
+  "/chi-fan/_app/immutable/chunks/_layout-da46b06b.js",
   "/chi-fan/_app/immutable/components/pages/_layout.svelte-7d6ebd7f.js",
+  "/chi-fan/_app/immutable/components/pages/_page.svelte-b5eadb59.js",
+  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/_page.svelte-7ab27cdd.js",
+  "/chi-fan/_app/immutable/chunks/index-183e008f.js",
+  "/chi-fan/_app/immutable/components/pages/taro-rice/_page.svelte-9c1b6935.js",
+  "/chi-fan/_app/immutable/chunks/RedTitle-87fa3a8d.js",
+  "/chi-fan/_app/immutable/start-7fede946.js",
+  "/chi-fan/_app/immutable/chunks/Button-d8ad3a44.js",
   "/chi-fan/_app/immutable/components/pages/doors/_page.svelte-30c47712.js",
-  "/chi-fan/_app/immutable/chunks/ChoppingKnife-d05e2634.js"
+  "/chi-fan/_app/immutable/components/pages/taro-rice/intro/_page.svelte-1c08102e.js",
+  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/intro/_page.svelte-cb621f96.js",
+  "/chi-fan/_app/immutable/chunks/ChoppingKnife-c883fc50.js"
 ], h = [
   "/chi-fan/.nojekyll",
   "/chi-fan/favicon.png",
@@ -111,6 +111,7 @@ const o = [
   "/chi-fan/img/taro-rice/photo-scallions-knife.jpg",
   "/chi-fan/img/taro-rice/photo-wok.jpg",
   "/chi-fan/img/taro-rice/rice bowl.png",
+  "/chi-fan/img/taro-rice/rice-cooker.png",
   "/chi-fan/img/taro-rice/shrimp.png",
   "/chi-fan/img/taro-rice/single-mushroom.png",
   "/chi-fan/img/taro-rice/sliced-mushroom.png",
@@ -120,16 +121,17 @@ const o = [
   "/chi-fan/img/taro-rice/spring-onion.png",
   "/chi-fan/img/taro-rice/taro-1.png",
   "/chi-fan/img/taro-rice/taro-2.png",
+  "/chi-fan/img/taro-rice/wash-rice.png",
   "/chi-fan/manifest.json",
   "/chi-fan/robots.txt",
   "/chi-fan/sound/sugar-cane.mp3"
-], p = "1678713287517", i = self, g = `cache${p}`, s = o.concat(
+], p = "1678798998688", i = self, r = `cache${p}`, s = o.concat(
   // Exclude this github pages related file, breaks the service worker
   h.filter((a) => a !== "/.nojekyll")
 ), m = new Set(s);
 i.addEventListener("install", (a) => {
   a.waitUntil(
-    caches.open(g).then(async (n) => {
+    caches.open(r).then(async (n) => {
       try {
         await n.addAll(s);
       } catch {
@@ -150,7 +152,7 @@ i.addEventListener("activate", (a) => {
   a.waitUntil(
     caches.keys().then(async (n) => {
       for (const e of n)
-        e !== g && await caches.delete(e);
+        e !== r && await caches.delete(e);
       i.clients.claim();
     })
   );
@@ -170,8 +172,8 @@ async function f(a) {
 i.addEventListener("fetch", (a) => {
   if (a.request.method !== "GET" || a.request.headers.has("range"))
     return;
-  const n = new URL(a.request.url), e = n.protocol.startsWith("http"), c = n.hostname === self.location.hostname && n.port !== self.location.port, t = n.host === self.location.host && m.has(n.pathname), r = a.request.cache === "only-if-cached" && !t;
-  e && !c && !r && a.respondWith(
+  const n = new URL(a.request.url), e = n.protocol.startsWith("http"), c = n.hostname === self.location.hostname && n.port !== self.location.port, t = n.host === self.location.host && m.has(n.pathname), g = a.request.cache === "only-if-cached" && !t;
+  e && !c && !g && a.respondWith(
     (async () => t && await caches.match(a.request) || f(a.request))()
   );
 });
