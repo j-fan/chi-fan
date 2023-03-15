@@ -27,6 +27,7 @@
         in:fly={{ y: -50, duration: 300, easing: sineIn }}
         src={props.heroImage}
         alt={props.alt}
+        style="--height-percent: {props.heightPercent}%"
       />
     {/if}
   </div>
@@ -46,7 +47,7 @@
   }
 
   img {
-    height: 45%;
+    height: var(--height-percent);
     object-fit: contain;
   }
 </style>

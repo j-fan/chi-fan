@@ -29,7 +29,8 @@
         bodyText:
           'Firstly we need to wash and cook the rice. To do this, place your palm flat on the rice and make sure the water reaches your the beginning of your knuckles. That is the perfect amount of water).',
         nextButton: { text: 'Continue' }
-      }
+      },
+      heightPercent: 55
     },
     {
       type: 'pick-items',
@@ -70,7 +71,8 @@
         bodyText:
           'Salt the rice with a teaspoon of salt then add your taro wedges into the rice. Add some water to wet the taro a little bit. Set it in the rice cooker and cook it.',
         nextButton: { text: 'Continue' }
-      }
+      },
+      heightPercent: 55
     },
     {
       type: 'pick-items',

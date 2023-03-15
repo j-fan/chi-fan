@@ -21,7 +21,8 @@
         characterName: 'Dad',
         bodyText: 'Example text',
         nextButton: { text: 'Continue' }
-      }
+      },
+      heightPercent: 70
     },
     {
       type: 'finished',

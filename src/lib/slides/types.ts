@@ -63,6 +63,7 @@ export type StaticSlideType = {
   type: 'static';
   heroImage: string;
   alt: string;
+  heightPercent: number;
 } & Omit<BaseSlideType, 'dialogs' | 'errorStep'>;
 
 export type Slide =
