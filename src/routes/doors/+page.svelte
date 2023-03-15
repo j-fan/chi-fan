@@ -32,6 +32,14 @@
         alt="kitchen of the taro fried rice recipe"
       />
     </Doors>
+    <Doors link="{base}/live-lobster/intro" aspectRatio="500 / 847">
+      <img
+        class="interior-img"
+        slot="doorInside"
+        src="{base}/img/sugar-cane-water/interior.jpg"
+        alt="kitchen of the live lobster stir fry recipe"
+      />
+    </Doors>
   </div>
 </div>
 
