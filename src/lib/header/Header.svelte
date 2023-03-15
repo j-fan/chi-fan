@@ -1,12 +1,9 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { base } from '$app/paths';
-
-  let windowWidth = 0;
 </script>
 
-<svelte:window bind:innerWidth={windowWidth} />
-<header style="--header-width: {windowWidth > 0 ? `${windowWidth}px` : '100%'}">
+<header>
   <nav>
     <ul>
       <li class:active={$page.url.pathname === '/'}>
@@ -21,7 +18,7 @@
 
 <style>
   header {
-    width: var(--header-width);
+    width: 100vw;
     position: fixed;
     top: 0;
     display: flex;
