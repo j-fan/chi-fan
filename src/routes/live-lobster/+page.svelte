@@ -10,7 +10,6 @@
   import RedTitle from '$lib/text/RedTitle.svelte';
 </script>
 
-live lobster recipe
 <svelte:head>
   <title>Live lobster stir fry</title>
   <meta name="description" content="Sugar cane water" />
