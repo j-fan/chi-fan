@@ -1,32 +1,29 @@
 <script lang="ts">
   export let imageSrc: string;
-  export let label: string = 'label';
+  export let label: string | undefined = undefined;
 </script>
 
 <div class="wrapper">
   <div class="cell" style="background-image: url({imageSrc})" />
-  <div class="label">{label}</div>
+  {#if label}
+    <div class="label">{label}</div>
+  {/if}
 </div>
 
 <style>
   .wrapper {
     position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
   }
 
   .cell {
-    width: 100px;
-    height: 100px;
-    margin: 0.5rem;
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-  }
-
-  @media (max-width: 600px) {
-    .cell {
-      width: 60px;
-      height: 60px;
-    }
   }
 
   .label {

@@ -2,25 +2,24 @@
   import { base } from '$app/paths';
 </script>
 
-<div class="wrapper" style="background-image: url({base}/img/sugar-cane-water/pot.jpg)">
+<div class="wrapper" style="background-image: url({base}/img/wok.png)">
   <slot />
 </div>
 
 <style>
   .wrapper {
-    width: 45vh;
-    height: 45vh;
+    width: 60vh;
+    height: 40vh;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
   }
 
   @media (max-width: 600px) {
     .wrapper {
       width: 300px;
       height: 300px;
-      margin-bottom: 0;
     }
   }
 </style>

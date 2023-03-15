@@ -1,12 +1,19 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import Slides from '$lib/slides/Slides.svelte';
+  import Wok from '$lib/tools/Wok.svelte';
   import ChoppingKnife from '../../../lib/tools/ChoppingKnife.svelte';
   import ChoppingBologna from './ChoppingBologna.svelte';
   import ChoppingHam from './ChoppingHam.svelte';
   import ChoppingMushrooms from './ChoppingMushrooms.svelte';
   import ChoppingSpringOnion from './ChoppingSpringOnion.svelte';
   import ChoppingTaro from './ChoppingTaro.svelte';
+  import Bologna from './DragDropItems/Bologna.svelte';
+  import Ham from './DragDropItems/Ham.svelte';
+  import Mint from './DragDropItems/Mint.svelte';
+  import Mushroom from './DragDropItems/Mushroom.svelte';
+  import Shrimp from './DragDropItems/Shrimp.svelte';
+  import SpringOnion from './DragDropItems/SpringOnion.svelte';
   import PickedMint from './PickedMint.svelte';
 
   let windowWidth = 9999;
@@ -200,6 +207,37 @@
       bgImage: `${base}/img/board-bg.jpg`,
       toolComponent: ChoppingKnife,
       bottomPosition: 50
+    },
+    {
+      type: 'drag-drop',
+      showMovedItemsInStack: true,
+      dialogs: [
+        {
+          characterName: 'Mum',
+          bodyText:
+            'Now prepare a wok or a pan with some oil. When it’s hot, throw in all of the chosen meats and vegetables.',
+          nextButton: { text: 'Continue' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Mum',
+        bodyText: 'Not all the ingredients have been added.'
+      },
+      successStep: {
+        characterName: 'Mum',
+        bodyText: 'Looks good. Time to add the seasonings.',
+        nextButton: { text: 'Keen to try it!' }
+      },
+      dropZone: Wok,
+      dragItems: [Ham, Bologna, Mushroom, Shrimp, Mint, SpringOnion],
+      confettiProps: {
+        rounded: true,
+        amount: 10,
+        cone: true,
+        delay: [500, 500],
+        duration: 800,
+        colorArray: ['#cbc7b7', '#dadec2']
+      }
     },
     {
       type: 'finished',

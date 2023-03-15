@@ -78,16 +78,26 @@
     </div>
     <div id="dropzone" on:dragover={handleDragOver} on:drop={handleDrop}>
       <svelte:component this={props.dropZone}>
-        {#key movedItem}
-          <div class="item-in-dropzone">
-            <svelte:component this={movedItem} />
+        {#if props.showMovedItemsInStack}
+          <div class="moved-items-stack">
+            {#each movedItems as item}
+              <div class="moved-item">
+                <svelte:component this={item} />
+              </div>
+            {/each}
           </div>
-          <div class="splash">
-            {#if props.confettiProps && movedItem !== null}
-              <Confetti {...props.confettiProps} />
-            {/if}
-          </div>
-        {/key}
+        {:else}
+          {#key movedItem}
+            <div class="item-in-dropzone">
+              <svelte:component this={movedItem} />
+            </div>
+            <div class="splash">
+              {#if props.confettiProps && movedItem !== null}
+                <Confetti {...props.confettiProps} />
+              {/if}
+            </div>
+          {/key}
+        {/if}
       </svelte:component>
     </div>
   </div>
@@ -106,7 +116,7 @@
   .pending-items-container {
     display: flex;
     flex-wrap: wrap;
-    width: 700px;
+    width: 900px;
     max-width: calc(100% - 3rem);
     gap: 0.5rem;
     padding: 1rem;
@@ -131,6 +141,8 @@
     border-radius: 1rem;
     border: var(--border-style);
     border-color: var(--c-light-green);
+    width: 100px;
+    height: 100px;
   }
 
   @keyframes bounce {
@@ -157,7 +169,9 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    width: 100%;
+    width: 100px;
+    height: 100px;
+    margin-left: calc(50% - 50px);
   }
 
   #dropzone {
@@ -170,5 +184,33 @@
     justify-content: center;
     position: absolute;
     width: 100%;
+  }
+
+  .moved-items-stack {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .moved-item {
+    position: absolute;
+    /* TODO: Set this to 100% after making the custom images for layering in taro rice */
+    width: 50%;
+    height: 50%;
+  }
+
+  @media (max-width: 600px) {
+    .item-in-dropzone {
+      width: 70px;
+      height: 70px;
+    }
+
+    .pending-item {
+      width: 70px;
+      height: 70px;
+    }
   }
 </style>

@@ -51,6 +51,13 @@ export type DragDropSlideType = {
   dropZoneOverlay?: typeof SvelteComponentTyped<{ progress?: number }>;
   dragItems: Array<typeof SvelteComponent>;
   confettiProps?: ConfettiProps;
+  /**
+   * By default, moved items disappear after the confetti splash animation.
+   * Set this prop to true if you want the moved items to persist in the view.
+   * They will stack on top of each other in the dropzone element, with the one
+   * picked last being on top.
+   */
+  showMovedItemsInStack?: boolean;
 } & BaseSlideType;
 
 export type FinishedSlideType = {
