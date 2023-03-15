@@ -1,10 +1,13 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { base } from '$app/paths';
+
+  let windowWidth = 0;
 </script>
 
-<header>
-  <nav data-sveltekit-prefetch>
+<svelte:window bind:innerWidth={windowWidth} />
+<header style="--header-width: {windowWidth > 0 ? `${windowWidth}px` : '100%'}">
+  <nav>
     <ul>
       <li class:active={$page.url.pathname === '/'}>
         <a href="{base}/">Home</a>
@@ -18,7 +21,7 @@
 
 <style>
   header {
-    width: 100%;
+    width: var(--header-width);
     position: fixed;
     top: 0;
     display: flex;
