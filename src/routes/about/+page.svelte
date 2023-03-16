@@ -8,37 +8,37 @@
 
 <svelte:head>
   <title>About</title>
-  <meta name="description" content="About this app" />
+  <meta name="description" content="About this Chi Fan" />
 </svelte:head>
 
 <Article>
   <div class="top-buffer" />
   <SectionGroup gap="4rem">
-    <Section aos="fade-up" width="100%">
+    <Section width="100%">
       <div class="image-showcase">
         <img src="{base}/img/taro-rice/completed.png" alt="Taro fried rice" />
         <img src="{base}/img/live-lobster/lobster1.png" alt="Live lobster stir fry" />
         <img src="{base}/img/sugar-cane-water/completed.png" alt="Sugar cane water" />
       </div>
     </Section>
-    <Section aos="fade-up" width="100%">
+    <Section width="100%">
       <RedTitle>About this project</RedTitle>
       吃饭 (Chi-Fan) is a visual arts / heritage studies project tracing the intimate stories and migration
       of family recipes across the contested “Chinese diaspora”.
     </Section>
-    <Section aos="fade-up" width="100%">
+    <Section width="100%">
       Materialising as a minigame, audiences enter animated kitchens which are vivified by
       interviews between young people who identify as a member of the Chinese diaspora and their
       relatives about a family recipe. Each kitchen features: audio ruminations about the recipe;
       photo essays of the cooking methodology; the dish’s cultural significance; and intimate
       vignettes of domestic spaces.
     </Section>
-    <Section aos="fade-up" width="100%">
+    <Section width="100%">
       By playfully weaving these interpretations of a ‘family recipe’, 吃饭 (Chi-Fan) presents an
       alternative version of the ‘Chinese diaspora’ - beyond surnames, passports or dialects. The
       project gives licence for the interrogation of who defines cultural history.
     </Section>
-    <Section aos="fade-up" width="100%">
+    <Section width="100%">
       <div class="image-showcase">
         <img src="{base}/img/sugar-cane-water/almond-bowl.png" alt="Almonds in a bowl" />
         <img src="{base}/img/taro-rice/mint.png" alt="Mint" />
@@ -47,7 +47,7 @@
         <img src="{base}/img/taro-rice/spring-onion-2.png" alt="Ham" />
       </div>
     </Section>
-    <Section aos="fade-up" width="100%">
+    <Section width="100%">
       <RedTitle>Contributors</RedTitle>
       <h2>Dylan Goh - Curator</h2>
       <p>
@@ -80,7 +80,7 @@
         diplomacy.
       </p>
     </Section>
-    <Section aos="fade-up" width="100%">
+    <Section width="100%">
       <h2>Amy Ge - Illustrator</h2>
       <p>
         Amy Ge is a Chinese-Australian artist and illustrator from Noongar country (Perth, Western
@@ -91,7 +91,7 @@
         publications such as Voiceworks Australia.
       </p>
     </Section>
-    <Section aos="fade-up" width="100%">
+    <Section width="100%">
       <h2>Jane Fan - Web developer</h2>
       <p>
         Jane Fan is a software engineer and digital artist based in Sydney, Australia. Her works
@@ -102,7 +102,7 @@
         spaces. She is part of the Sydney based New Media Arts group known as Origin Collective.
       </p>
     </Section>
-    <Section aos="fade-up" width="100%">
+    <Section width="100%">
       <div class="image-showcase">
         <img src="{base}/img/wok.png" alt="Wok" />
         <img src="{base}/img/live-lobster/chopsticks.png" alt="Chopsticks" />
