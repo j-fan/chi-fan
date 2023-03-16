@@ -1,6 +1,7 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import Slides from '$lib/slides/Slides.svelte';
+  import SoundControls from '$lib/sound/SoundControls.svelte';
   import Wok from '$lib/tools/Wok.svelte';
   import ChoppingKnife from '../../../lib/tools/ChoppingKnife.svelte';
   import ChoppingBologna from './ChoppingBologna.svelte';
@@ -30,6 +31,7 @@
   <title>Taro fried rice</title>
 </svelte:head>
 <svelte:window bind:innerWidth={windowWidth} />
+<SoundControls src="{base}/sound/taro-rice.mp3" />
 <Slides
   skipButtonUrl="/taro-rice"
   slides={[
