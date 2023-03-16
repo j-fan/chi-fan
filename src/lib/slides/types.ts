@@ -50,6 +50,12 @@ export type DragDropSlideType = {
   dropZone: typeof SvelteComponentTyped<{ progress?: number }>;
   dropZoneOverlay?: typeof SvelteComponentTyped<{ progress?: number }>;
   dragItems: Array<typeof SvelteComponent>;
+  /**
+   * Optional prop for specifying a different appearance for drag items
+   * when they are dropped in the dropzone. It this is omitted, the item
+   * will look the same before & after dropping.
+   */
+  droppedItems?: Array<typeof SvelteComponent>;
   confettiProps?: ConfettiProps;
   /**
    * By default, moved items disappear after the confetti splash animation.

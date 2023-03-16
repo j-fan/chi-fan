@@ -30,7 +30,7 @@
     position: absolute;
     pointer-events: none;
     right: -1rem;
-    top: -2rem;
+    top: -1.5rem;
     border: 2px solid var(--c-dark-green);
     padding: 0.5rem;
     border-radius: 1rem;

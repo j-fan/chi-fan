@@ -9,11 +9,17 @@
   import ChoppingSpringOnion from './ChoppingSpringOnion.svelte';
   import ChoppingTaro from './ChoppingTaro.svelte';
   import Bologna from './DragDropItems/Bologna.svelte';
+  import BolognaDropped from './DragDropItems/BolognaDropped.svelte';
   import Ham from './DragDropItems/Ham.svelte';
+  import HamDropped from './DragDropItems/HamDropped.svelte';
   import Mint from './DragDropItems/Mint.svelte';
+  import MintDropped from './DragDropItems/MintDropped.svelte';
   import Mushroom from './DragDropItems/Mushroom.svelte';
+  import MushroomDropped from './DragDropItems/MushroomDropped.svelte';
   import Shrimp from './DragDropItems/Shrimp.svelte';
+  import ShrimpDropped from './DragDropItems/ShrimpDropped.svelte';
   import SpringOnion from './DragDropItems/SpringOnion.svelte';
+  import SpringOnionDropped from './DragDropItems/SpringOnionDropped.svelte';
   import PickedMint from './PickedMint.svelte';
 
   let windowWidth = 9999;
@@ -230,14 +236,14 @@
       },
       dropZone: Wok,
       dragItems: [Ham, Bologna, Mushroom, Shrimp, Mint, SpringOnion],
-      confettiProps: {
-        rounded: true,
-        amount: 10,
-        cone: true,
-        delay: [500, 500],
-        duration: 800,
-        colorArray: ['#cbc7b7', '#dadec2']
-      }
+      droppedItems: [
+        HamDropped,
+        BolognaDropped,
+        MushroomDropped,
+        ShrimpDropped,
+        MintDropped,
+        SpringOnionDropped
+      ]
     },
     {
       type: 'finished',

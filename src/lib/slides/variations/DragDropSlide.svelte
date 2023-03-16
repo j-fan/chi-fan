@@ -1,6 +1,6 @@
 <script lang="ts">
   import { setNoScrollBody } from '$lib/utils/setNoScrollBody';
-  import type { SvelteComponent } from 'svelte';
+  import { onMount, type SvelteComponent } from 'svelte';
   import { Confetti } from 'svelte-confetti';
   import type { DragDropSlideType } from '../types';
   import BaseSlide from './BaseSlide.svelte';
@@ -11,6 +11,9 @@
   let movedItem: typeof SvelteComponent | null = null;
 
   let pendingItems: Array<typeof SvelteComponent> = [...props.dragItems];
+  let pendingDroppedItems: Array<typeof SvelteComponent> = props.droppedItems
+    ? [...props.droppedItems]
+    : [...props.dragItems];
   let movedItems: Array<typeof SvelteComponent> = [];
 
   setNoScrollBody();
@@ -35,24 +38,38 @@
     }
 
     if (currentTarget.id === 'dropzone') {
-      const indexToRemove = pendingItems.indexOf(currentDragItem);
-      pendingItems.splice(indexToRemove, 1);
-      pendingItems = pendingItems;
-
-      movedItems = [...movedItems, currentDragItem];
-      movedItem = currentDragItem;
+      dropItemIntoDropzone(currentDragItem);
     }
   };
 
   // Ditch drag and drop for mobile because if UX issues, use taps instead
   const handleTouch = (currentItem: typeof SvelteComponent) => () => {
+    dropItemIntoDropzone(currentItem);
+  };
+
+  const dropItemIntoDropzone = (currentItem: typeof SvelteComponent) => {
     const indexToRemove = pendingItems.indexOf(currentItem);
     pendingItems.splice(indexToRemove, 1);
     pendingItems = pendingItems;
 
-    movedItems = [...movedItems, currentItem];
-    movedItem = currentItem;
+    if (props.droppedItems) {
+      const currentVariant = pendingDroppedItems[indexToRemove];
+      pendingDroppedItems.splice(indexToRemove, 1);
+      pendingDroppedItems = pendingDroppedItems;
+
+      movedItems = [...movedItems, currentVariant];
+      movedItem = currentVariant;
+    } else {
+      movedItems = [...movedItems, currentItem];
+      movedItem = currentItem;
+    }
   };
+
+  onMount(() => {
+    if (props.droppedItems && props.droppedItems.length !== props.dragItems.length) {
+      throw new Error('If droppedItems array is used, it must have the same length as dragItems');
+    }
+  });
 </script>
 
 <BaseSlide
@@ -197,9 +214,8 @@
 
   .moved-item {
     position: absolute;
-    /* TODO: Set this to 100% after making the custom images for layering in taro rice */
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
   }
 
   @media (max-width: 600px) {

@@ -3,4 +3,4 @@
   import DragDropItem from '$lib/slides/variations/DragDropItem.svelte';
 </script>
 
-<DragDropItem imageSrc="{base}/img/taro-rice/bologna-slices.png" label="Bologna" />
+<DragDropItem imageSrc="{base}/img/taro-rice/wok-ham.png" />
