@@ -1,34 +1,57 @@
 <script lang="ts">
   import { base } from '$app/paths';
-  import { soundSrc } from './SoundStore';
+  import { soundSrc as externalSoundSrc } from './SoundStore';
+  import { tweened } from 'svelte/motion';
+  import { linear } from 'svelte/easing';
 
   let audio: HTMLAudioElement | null = null;
   let interactionStarted = false;
+  let soundIsPaused = true;
+  let src = $externalSoundSrc;
+  const audioFadeTime = 2000;
+
+  const tweenedVolume = tweened(0, {
+    duration: audioFadeTime,
+    easing: linear
+  });
 
   $: {
     if (interactionStarted) {
-      playSound();
       audioUpdated();
+      playSound();
     }
   }
 
   $: {
     // Restart audio when the sound src changes
-    if ($soundSrc) {
-      interactionStarted = false;
-      audioUpdated();
+    if ($externalSoundSrc) {
+      pauseSound();
+
+      setTimeout(() => {
+        src = $externalSoundSrc;
+        interactionStarted = false;
+      }, audioFadeTime);
+    }
+  }
+
+  $: {
+    if (audio) {
+      audio.volume = $tweenedVolume;
     }
   }
 
   const playSound = () => {
     if (audio) {
       audio.play();
+      tweenedVolume.set(1);
+      soundIsPaused = false;
     }
   };
 
   const pauseSound = () => {
     if (audio) {
-      audio.pause();
+      tweenedVolume.set(0);
+      soundIsPaused = true;
     }
   };
 
@@ -48,10 +71,10 @@
   on:play={audioUpdated}
   on:ended={audioUpdated}
   loop
-  src={$soundSrc}
+  {src}
 />
 <div class="sound-controls">
-  {#if audio?.paused}
+  {#if audio?.paused || soundIsPaused}
     <button on:click|stopPropagation={playSound}>
       <img src="{base}/img/speaker-off.png" alt="sound off" />
     </button>
