@@ -158,8 +158,8 @@
     border-radius: 1rem;
     border: var(--border-style);
     border-color: var(--c-light-green);
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
 
   @keyframes bounce {
