@@ -1,51 +1,54 @@
 const o = [
-  "/chi-fan/_app/immutable/assets/SectionWithImage-b39054a3.css",
-  "/chi-fan/_app/immutable/assets/Button-8ca56c60.css",
+  "/chi-fan/_app/immutable/assets/SoundControls-5ce9decf.css",
+  "/chi-fan/_app/immutable/assets/_page-539ad827.css",
   "/chi-fan/_app/immutable/assets/_page-1c8430b3.css",
   "/chi-fan/_app/immutable/assets/_page-ac211827.css",
-  "/chi-fan/_app/immutable/assets/_page-539ad827.css",
   "/chi-fan/_app/immutable/assets/RedTitle-eff5c1de.css",
-  "/chi-fan/_app/immutable/assets/SoundControls-dda15d14.css",
+  "/chi-fan/_app/immutable/assets/SectionWithImage-b39054a3.css",
+  "/chi-fan/_app/immutable/assets/Button-8ca56c60.css",
   "/chi-fan/_app/immutable/assets/Slides-0da46ae4.css",
-  "/chi-fan/_app/immutable/assets/_layout-d56471e8.css",
   "/chi-fan/_app/immutable/assets/_page-90e76144.css",
   "/chi-fan/_app/immutable/assets/_page-7121ee61.css",
-  "/chi-fan/_app/immutable/chunks/_layout-da46b06b.js",
-  "/chi-fan/_app/immutable/chunks/stores-ef4eef89.js",
-  "/chi-fan/_app/immutable/components/error.svelte-ea2f06b0.js",
-  "/chi-fan/_app/immutable/components/pages/live-lobster/intro/_page.svelte-c7c546c7.js",
-  "/chi-fan/_app/immutable/chunks/_page-3afc52e2.js",
-  "/chi-fan/_app/immutable/chunks/singletons-ad3aa310.js",
-  "/chi-fan/_app/immutable/chunks/index-2708e55c.js",
-  "/chi-fan/_app/immutable/chunks/0-b27c950c.js",
-  "/chi-fan/_app/immutable/chunks/1-e44bd855.js",
+  "/chi-fan/_app/immutable/assets/DragDropItem-e196a5fc.css",
+  "/chi-fan/_app/immutable/assets/_layout-d56471e8.css",
+  "/chi-fan/_app/immutable/chunks/0-dbd2cba2.js",
+  "/chi-fan/_app/immutable/chunks/stores-406f851e.js",
+  "/chi-fan/_app/immutable/chunks/SoundControls.svelte_svelte_type_style_lang-3c003428.js",
+  "/chi-fan/_app/immutable/chunks/2-1f9daebe.js",
+  "/chi-fan/_app/immutable/chunks/1-07e6bd06.js",
+  "/chi-fan/_app/immutable/chunks/8-8a51b4c2.js",
+  "/chi-fan/_app/immutable/chunks/singletons-0e90907b.js",
+  "/chi-fan/_app/immutable/components/pages/live-lobster/intro/_page.svelte-b6934abc.js",
+  "/chi-fan/_app/immutable/chunks/7-061873b4.js",
   "/chi-fan/_app/immutable/modules/pages/about/_page.ts-08c78b37.js",
-  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/_page.svelte-4c7ed9c5.js",
-  "/chi-fan/_app/immutable/chunks/8-061fb18d.js",
-  "/chi-fan/_app/immutable/chunks/2-51585641.js",
   "/chi-fan/_app/immutable/modules/pages/_layout.ts-9cbb603b.js",
-  "/chi-fan/_app/immutable/chunks/paths-a5fbac2f.js",
-  "/chi-fan/_app/immutable/chunks/6-ed55c39e.js",
-  "/chi-fan/_app/immutable/chunks/3-6be1955a.js",
-  "/chi-fan/_app/immutable/chunks/SectionWithImage-2ce6dc25.js",
-  "/chi-fan/_app/immutable/chunks/10-c6f1ec54.js",
-  "/chi-fan/_app/immutable/chunks/Button-831f7044.js",
-  "/chi-fan/_app/immutable/start-4da48cbd.js",
-  "/chi-fan/_app/immutable/chunks/7-7d2c5e8a.js",
-  "/chi-fan/_app/immutable/chunks/9-18841269.js",
-  "/chi-fan/_app/immutable/chunks/5-e3ec2e36.js",
-  "/chi-fan/_app/immutable/chunks/RedTitle-d09b2660.js",
-  "/chi-fan/_app/immutable/components/pages/live-lobster/_page.svelte-90c61358.js",
-  "/chi-fan/_app/immutable/chunks/SoundControls-df12ac4e.js",
-  "/chi-fan/_app/immutable/chunks/4-15da6b89.js",
-  "/chi-fan/_app/immutable/components/pages/_page.svelte-844591ec.js",
-  "/chi-fan/_app/immutable/components/pages/taro-rice/_page.svelte-073fcfd2.js",
-  "/chi-fan/_app/immutable/components/pages/about/_page.svelte-5473bf3b.js",
-  "/chi-fan/_app/immutable/components/pages/doors/_page.svelte-625fcae2.js",
-  "/chi-fan/_app/immutable/components/pages/_layout.svelte-5a218c7d.js",
-  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/intro/_page.svelte-5d5f828e.js",
-  "/chi-fan/_app/immutable/components/pages/taro-rice/intro/_page.svelte-2ff37fac.js",
-  "/chi-fan/_app/immutable/chunks/Slides-1a6bbed5.js"
+  "/chi-fan/_app/immutable/chunks/9-86a1daaf.js",
+  "/chi-fan/_app/immutable/chunks/10-9acade5d.js",
+  "/chi-fan/_app/immutable/chunks/4-26df2212.js",
+  "/chi-fan/_app/immutable/chunks/_page-3afc52e2.js",
+  "/chi-fan/_app/immutable/chunks/5-57efad38.js",
+  "/chi-fan/_app/immutable/chunks/6-0acd9b10.js",
+  "/chi-fan/_app/immutable/chunks/index-7bab4e22.js",
+  "/chi-fan/_app/immutable/components/error.svelte-02de6dc4.js",
+  "/chi-fan/_app/immutable/chunks/_layout-da46b06b.js",
+  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/_page.svelte-7ecbf2d9.js",
+  "/chi-fan/_app/immutable/chunks/index-349468e6.js",
+  "/chi-fan/_app/immutable/chunks/3-5e5a0156.js",
+  "/chi-fan/_app/immutable/components/pages/taro-rice/_page.svelte-05275631.js",
+  "/chi-fan/_app/immutable/start-04f31636.js",
+  "/chi-fan/_app/immutable/components/pages/_page.svelte-fdaba5dd.js",
+  "/chi-fan/_app/immutable/components/pages/doors/_page.svelte-9f6f19eb.js",
+  "/chi-fan/_app/immutable/components/pages/about/_page.svelte-3bd9cb06.js",
+  "/chi-fan/_app/immutable/chunks/Button-53e3e0fb.js",
+  "/chi-fan/_app/immutable/chunks/paths-1ce9315e.js",
+  "/chi-fan/_app/immutable/components/pages/live-lobster/_page.svelte-34a0a5bc.js",
+  "/chi-fan/_app/immutable/chunks/RedTitle-9af37c03.js",
+  "/chi-fan/_app/immutable/chunks/SectionWithImage-14b9239b.js",
+  "/chi-fan/_app/immutable/chunks/DragDropItem-26914d9d.js",
+  "/chi-fan/_app/immutable/components/pages/taro-rice/intro/_page.svelte-466dad43.js",
+  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/intro/_page.svelte-ac97c5e5.js",
+  "/chi-fan/_app/immutable/components/pages/_layout.svelte-7c8ff4f4.js",
+  "/chi-fan/_app/immutable/chunks/Slides-a013b2a1.js"
 ], h = [
   "/chi-fan/.nojekyll",
   "/chi-fan/favicon.png",
@@ -151,20 +154,20 @@ const o = [
   "/chi-fan/robots.txt",
   "/chi-fan/sound/sugar-cane.mp3",
   "/chi-fan/sound/taro-rice.mp3"
-], p = "1678967129377", c = self, g = `cache${p}`, s = o.concat(
+], p = "1678971824238", c = self, g = `cache${p}`, s = o.concat(
   // Exclude this github pages related file, breaks the service worker
   h.filter((a) => a !== "/.nojekyll")
 ), m = new Set(s);
 c.addEventListener("install", (a) => {
   a.waitUntil(
-    caches.open(g).then(async (i) => {
+    caches.open(g).then(async (e) => {
       try {
-        await i.addAll(s);
+        await e.addAll(s);
       } catch {
         console.warn("cache.addAll failed, attempting to add files individually");
         for await (const n of s)
           try {
-            await i.add(n);
+            await e.add(n);
           } catch {
             console.warn("This file could not be added:", n);
           }
@@ -176,30 +179,30 @@ c.addEventListener("install", (a) => {
 });
 c.addEventListener("activate", (a) => {
   a.waitUntil(
-    caches.keys().then(async (i) => {
-      for (const e of i)
-        e !== g && await caches.delete(e);
+    caches.keys().then(async (e) => {
+      for (const i of e)
+        i !== g && await caches.delete(i);
       c.clients.claim();
     })
   );
 });
 async function f(a) {
-  const i = await caches.open(`offline${p}`);
+  const e = await caches.open(`offline${p}`);
   try {
-    const e = await fetch(a);
-    return i.put(a, e.clone()), e;
-  } catch (e) {
-    const n = await i.match(a);
+    const i = await fetch(a);
+    return e.put(a, i.clone()), i;
+  } catch (i) {
+    const n = await e.match(a);
     if (n)
       return n;
-    throw e;
+    throw i;
   }
 }
 c.addEventListener("fetch", (a) => {
   if (a.request.method !== "GET" || a.request.headers.has("range"))
     return;
-  const i = new URL(a.request.url), e = i.protocol.startsWith("http"), n = i.hostname === self.location.hostname && i.port !== self.location.port, t = i.host === self.location.host && m.has(i.pathname), r = a.request.cache === "only-if-cached" && !t;
-  e && !n && !r && a.respondWith(
+  const e = new URL(a.request.url), i = e.protocol.startsWith("http"), n = e.hostname === self.location.hostname && e.port !== self.location.port, t = e.host === self.location.host && m.has(e.pathname), r = a.request.cache === "only-if-cached" && !t;
+  i && !n && !r && a.respondWith(
     (async () => t && await caches.match(a.request) || f(a.request))()
   );
 });

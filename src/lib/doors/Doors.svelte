@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { goto } from '$app/navigation';
   import { base } from '$app/paths';
   import Button from '$lib/button/Button.svelte';
   import { fade } from 'svelte/transition';
@@ -23,7 +24,7 @@
 
   const navigate = () => {
     if (link) {
-      location.href = link;
+      goto(link);
     }
   };
 </script>
@@ -70,11 +71,7 @@
   />
 
   {#if kitchenIsExpanded}
-    <div
-      class="white-fade-out"
-      transition:fade={{ delay: 1000, duration: 500 }}
-      on:introend={navigate}
-    />
+    <div class="white-fade-out" in:fade={{ delay: 1000, duration: 500 }} on:introend={navigate} />
   {/if}
 </div>
 

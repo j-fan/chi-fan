@@ -1,14 +1,21 @@
 <script lang="ts">
   import { base } from '$app/paths';
-  import { onMount } from 'svelte';
+  import { soundSrc } from './SoundStore';
 
-  export let src = '';
   let audio: HTMLAudioElement | null = null;
   let interactionStarted = false;
 
   $: {
     if (interactionStarted) {
       playSound();
+      audioUpdated();
+    }
+  }
+
+  $: {
+    // Restart audio when the sound src changes
+    if ($soundSrc) {
+      interactionStarted = false;
       audioUpdated();
     }
   }
@@ -41,7 +48,7 @@
   on:play={audioUpdated}
   on:ended={audioUpdated}
   loop
-  {src}
+  src={$soundSrc}
 />
 <div class="sound-controls">
   {#if audio?.paused}

@@ -2,7 +2,9 @@
   import { base } from '$app/paths';
   import Slides from '$lib/slides/Slides.svelte';
   import SoundControls from '$lib/sound/SoundControls.svelte';
+  import { soundSrc } from '$lib/sound/SoundStore';
   import Wok from '$lib/tools/Wok.svelte';
+  import { onMount } from 'svelte';
   import ChoppingKnife from '../../../lib/tools/ChoppingKnife.svelte';
   import ChoppingBologna from './ChoppingBologna.svelte';
   import ChoppingHam from './ChoppingHam.svelte';
@@ -25,13 +27,16 @@
 
   let windowWidth = 9999;
   $: isMobile = windowWidth < 500;
+
+  onMount(() => {
+    soundSrc.set(`${base}/sound/taro-rice.mp3`);
+  });
 </script>
 
 <svelte:head>
   <title>Taro fried rice</title>
 </svelte:head>
 <svelte:window bind:innerWidth={windowWidth} />
-<SoundControls src="{base}/sound/taro-rice.mp3" />
 <Slides
   skipButtonUrl="/taro-rice"
   slides={[

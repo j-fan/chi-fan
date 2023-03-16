@@ -20,7 +20,6 @@
   <SectionGroup gap="4rem">
     <Section align="center" width="100%">By Tammy Dang</Section>
     <SectionWithImage
-      aos="fade-left"
       imageAlign="right"
       imageSrc="{base}/img/taro-rice/photo-dish.jpg"
       alt="Cooked dish of taro fried rice"
@@ -32,7 +31,7 @@
       have to make it yummy and to your liking.
     </SectionWithImage>
 
-    <Section aos="fade-up" width="100%">
+    <Section width="100%">
       Taro rice first came into our family when there was political unrest and war. During those
       times, there was not enough rice to go around big Chinese families, so my great grandma and
       grandma would add some taro to make it more filling. Since then, there have been many
@@ -78,7 +77,6 @@
     />
 
     <SectionWithImage
-      aos="fade-right"
       imageAlign="left"
       imageSrc="{base}/img/taro-rice/photo-ingredients.jpg"
       alt="Ingredients laid out on the kitchen table"
@@ -116,7 +114,6 @@
     />
 
     <SectionWithImage
-      aos="fade-left"
       imageAlign="right"
       imageSrc="{base}/img/taro-rice/photo-scallions-knife.jpg"
       alt="chopping board with knife and scallions"
@@ -130,7 +127,7 @@
       </ul>
     </SectionWithImage>
 
-    <Section align="left" width="100%" aos="fade-up" title="Directions">
+    <Section align="left" width="100%" title="Directions">
       <p>Preparing the ingredients:</p>
       <br />
       <ol>
@@ -156,14 +153,14 @@
       </ol>
     </Section>
 
-    <Section align="center" width="100%" aos="fade-up">
+    <Section align="center" width="100%">
       <Image
         src="{base}/img/taro-rice/photo-chopped-ingredients.jpg"
         alt="Cutting sugar cane together"
       />
     </Section>
 
-    <Section align="left" width="100%" aos="fade-up">
+    <Section align="left" width="100%">
       <p>Stir frying the rice:</p>
       <br />
       <ol>
@@ -190,7 +187,7 @@
       </ol>
     </Section>
 
-    <Section align="center" width="100%" aos="fade-up">
+    <Section align="center" width="100%">
       <Image src="{base}/img/taro-rice/photo-wok.jpg" alt="Cutting sugar cane together" />
     </Section>
   </SectionGroup>

@@ -17,16 +17,21 @@
   import Figs from './DragDropItems/Figs.svelte';
   import RockSugar from './DragDropItems/RockSugar.svelte';
   import SoundControls from '$lib/sound/SoundControls.svelte';
+  import { onMount } from 'svelte';
+  import { soundSrc } from '$lib/sound/SoundStore';
 
   let windowWidth = 9999;
   $: isMobile = windowWidth < 500;
+
+  onMount(() => {
+    soundSrc.set(`${base}/sound/sugar-cane.mp3`);
+  });
 </script>
 
 <svelte:head>
   <title>Sugar cane water</title>
 </svelte:head>
 <svelte:window bind:innerWidth={windowWidth} />
-<SoundControls src="{base}/sound/sugar-cane.mp3" />
 <Slides
   skipButtonUrl="/sugar-cane-water"
   slides={[

@@ -3,6 +3,7 @@
   import '../app.css';
   import AOS from 'aos';
   import { onMount } from 'svelte';
+  import SoundControls from '$lib/sound/SoundControls.svelte';
 
   onMount(() => {
     AOS.init({ offset: 140 });
@@ -10,7 +11,7 @@
 </script>
 
 <Header />
-
+<SoundControls />
 <svelte:head>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </svelte:head>

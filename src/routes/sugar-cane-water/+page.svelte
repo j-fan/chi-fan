@@ -21,7 +21,6 @@
   <SectionGroup gap="4rem">
     <Section align="center" width="100%">By Dylan Goh</Section>
     <SectionWithImage
-      aos="fade-left"
       imageAlign="right"
       imageSrc="{base}/img/sugar-cane-water/grandpa-cane.jpg"
       alt="Grandpa amongst the canes"
@@ -31,7 +30,7 @@
       He also harvests and prepares the sugarcane which my grandma uses to boil sugarcane water.
     </SectionWithImage>
 
-    <Section aos="fade-up" width="100%">
+    <Section width="100%">
       During COVID-19 lockdown in Sydney, my grandma would also boil sugarcane water and cook dishes
       to give to us. We would call ahead and she would fill repurposed juice bottles and takeaway
       containers to be left outside the front door. When we saw each other through the clear windows
@@ -66,7 +65,6 @@
     />
 
     <SectionWithImage
-      aos="fade-right"
       imageAlign="left"
       imageSrc="{base}/img/sugar-cane-water/cooking-in-pot.jpg"
       alt="Ingredients all boiling in the pot"
@@ -112,7 +110,6 @@
     />
 
     <SectionWithImage
-      aos="fade-left"
       imageAlign="right"
       imageSrc="{base}/img/sugar-cane-water/cutting-cane.jpg"
       alt="Cutting up the cane"
@@ -128,7 +125,7 @@
       </ul>
     </SectionWithImage>
 
-    <Section align="left" width="100%" aos="fade-up" title="Directions">
+    <Section align="left" width="100%" title="Directions">
       <p>Preparing the sugarcane stalks:</p>
       <br />
       <ol>
@@ -145,14 +142,14 @@
       </ol>
     </Section>
 
-    <Section align="center" width="100%" aos="fade-up">
+    <Section align="center" width="100%">
       <Image
         src="{base}/img/sugar-cane-water/cane-cutting-equipment.jpg"
         alt="Cutting sugar cane together"
       />
     </Section>
 
-    <Section align="left" width="100%" aos="fade-up">
+    <Section align="left" width="100%">
       <p>Making sugarcane water (10L):</p>
       <br />
       <ol>
@@ -178,12 +175,12 @@
       </ol>
     </Section>
 
-    <Section align="left" width="100%" aos="fade-up" title="Special notes">
+    <Section align="left" width="100%" title="Special notes">
       If you do not intend to boil the sugarcane immediately, store the 15cm lengths in a plastic
       bag and place into the freezer.
     </Section>
 
-    <Section align="center" width="100%" aos="fade-up">
+    <Section align="center" width="100%">
       <Image
         src="{base}/img/sugar-cane-water/save-for-later.jpg"
         alt="Cutting sugar cane together"

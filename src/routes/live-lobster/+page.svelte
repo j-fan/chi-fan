@@ -21,7 +21,6 @@
   <SectionGroup gap="4rem">
     <Section align="center" width="100%">By Jane Fan</Section>
     <SectionWithImage
-      aos="fade-left"
       imageAlign="right"
       imageSrc="{base}/img/live-lobster/photo-finished.jpg"
       alt="Finished dish"
@@ -31,7 +30,7 @@
       is a chef with 3 decades of experience and preparing fresh seafood well is one of his skills.
     </SectionWithImage>
 
-    <Section aos="fade-up" width="100%">
+    <Section width="100%">
       My family is lucky to be spoiled with a Cantonese traditional dinner every week on his day
       off. It typically features 3-6 dishes shared amongst diners. There is always at least one
       seafood dish, reflecting the diet they grew up with and proximity of their birthplace to the
@@ -55,7 +54,6 @@
     />
 
     <SectionWithImage
-      aos="fade-right"
       imageAlign="left"
       imageSrc="{base}/img/live-lobster/photo-ingredients.jpg"
       alt="Prepped herbs and spices on a plate"
@@ -94,7 +92,6 @@
     />
 
     <SectionWithImage
-      aos="fade-left"
       imageAlign="right"
       imageSrc="{base}/img/live-lobster/photo-cutting-lobster.jpg"
       alt="Cutting up the lobster"
@@ -108,7 +105,7 @@
       </ul>
     </SectionWithImage>
 
-    <Section align="left" width="100%" aos="fade-up" title="Directions">
+    <Section align="left" width="100%" title="Directions">
       <p>Prepare ingredients:</p>
       <br />
       <ol>
@@ -120,14 +117,14 @@
       </ol>
     </Section>
 
-    <Section align="center" width="100%" aos="fade-up">
+    <Section align="center" width="100%">
       <Image
         src="{base}/img/live-lobster/photo-cleaning-head.jpg"
         alt="Cut lobster pieces on a plate"
       />
     </Section>
 
-    <Section align="left" width="100%" aos="fade-up">
+    <Section align="left" width="100%">
       <p>Butcher the live lobster:</p>
       <br />
       <ol>
@@ -179,11 +176,11 @@
       </ol>
     </Section>
 
-    <Section align="center" width="100%" aos="fade-up">
+    <Section align="center" width="100%">
       <Image src="{base}/img/live-lobster/photo-stir-fry.jpg" alt="Cutting sugar cane together" />
     </Section>
 
-    <Section align="left" width="100%" aos="fade-up">
+    <Section align="left" width="100%">
       <p>Stir fry the lobster:</p>
       <br />
       <ol>
@@ -210,7 +207,7 @@
       </ol>
     </Section>
 
-    <Section align="center" width="100%" aos="fade-up">
+    <Section align="center" width="100%">
       <Image src="{base}/img/live-lobster/photo-finished2.jpg" alt="Cutting sugar cane together" />
     </Section>
   </SectionGroup>
