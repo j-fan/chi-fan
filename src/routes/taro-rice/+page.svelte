@@ -72,6 +72,26 @@
         {
           label: 'Bologna',
           src: `${base}/img/taro-rice/bologna.png`
+        },
+        {
+          label: 'Black pepper',
+          src: `${base}/img/taro-rice/black-pepper.png`
+        },
+        {
+          label: 'Chilli powder',
+          src: `${base}/img/taro-rice/chilli-powder.png`
+        },
+        {
+          label: 'Salt',
+          src: `${base}/img/taro-rice/salt.png`
+        },
+        {
+          label: 'Teriyaki sauce',
+          src: `${base}/img/taro-rice/teriyaki-sauce.png`
+        },
+        {
+          label: 'Oyster sauce',
+          src: `${base}/img/taro-rice/oyster-sauce.png`
         }
       ]}
     />
@@ -109,6 +129,14 @@
         {
           label: 'Chopping board',
           src: `${base}/img/sugar-cane-water/board.jpg`
+        },
+        {
+          label: 'Rice cooker',
+          src: `${base}/img/taro-rice/rice-cooker.png`
+        },
+        {
+          label: 'Wok',
+          src: `${base}/img/wok.png`
         }
       ]}
     />

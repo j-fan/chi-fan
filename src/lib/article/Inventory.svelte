@@ -73,6 +73,7 @@
     padding: 0.5rem;
     border-radius: 1rem;
     width: min-content;
+    font-size: 1rem;
   }
 
   .cell:hover .label {

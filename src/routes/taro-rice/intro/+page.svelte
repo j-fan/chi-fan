@@ -1,7 +1,6 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import Slides from '$lib/slides/Slides.svelte';
-  import SoundControls from '$lib/sound/SoundControls.svelte';
   import { soundSrc } from '$lib/sound/SoundStore';
   import Wok from '$lib/tools/Wok.svelte';
   import { onMount } from 'svelte';
@@ -11,19 +10,30 @@
   import ChoppingMushrooms from './ChoppingMushrooms.svelte';
   import ChoppingSpringOnion from './ChoppingSpringOnion.svelte';
   import ChoppingTaro from './ChoppingTaro.svelte';
+  import BlackPepper from './DragDropItems/BlackPepper.svelte';
   import Bologna from './DragDropItems/Bologna.svelte';
   import BolognaDropped from './DragDropItems/BolognaDropped.svelte';
+  import ChilliPowder from './DragDropItems/ChilliPowder.svelte';
+  import DroppedBlackPepper from './DragDropItems/DroppedBlackPepper.svelte';
+  import DroppedChilliPowder from './DragDropItems/DroppedChilliPowder.svelte';
+  import DroppedOysterSauce from './DragDropItems/DroppedOysterSauce.svelte';
+  import DroppedSalt from './DragDropItems/DroppedSalt.svelte';
+  import DroppedTeriyaki from './DragDropItems/DroppedTeriyaki.svelte';
   import Ham from './DragDropItems/Ham.svelte';
   import HamDropped from './DragDropItems/HamDropped.svelte';
   import Mint from './DragDropItems/Mint.svelte';
   import MintDropped from './DragDropItems/MintDropped.svelte';
   import Mushroom from './DragDropItems/Mushroom.svelte';
   import MushroomDropped from './DragDropItems/MushroomDropped.svelte';
+  import OysterSauce from './DragDropItems/OysterSauce.svelte';
+  import Salt from './DragDropItems/Salt.svelte';
   import Shrimp from './DragDropItems/Shrimp.svelte';
   import ShrimpDropped from './DragDropItems/ShrimpDropped.svelte';
   import SpringOnion from './DragDropItems/SpringOnion.svelte';
   import SpringOnionDropped from './DragDropItems/SpringOnionDropped.svelte';
+  import TeriyakiSauce from './DragDropItems/TeriyakiSauce.svelte';
   import PickedMint from './PickedMint.svelte';
+  import WokWithRice from './WokWithRice.svelte';
 
   let windowWidth = 9999;
   $: isMobile = windowWidth < 500;
@@ -250,6 +260,36 @@
         ShrimpDropped,
         MintDropped,
         SpringOnionDropped
+      ]
+    },
+    {
+      type: 'drag-drop',
+      showMovedItemsInStack: true,
+      dialogs: [
+        {
+          characterName: 'Mum',
+          bodyText:
+            'Add extra seasoning to your taste. Always taste your food while you’re cooking and season to your taste!',
+          nextButton: { text: 'Continue' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Mum',
+        bodyText: "Let's add some more seasonings."
+      },
+      successStep: {
+        characterName: 'Mum',
+        bodyText: "Looks like we are done. Let's serve it on a plate.",
+        nextButton: { text: "That's great!" }
+      },
+      dropZone: WokWithRice,
+      dragItems: [BlackPepper, ChilliPowder, Salt, TeriyakiSauce, OysterSauce],
+      droppedItems: [
+        DroppedBlackPepper,
+        DroppedChilliPowder,
+        DroppedSalt,
+        DroppedTeriyaki,
+        DroppedOysterSauce
       ]
     },
     {

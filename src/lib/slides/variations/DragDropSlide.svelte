@@ -103,6 +103,13 @@
               </div>
             {/each}
           </div>
+          {#key movedItems.length}
+            {#if props.confettiProps && movedItems.length > 0}
+              <div class="splash-stack">
+                <Confetti {...props.confettiProps} />
+              </div>
+            {/if}
+          {/key}
         {:else}
           {#key movedItem}
             <div class="item-in-dropzone">
@@ -201,6 +208,13 @@
     justify-content: center;
     position: absolute;
     width: 100%;
+  }
+
+  .splash-stack {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
   }
 
   .moved-items-stack {

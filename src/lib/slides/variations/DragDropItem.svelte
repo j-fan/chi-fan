@@ -1,10 +1,11 @@
 <script lang="ts">
   export let imageSrc: string;
   export let label: string | undefined = undefined;
+  export let mixBlendMode: string = 'normal';
 </script>
 
 <div class="wrapper">
-  <div class="cell" style="background-image: url({imageSrc})" />
+  <div class="cell" style="background-image: url({imageSrc}); mix-blend-mode: {mixBlendMode};" />
   {#if label}
     <div class="label">{label}</div>
   {/if}
