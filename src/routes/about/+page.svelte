@@ -48,7 +48,7 @@
       </div>
     </Section>
     <Section width="100%">
-      <RedTitle>Contributors</RedTitle>
+      <RedTitle>The team</RedTitle>
       <h2>Dylan Goh - Curator</h2>
       <p>
         Born on unceded Bidjigal lands, Dylan Goh is a cultural practitioner with 7 years’
