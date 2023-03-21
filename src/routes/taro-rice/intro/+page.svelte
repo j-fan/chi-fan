@@ -6,6 +6,7 @@
   import { onMount } from 'svelte';
   import ChoppingKnife from '../../../lib/tools/ChoppingKnife.svelte';
   import WokMeatVegOnly from '../WokMeatVegOnly.svelte';
+  import WokMeatVegSeasoned from '../WokMeatVegSeasoned.svelte';
   import ChoppingBologna from './ChoppingBologna.svelte';
   import ChoppingHam from './ChoppingHam.svelte';
   import ChoppingMushrooms from './ChoppingMushrooms.svelte';
@@ -19,6 +20,7 @@
   import DroppedChilliPowder from './DragDropItems/DroppedChilliPowder.svelte';
   import DroppedOysterSauce from './DragDropItems/DroppedOysterSauce.svelte';
   import DroppedSalt from './DragDropItems/DroppedSalt.svelte';
+  import DroppedTaroRice from './DragDropItems/DroppedTaroRice.svelte';
   import DroppedTeriyaki from './DragDropItems/DroppedTeriyaki.svelte';
   import Ham from './DragDropItems/Ham.svelte';
   import HamDropped from './DragDropItems/HamDropped.svelte';
@@ -27,6 +29,7 @@
   import Mushroom from './DragDropItems/Mushroom.svelte';
   import MushroomDropped from './DragDropItems/MushroomDropped.svelte';
   import OysterSauce from './DragDropItems/OysterSauce.svelte';
+  import RiceAndTaroBowl from './DragDropItems/RiceAndTaroBowl.svelte';
   import Salt from './DragDropItems/Salt.svelte';
   import Shrimp from './DragDropItems/Shrimp.svelte';
   import ShrimpDropped from './DragDropItems/ShrimpDropped.svelte';
@@ -295,15 +298,27 @@
       ]
     },
     {
-      type: 'static',
-      heroImage: `${base}/img/taro-rice/wok-with-rice.png`,
-      alt: 'taro rice in a wok',
+      type: 'drag-drop',
+      showMovedItemsInStack: true,
+      dialogs: [
+        {
+          characterName: 'Mum',
+          bodyText: 'After stir frying for a few minutes, we add the taro and rice.',
+          nextButton: { text: 'Done' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Mum',
+        bodyText: 'Add the taro and rice please.'
+      },
       successStep: {
         characterName: 'Mum',
-        bodyText: 'After stir frying for a few minutes, we add the taro and rice',
-        nextButton: { text: 'Done' }
+        bodyText: "Let's adjust the seasoning again.",
+        nextButton: { text: 'Continue' }
       },
-      heightPercent: 55
+      dropZone: WokMeatVegSeasoned,
+      dragItems: [RiceAndTaroBowl],
+      droppedItems: [DroppedTaroRice]
     },
     {
       type: 'drag-drop',
