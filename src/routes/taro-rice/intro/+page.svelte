@@ -328,7 +328,7 @@
         {
           characterName: 'Mum',
           bodyText:
-            'Finally, add any extra seasoning to your taste. Always taste your food while you’re cooking and season to your taste!',
+            'Add any final seasonings. Always taste your food while you’re cooking and season to your taste!',
           nextButton: { text: 'Continue' }
         }
       ],
