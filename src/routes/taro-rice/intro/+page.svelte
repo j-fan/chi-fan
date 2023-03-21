@@ -5,6 +5,7 @@
   import Wok from '$lib/tools/Wok.svelte';
   import { onMount } from 'svelte';
   import ChoppingKnife from '../../../lib/tools/ChoppingKnife.svelte';
+  import WokMeatVegOnly from '../WokMeatVegOnly.svelte';
   import ChoppingBologna from './ChoppingBologna.svelte';
   import ChoppingHam from './ChoppingHam.svelte';
   import ChoppingMushrooms from './ChoppingMushrooms.svelte';
@@ -269,7 +270,7 @@
         {
           characterName: 'Mum',
           bodyText:
-            'Add extra seasoning to your taste. Always taste your food while you’re cooking and season to your taste!',
+            'Add some chilli powder, teriyaki sauce, oyster sauce, soy sauce and black peppers into the pan.',
           nextButton: { text: 'Continue' }
         }
       ],
@@ -279,8 +280,51 @@
       },
       successStep: {
         characterName: 'Mum',
-        bodyText: "Looks like we are done. Let's serve it on a plate.",
-        nextButton: { text: "That's great!" }
+        bodyText:
+          'Stir fry on medium-high heat for a few minutes before putting the cooked taro and rice into the pan.',
+        nextButton: { text: 'Continue' }
+      },
+      dropZone: WokMeatVegOnly,
+      dragItems: [BlackPepper, ChilliPowder, Salt, TeriyakiSauce, OysterSauce],
+      droppedItems: [
+        DroppedBlackPepper,
+        DroppedChilliPowder,
+        DroppedSalt,
+        DroppedTeriyaki,
+        DroppedOysterSauce
+      ]
+    },
+    {
+      type: 'static',
+      heroImage: `${base}/img/taro-rice/wok-with-rice.png`,
+      alt: 'taro rice in a wok',
+      successStep: {
+        characterName: 'Mum',
+        bodyText: 'After stir frying for a few minutes, we add the taro and rice',
+        nextButton: { text: 'Done' }
+      },
+      heightPercent: 55
+    },
+    {
+      type: 'drag-drop',
+      showMovedItemsInStack: true,
+      targetCount: 1,
+      dialogs: [
+        {
+          characterName: 'Mum',
+          bodyText:
+            'Finally, add any extra seasoning to your taste. Always taste your food while you’re cooking and season to your taste!',
+          nextButton: { text: 'Continue' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Mum',
+        bodyText: "Let's add some more seasonings."
+      },
+      successStep: {
+        characterName: 'Mum',
+        bodyText: 'If you are done with the seasonings, we can serve it on a plate.',
+        nextButton: { text: "I'm finished now" }
       },
       dropZone: WokWithRice,
       dragItems: [BlackPepper, ChilliPowder, Salt, TeriyakiSauce, OysterSauce],

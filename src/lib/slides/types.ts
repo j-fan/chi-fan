@@ -64,6 +64,7 @@ export type DragDropSlideType = {
    * picked last being on top.
    */
   showMovedItemsInStack?: boolean;
+  targetCount?: number;
 } & BaseSlideType;
 
 export type FinishedSlideType = {

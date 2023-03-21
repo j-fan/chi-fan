@@ -76,7 +76,9 @@
   dialogs={props.dialogs}
   errorStep={props.errorStep}
   successStep={props.successStep}
-  isValid={movedItems.length === props.dragItems.length}
+  isValid={props.targetCount
+    ? movedItems.length === props.targetCount
+    : movedItems.length === props.dragItems.length}
   bgImage={props.bgImage}
 >
   <div class="slide-contents">
