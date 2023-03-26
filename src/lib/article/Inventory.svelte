@@ -10,7 +10,7 @@
   export let title: string;
 </script>
 
-<Section aos="fade-up" width="100%" {title}>
+<Section width="100%" {title}>
   <div class="grid-wrapper">
     {#each itemsImageSrc as item}
       <div class="cell">

@@ -6,7 +6,7 @@
   import SoundControls from '$lib/sound/SoundControls.svelte';
 
   onMount(() => {
-    AOS.init({ offset: 140 });
+    AOS.init({ offset: 140, once: true });
   });
 </script>
 

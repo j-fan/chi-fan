@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-  <title>Sugar cane water</title>
+  <title>蔗水</title>
   <meta name="description" content="Sugar cane water" />
 </svelte:head>
 
@@ -19,24 +19,33 @@
   <FullWidthBanner src="{base}/img/sugar-cane-water/interior.jpg" alt="kitchen interior" />
   <RedTitle>Sugar cane water</RedTitle>
   <SectionGroup gap="4rem">
-    <Section align="center" width="100%">By Dylan Goh</Section>
+    <Section align="center" width="100%"
+      >By Dylan Goh, Joseph Tsang (曾廣棟) & Lipoha Tsang (李寶霞)</Section
+    >
+
     <SectionWithImage
       imageAlign="right"
-      imageSrc="{base}/img/sugar-cane-water/grandpa-cane.jpg"
-      alt="Grandpa amongst the canes"
+      imageSrc="{base}/img/sugar-cane-water/grandpa.jpg"
+      alt="Grandpa sitting in a chair"
+      caption="Grandpa - Joseph Tsang (曾廣棟)"
     >
       Sugarcane water has been produced in my family for as long as I can remember. Grandpa is
       really proud of his garden. From winter melon to bamboo, he grows a lot of different plants.
       He also harvests and prepares the sugarcane which my grandma uses to boil sugarcane water.
     </SectionWithImage>
 
-    <Section width="100%">
+    <SectionWithImage
+      imageAlign="left"
+      imageSrc="{base}/img/sugar-cane-water/grandma.jpg"
+      alt="Grandma holding up fruits"
+      caption="Grandma - Lipoha Tsang (李寶霞)"
+    >
       During COVID-19 lockdown in Sydney, my grandma would also boil sugarcane water and cook dishes
       to give to us. We would call ahead and she would fill repurposed juice bottles and takeaway
       containers to be left outside the front door. When we saw each other through the clear windows
       of the door, we would perform this strange dance. As we approached the door, she retreated
       further inside. Once we retreated into our cars, she would step forward again to wave at us.
-    </Section>
+    </SectionWithImage>
 
     <Inventory
       title="Ingredients"
