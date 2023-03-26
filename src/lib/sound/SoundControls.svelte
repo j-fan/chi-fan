@@ -8,7 +8,7 @@
   let interactionStarted = false;
   let soundIsPaused = true;
   let src = $externalSoundSrc;
-  const audioFadeTime = 2000;
+  const audioFadeTime = 1000;
 
   const tweenedVolume = tweened(0, {
     duration: audioFadeTime,
