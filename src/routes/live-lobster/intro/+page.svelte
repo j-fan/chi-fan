@@ -7,6 +7,20 @@
   import ChoppingKnife from '../../../lib/tools/ChoppingKnife.svelte';
   import ChopLobster from './ChopLobster.svelte';
   import ChopSwimmerets from './ChopSwimmerets.svelte';
+  import SpringOnionWhite from './DragDropItems/SpringOnionWhite.svelte';
+  import SpringOnionDroppedWhite from './DragDropItems/SpringOnionDroppedWhite.svelte';
+  import Ginger from './DragDropItems/Ginger.svelte';
+  import GingerDropped from './DragDropItems/GingerDropped.svelte';
+  import Salt from './DragDropItems/Salt.svelte';
+  import SaltDropped from './DragDropItems/SaltDropped.svelte';
+  import Oil from './DragDropItems/Oil.svelte';
+  import OilDropped from './DragDropItems/OilDropped.svelte';
+  import Coriander from './DragDropItems/Coriander.svelte';
+  import CorianderDropped from './DragDropItems/CorianderDropped.svelte';
+  import SlurryDropped from './DragDropItems/SlurryDropped.svelte';
+  import Slurry from './DragDropItems/Slurry.svelte';
+  import Wine from './DragDropItems/Wine.svelte';
+  import WineDropped from './DragDropItems/WineDropped.svelte';
 
   let windowWidth = 9999;
   $: isMobile = windowWidth < 500;
@@ -274,12 +288,6 @@
           bodyText:
             'Keep stirring the contents of the pan for another 30 seconds until the slurry has thickened into sauce.',
           nextButton: { text: 'Continue' }
-        },
-        {
-          characterName: 'Dad',
-          bodyText:
-            'Drizzle some oil over the top and mix again. This will improve the sheen of the food. Transfer the stir fry to a plate and garnish with the remaining coriander.',
-          nextButton: { text: 'Continue' }
         }
       ],
       errorStep: {
@@ -288,12 +296,23 @@
       },
       successStep: {
         characterName: 'Dad',
-        bodyText: 'This dish is now ready to serve!',
+        bodyText:
+          'Drizzle some oil over the top and mix again. This will improve the sheen of the food. Garnish with coriander and serve.',
         nextButton: { text: 'We did it!' }
       },
       dropZone: Wok,
-      dragItems: [SpringOnion],
-      droppedItems: [SpringOnionDropped]
+      dragItems: [Oil, Ginger, SpringOnionWhite, Salt, Wine, Slurry, SpringOnion, Coriander],
+      droppedItems: [
+        OilDropped,
+        GingerDropped,
+        SpringOnionDroppedWhite,
+        SaltDropped,
+        WineDropped,
+        SlurryDropped,
+        SpringOnionDropped,
+        CorianderDropped
+        //TODO: Add lobster pieces
+      ]
     },
     {
       type: 'finished',
