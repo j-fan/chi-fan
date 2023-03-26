@@ -16,19 +16,31 @@
     {
       type: 'static',
       heroImage: `${base}/img/live-lobster/lobster-labelled.png`,
-      alt: 'washing rice',
+      alt: 'Parts of the lobster',
       dialogs: [
         {
           characterName: 'Dad',
           bodyText:
             'Identify the parts of the lobster. There are two main sections, the carapace and abdomen.',
           nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText:
+            'The carapace includes the head and middle section (thorax) where the walking legs attach.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText:
+            'The abdomen is the segmented section from the end of the carapace and down to the tip of the tail. ',
+          nextButton: { text: 'Continue' }
         }
       ],
       successStep: {
         characterName: 'Dad',
-        bodyText: 'Done',
-        nextButton: { text: 'Continue' }
+        bodyText: 'The spiny lobster that is common in Australia has no claws.',
+        nextButton: { text: 'Got it!' }
       },
       heightPercent: 80
     },
