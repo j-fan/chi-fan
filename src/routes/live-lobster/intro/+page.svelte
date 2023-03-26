@@ -15,14 +15,22 @@
   slides={[
     {
       type: 'static',
-      heroImage: `${base}/img/live-lobster/lobster1.png`,
+      heroImage: `${base}/img/live-lobster/lobster-labelled.png`,
       alt: 'washing rice',
+      dialogs: [
+        {
+          characterName: 'Dad',
+          bodyText:
+            'Identify the parts of the lobster. There are two main sections, the carapace and abdomen.',
+          nextButton: { text: 'Continue' }
+        }
+      ],
       successStep: {
         characterName: 'Dad',
-        bodyText: 'Example text',
+        bodyText: 'Done',
         nextButton: { text: 'Continue' }
       },
-      heightPercent: 70
+      heightPercent: 80
     },
     {
       type: 'finished',

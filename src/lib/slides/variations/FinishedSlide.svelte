@@ -16,7 +16,7 @@
 </script>
 
 <BaseSlide
-  dialogs={[{ bodyText: '', characterName: '' }]}
+  dialogs={[props.successStep]}
   errorStep={{ bodyText: '', characterName: '' }}
   successStep={props.successStep}
   isValid={true}

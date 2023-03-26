@@ -16,10 +16,6 @@
   }
   $: currentDialog = dialogs[0];
   $: {
-    // Ensure currentDialog reacts to the isValid prop
-    if (dialogStep === dialogs.length - 1 && isValid) {
-      currentDialog = successStep;
-    }
     if (dialogStep === dialogs.length) {
       currentDialog = isValid ? successStep : errorStep;
     }

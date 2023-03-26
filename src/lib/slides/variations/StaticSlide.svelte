@@ -15,7 +15,7 @@
 </script>
 
 <BaseSlide
-  dialogs={[{ bodyText: '', characterName: '' }]}
+  dialogs={props.dialogs && props.dialogs.length > 0 ? props.dialogs : [props.successStep]}
   errorStep={{ bodyText: '', characterName: '' }}
   successStep={props.successStep}
   isValid={true}

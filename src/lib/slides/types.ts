@@ -78,7 +78,8 @@ export type StaticSlideType = {
   heroImage: string;
   alt: string;
   heightPercent: number;
-} & Omit<BaseSlideType, 'dialogs' | 'errorStep'>;
+} & Omit<BaseSlideType, 'dialogs' | 'errorStep'> &
+  Partial<Pick<BaseSlideType, 'dialogs'>>;
 
 export type Slide =
   | PickItemsSlideType
