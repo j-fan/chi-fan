@@ -47,8 +47,36 @@
           src: `${base}/img/live-lobster/lobster1.png`
         },
         {
+          label: 'Chicken stick',
+          src: `${base}/img/live-lobster/chicken-stock.png`
+        },
+        {
+          label: 'Coriander',
+          src: `${base}/img/live-lobster/coriander-2.png`
+        },
+        {
+          label: 'Ginger',
+          src: `${base}/img/live-lobster/ginger.png`
+        },
+        {
+          label: 'Salt',
+          src: `${base}/img/taro-rice/salt.png`
+        },
+        {
           label: 'Spring onion',
           src: `${base}/img/taro-rice/spring-onion-2.png`
+        },
+        {
+          label: 'Starch',
+          src: `${base}/img/live-lobster/potato-starch.png`
+        },
+        {
+          label: 'Vegetable oil',
+          src: `${base}/img/live-lobster/corn-oil.png`
+        },
+        {
+          label: 'White wine',
+          src: `${base}/img/live-lobster/wine.png`
         }
       ]}
     />
@@ -60,7 +88,7 @@
     >
       <ul>
         <li>1 live spiny/rock lobster</li>
-        <li>4 scallions</li>
+        <li>4 spring onions</li>
         <li>Large handful of coriander leaves</li>
         <li>About 10 thin slices of ginger</li>
         <li>Vegetable oil</li>
@@ -78,15 +106,23 @@
       itemsImageSrc={[
         {
           label: 'Cleaver',
-          src: `${base}/img/sugar-cane-water/cleaver2.png`
+          src: `${base}/img/live-lobster/cleaver.png`
         },
         {
           label: 'Chopping board',
-          src: `${base}/img/sugar-cane-water/board.jpg`
+          src: `${base}/img/live-lobster/chopping-board.png`
         },
         {
           label: 'Chopsticks',
           src: `${base}/img/live-lobster/chopsticks.png`
+        },
+        {
+          label: 'Meat mallet',
+          src: `${base}/img/live-lobster/mallet.png`
+        },
+        {
+          label: 'Wok',
+          src: `${base}/img/wok.png`
         }
       ]}
     />
@@ -101,7 +137,7 @@
         <li>Meat mallet</li>
         <li>Wok or deep fry pan</li>
         <li>Steel Chopping board</li>
-        <li>Chopping Chopsticks (for mixing the stir fry)</li>
+        <li>Chopsticks (for mixing the stir fry)</li>
       </ul>
     </SectionWithImage>
 

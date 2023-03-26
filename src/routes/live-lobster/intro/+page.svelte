@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>Taro fried rice</title>
+  <title>Live lobster stir fry</title>
 </svelte:head>
 <svelte:window bind:innerWidth={windowWidth} />
 <Slides
