@@ -1,6 +1,9 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import Slides from '$lib/slides/Slides.svelte';
+  import Wok from '$lib/tools/Wok.svelte';
+  import SpringOnion from './DragDropItems/SpringOnion.svelte';
+  import SpringOnionDropped from './DragDropItems/SpringOnionDropped.svelte';
   import ChoppingKnife from '../../../lib/tools/ChoppingKnife.svelte';
   import ChopLobster from './ChopLobster.svelte';
   import ChopSwimmerets from './ChopSwimmerets.svelte';
@@ -227,6 +230,70 @@
       bgImage: `${base}/img/live-lobster/chopping-board.png`,
       toolComponent: ChoppingKnife,
       bottomPosition: 45
+    },
+    {
+      type: 'drag-drop',
+      showMovedItemsInStack: true,
+      dialogs: [
+        {
+          characterName: 'Dad',
+          bodyText:
+            'Add 1 tablespoon of oil to a fry pan and turn on high heat. Make it as hot as you can.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText: 'When you can barely hold your hand over the pan, it is ready.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText: 'Add the ginger slices and fry until fragrant.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText:
+            'Add the white parts of the scallion, lobster pieces, ½ teaspoon of salt and one teaspoon of white wine.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText:
+            'Mix together and cover for 3-4 minutes. It is important not to overcook lobster otherwise it gets tough. ',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText:
+            'Add the remaining scallions, half the coriander and drizzle in the starch flour slurry slowly into the pan.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText:
+            'Keep stirring the contents of the pan for another 30 seconds until the slurry has thickened into sauce.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText:
+            'Drizzle some oil over the top and mix again. This will improve the sheen of the food. Transfer the stir fry to a plate and garnish with the remaining coriander.',
+          nextButton: { text: 'Continue' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Dad',
+        bodyText: 'Not all the ingredients have been added to the wok and cooked.'
+      },
+      successStep: {
+        characterName: 'Dad',
+        bodyText: 'This dish is now ready to serve!',
+        nextButton: { text: 'We did it!' }
+      },
+      dropZone: Wok,
+      dragItems: [SpringOnion],
+      droppedItems: [SpringOnionDropped]
     },
     {
       type: 'finished',
