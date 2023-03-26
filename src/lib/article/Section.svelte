@@ -4,7 +4,7 @@
 
   export let align: 'left' | 'right' | 'center' = 'left';
   export let width: string = 'auto';
-  export let aos: AosType | undefined = undefined;
+  export let aos: AosType | undefined = 'fade-up';
   export let aosPlacement: anchorPlacementOptions | undefined = undefined;
   export let aosDelay: number | undefined = undefined;
   export let aosDuration: number | undefined = undefined;
