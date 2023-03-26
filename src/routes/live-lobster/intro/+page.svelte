@@ -3,6 +3,7 @@
   import Slides from '$lib/slides/Slides.svelte';
   import ChoppingKnife from '../../../lib/tools/ChoppingKnife.svelte';
   import ChopLobster from './ChopLobster.svelte';
+  import ChopSwimmerets from './ChopSwimmerets.svelte';
 
   let windowWidth = 9999;
   $: isMobile = windowWidth < 500;
@@ -35,7 +36,7 @@
         {
           characterName: 'Dad',
           bodyText:
-            'The abdomen is the segmented section from the end of the carapace and down to the tip of the tail. ',
+            'The abdomen is the segmented section from the end of the carapace and down to the tip of the tail.',
           nextButton: { text: 'Continue' }
         }
       ],
@@ -116,7 +117,7 @@
       },
       targetCount: 1,
       totalItems: 1,
-      itemComponent: ChopLobster,
+      itemComponent: ChopLobster, // TODO replace with new component that has the flipped carapace
       bgImage: `${base}/img/live-lobster/chopping-board.png`,
       toolComponent: ChoppingKnife,
       bottomPosition: 45
@@ -144,6 +145,52 @@
         nextButton: { text: 'Ok' }
       },
       heightPercent: 60
+    },
+    {
+      type: 'pick-items',
+      dialogs: [
+        {
+          characterName: 'Dad',
+          bodyText: 'Place the abdomen piece so that the bottom side is facing up.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText: 'Lift up the swimmerets on one side with your knife.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText:
+            'With the swimmerets still lifted, turn the abdomen to the side and slice off the swimmerets.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText: 'Also trim off the tip of the tail and discard it.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText: 'Repeat on the other side.',
+          nextButton: { text: 'Continue' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Dad',
+        bodyText: "You haven't cut the swimmerets off yet."
+      },
+      successStep: {
+        characterName: 'Dad',
+        bodyText: 'We need to continue chopping up the abdomen.',
+        nextButton: { text: 'Ok' }
+      },
+      targetCount: 1,
+      totalItems: 1,
+      itemComponent: ChopSwimmerets,
+      bgImage: `${base}/img/live-lobster/chopping-board.png`,
+      toolComponent: ChoppingKnife,
+      bottomPosition: 45
     },
     {
       type: 'finished',
