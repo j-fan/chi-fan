@@ -16,7 +16,6 @@
   import Almonds from './DragDropItems/Almonds.svelte';
   import Figs from './DragDropItems/Figs.svelte';
   import RockSugar from './DragDropItems/RockSugar.svelte';
-  import SoundControls from '$lib/sound/SoundControls.svelte';
   import { onMount } from 'svelte';
   import { soundSrc } from '$lib/sound/SoundStore';
 

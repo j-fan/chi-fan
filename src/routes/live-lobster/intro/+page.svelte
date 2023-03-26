@@ -21,9 +21,15 @@
   import Slurry from './DragDropItems/Slurry.svelte';
   import Wine from './DragDropItems/Wine.svelte';
   import WineDropped from './DragDropItems/WineDropped.svelte';
+  import { onMount } from 'svelte';
+  import { soundSrc } from '$lib/sound/SoundStore';
 
   let windowWidth = 9999;
   $: isMobile = windowWidth < 500;
+
+  onMount(() => {
+    soundSrc.set(`${base}/sound/lobster.mp3`);
+  });
 </script>
 
 <svelte:head>
