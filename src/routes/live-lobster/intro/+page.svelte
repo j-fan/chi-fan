@@ -193,6 +193,42 @@
       bottomPosition: 45
     },
     {
+      type: 'pick-items',
+      dialogs: [
+        {
+          characterName: 'Dad',
+          bodyText:
+            'Slice the abdomen halfway on the long side and remove the dark thread that is the intestine.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText: 'Cut each half into 4 pieces on the short side.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText: 'Repeat again for the other half of the abdomen.',
+          nextButton: { text: 'Continue' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Dad',
+        bodyText: "You haven't cut the abdomen into small enough pieced yet."
+      },
+      successStep: {
+        characterName: 'Dad',
+        bodyText: 'Now that the lobster is in small pieces, we can cook it.',
+        nextButton: { text: "Let's do it!" }
+      },
+      targetCount: 1,
+      totalItems: 1,
+      itemComponent: ChopSwimmerets, // TODO - replace with 3 step of chopping abdomen lengthwise and into smaller chunks
+      bgImage: `${base}/img/live-lobster/chopping-board.png`,
+      toolComponent: ChoppingKnife,
+      bottomPosition: 45
+    },
+    {
       type: 'finished',
       heroImage: `${base}/img/live-lobster/lobster-dish.png`,
       title: '☆ Live lobster stir fry ☆',
