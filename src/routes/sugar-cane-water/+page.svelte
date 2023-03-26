@@ -11,13 +11,12 @@
 </script>
 
 <svelte:head>
-  <title>蔗水</title>
-  <meta name="description" content="Sugar cane water" />
+  <title>Chi Fan - 蔗水 (sugarcane water)</title>
 </svelte:head>
 
 <Article>
   <FullWidthBanner src="{base}/img/sugar-cane-water/interior.jpg" alt="kitchen interior" />
-  <RedTitle>Sugar cane water</RedTitle>
+  <RedTitle>蔗水</RedTitle>
   <SectionGroup gap="4rem">
     <Section align="center" width="100%"
       >By Dylan Goh, Joseph Tsang (曾廣棟) & Lipoha Tsang (李寶霞)</Section
@@ -29,9 +28,10 @@
       alt="Grandpa sitting in a chair"
       caption="Grandpa - Joseph Tsang (曾廣棟)"
     >
-      Sugarcane water has been produced in my family for as long as I can remember. Grandpa is
-      really proud of his garden. From winter melon to bamboo, he grows a lot of different plants.
-      He also harvests and prepares the sugarcane which my grandma uses to boil sugarcane water.
+      蔗水 (sugarcane water) has been produced in my family for as long as I can remember. Grandpa
+      is really proud of his garden. From winter melon to bamboo, he grows a lot of different
+      plants. He also harvests and prepares the sugarcane which my grandma uses to boil sugarcane
+      water.
     </SectionWithImage>
 
     <SectionWithImage

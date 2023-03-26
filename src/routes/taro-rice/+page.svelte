@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-  <title>Taro fried rice</title>
+  <title>Chi Fan - Taro fried rice</title>
 </svelte:head>
 
 <Article>

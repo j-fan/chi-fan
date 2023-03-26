@@ -11,8 +11,7 @@
 </script>
 
 <svelte:head>
-  <title>Live lobster stir fry</title>
-  <meta name="description" content="Sugar cane water" />
+  <title>Chi Fan - Live lobster stir fry</title>
 </svelte:head>
 
 <Article>

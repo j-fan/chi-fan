@@ -4,8 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>Doors</title>
-  <meta name="description" content="Doors" />
+  <title>Chi Fan - Kitchens</title>
 </svelte:head>
 
 <div class="wrapper">

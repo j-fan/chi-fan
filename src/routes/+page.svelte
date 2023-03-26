@@ -3,16 +3,15 @@
   import Button from '$lib/button/Button.svelte';
   import Card from '$lib/card/Card.svelte';
 
-  const src = `${base}/img/home-bg.jpg`;
+  const homeBg = `${base}/img/home-bg.jpg`;
 </script>
 
 <svelte:head>
-  <title>Chi Fan</title>
-  <meta name="description" content="Chi Fan interactive artwork" />
-  <link rel="preload" as="image" href={src} />
+  <title>Welcome to Chi Fan</title>
+  <link rel="preload" as="image" href={homeBg} />
 </svelte:head>
 
-<section style="background-image: url({src})">
+<section style="background-image: url({homeBg})">
   <Card width="800px" isCentered>
     <img src="{base}/img/home-banner.png" alt="Welcome to Chi Fan" />
     <Button href="/doors">Enter</Button></Card

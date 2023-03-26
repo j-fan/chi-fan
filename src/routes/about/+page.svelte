@@ -7,8 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>About</title>
-  <meta name="description" content="About this Chi Fan" />
+  <title>Chi Fan - About</title>
 </svelte:head>
 
 <Article>

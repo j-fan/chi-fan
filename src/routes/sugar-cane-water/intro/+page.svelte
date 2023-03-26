@@ -28,7 +28,7 @@
 </script>
 
 <svelte:head>
-  <title>Sugar cane water</title>
+  <title>Chi Fan - 蔗水 (sugarcane water)</title>
 </svelte:head>
 <svelte:window bind:innerWidth={windowWidth} />
 <Slides

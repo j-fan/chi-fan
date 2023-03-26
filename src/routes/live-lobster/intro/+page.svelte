@@ -33,7 +33,7 @@
 </script>
 
 <svelte:head>
-  <title>Live lobster stir fry</title>
+  <title>Chi Fan - Live lobster stir fry</title>
 </svelte:head>
 <svelte:window bind:innerWidth={windowWidth} />
 <Slides
