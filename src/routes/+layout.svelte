@@ -4,7 +4,6 @@
   import AOS from 'aos';
   import { onMount } from 'svelte';
   import SoundControls from '$lib/sound/SoundControls.svelte';
-  import { base } from '$app/paths';
 
   onMount(() => {
     AOS.init({ offset: 140, once: true });
@@ -17,7 +16,7 @@
 
 <svelte:head>
   <title>Chi Fan</title>
-  <meta name="description" content="Chi Fan interactive artwork" />
+  <meta name="description" content={description} />
 
   <!-- Primary Meta Tags -->
   <title>Chi Fan</title>
