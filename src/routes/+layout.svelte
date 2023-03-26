@@ -12,6 +12,7 @@
 
   const description =
     '吃饭 (Chi-Fan) is a visual arts / heritage studies project tracing the intimate stories and migration of family recipes across the contested “Chinese diaspora”.';
+  const socialMediaImage = 'https://j-fan.github.io/chi-fan/img/home-banner.jpg';
 </script>
 
 <svelte:head>
@@ -28,14 +29,14 @@
   <meta property="og:url" content="https://j-fan.github.io/chi-fan" />
   <meta property="og:title" content="Chi Fan" />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content="{base}/home-banner.png" />
+  <meta property="og:image" content={socialMediaImage} />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://j-fan.github.io/chi-fan" />
   <meta property="twitter:title" content="Chi Fan" />
   <meta property="twitter:description" content={description} />
-  <meta property="twitter:image" content="{base}/home-banner.png" />
+  <meta property="twitter:image" content={socialMediaImage} />
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </svelte:head>
