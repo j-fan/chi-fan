@@ -50,4 +50,10 @@
     height: var(--height-percent);
     object-fit: contain;
   }
+
+  @media (max-width: 800px) {
+    .center-content {
+      justify-content: flex-start;
+    }
+  }
 </style>

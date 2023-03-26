@@ -1,6 +1,8 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import Slides from '$lib/slides/Slides.svelte';
+  import ChoppingKnife from '../../../lib/tools/ChoppingKnife.svelte';
+  import ChopLobster from './ChopLobster.svelte';
 
   let windowWidth = 9999;
   $: isMobile = windowWidth < 500;
@@ -45,8 +47,52 @@
       heightPercent: 80
     },
     {
+      type: 'pick-items',
+      dialogs: [
+        {
+          characterName: 'Dad',
+          bodyText:
+            'Cut the lobster along the line between carapace and abdomen in one strong, swift motion.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText:
+            'You will need to raise your arm slightly and bring down the knife straight down, taking care to avoid your fingers.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText:
+            'Alternatively a safer method would be to rest your knife on the right location and use a meat mallet to hit the top of your knife.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText:
+            'You can also use the heel of your palm instead of the mallet to apply force to the knife.',
+          nextButton: { text: 'Continue' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Dad',
+        bodyText: "You haven't cut the lobster in half yet."
+      },
+      successStep: {
+        characterName: 'Dad',
+        bodyText: 'We will move onto the carapace.',
+        nextButton: { text: "What's next?" }
+      },
+      targetCount: 1,
+      totalItems: 1,
+      itemComponent: ChopLobster,
+      bgImage: `${base}/img/live-lobster/chopping-board.png`,
+      toolComponent: ChoppingKnife,
+      bottomPosition: 45
+    },
+    {
       type: 'finished',
-      heroImage: `${base}/img/taro-rice/completed.png`,
+      heroImage: `${base}/img/live-lobster/lobster-dish.png`,
       title: '☆ Live lobster stir fry ☆',
       successStep: {
         characterName: 'Dad',

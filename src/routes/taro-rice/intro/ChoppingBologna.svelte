@@ -1,6 +1,6 @@
 <script lang="ts">
   import { base } from '$app/paths';
-  import SingleChopItem from './SingleChopItem.svelte';
+  import SingleChopItem from '../../../lib/slides/variations/SingleChopItem.svelte';
 
   const beforeChop = `${base}/img/taro-rice/bologna.png`;
   const afterChop = `${base}/img/taro-rice/bologna-slices.png`;

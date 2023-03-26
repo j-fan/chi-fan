@@ -36,7 +36,7 @@
     height: 100%;
     overflow: hidden;
     background-repeat: no-repeat;
-    background-size: 80% contain;
+    background-size: 80vh;
     background-position: center;
   }
 
@@ -48,5 +48,11 @@
     z-index: 100;
     width: 500px;
     max-width: 90%;
+  }
+
+  @media (max-width: 700px) {
+    .slide-content {
+      background-size: 100vw;
+    }
   }
 </style>

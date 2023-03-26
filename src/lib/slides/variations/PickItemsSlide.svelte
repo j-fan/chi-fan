@@ -95,7 +95,7 @@
           ? `left: ${getItemSpacing(index)}%; bottom: ${
               props.bottomPosition + randomRange(-20, 10)
             }%`
-          : 'left: 50%; transform: translate(-50%, -50%); top: 50%;'}
+          : `left: 50%; transform: translate(-50%, -50%); top: ${props.bottomPosition}%;`}
       >
         <svelte:component this={props.itemComponent} picked={pickedItems.has(index)} />
       </div>
