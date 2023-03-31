@@ -77,7 +77,7 @@
   errorStep={props.errorStep}
   successStep={props.successStep}
   isValid={props.targetCount
-    ? movedItems.length === props.targetCount
+    ? movedItems.length >= props.targetCount
     : movedItems.length === props.dragItems.length}
   bgImage={props.bgImage}
 >
