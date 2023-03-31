@@ -23,6 +23,10 @@
   import WineDropped from './DragDropItems/WineDropped.svelte';
   import { onMount } from 'svelte';
   import { soundSrc } from '$lib/sound/SoundStore';
+    import Lobster from './DragDropItems/Lobster.svelte';
+    import LobsterDropped from './DragDropItems/LobsterDropped.svelte';
+    import ChopLobsterHead from './ChopLobsterHead.svelte';
+    import ChopTail from './ChopTail.svelte';
 
   let windowWidth = 9999;
   $: isMobile = windowWidth < 500;
@@ -140,7 +144,7 @@
       },
       targetCount: 1,
       totalItems: 1,
-      itemComponent: ChopLobster, // TODO replace with new component that has the flipped carapace
+      itemComponent: ChopLobsterHead,
       bgImage: `${base}/img/live-lobster/chopping-board.png`,
       toolComponent: ChoppingKnife,
       bottomPosition: 45
@@ -246,7 +250,7 @@
       },
       targetCount: 1,
       totalItems: 1,
-      itemComponent: ChopSwimmerets, // TODO - replace with 3 step of chopping abdomen lengthwise and into smaller chunks
+      itemComponent: ChopTail, 
       bgImage: `${base}/img/live-lobster/chopping-board.png`,
       toolComponent: ChoppingKnife,
       bottomPosition: 45
@@ -307,17 +311,17 @@
         nextButton: { text: 'We did it!' }
       },
       dropZone: Wok,
-      dragItems: [Oil, Ginger, SpringOnionWhite, Salt, Wine, Slurry, SpringOnion, Coriander],
+      dragItems: [Oil, Ginger, SpringOnionWhite, Lobster, Salt, Wine, Slurry, SpringOnion, Coriander],
       droppedItems: [
         OilDropped,
         GingerDropped,
         SpringOnionDroppedWhite,
+        LobsterDropped,
         SaltDropped,
         WineDropped,
         SlurryDropped,
         SpringOnionDropped,
         CorianderDropped
-        //TODO: Add lobster pieces
       ]
     },
     {
@@ -327,7 +331,7 @@
       successStep: {
         characterName: 'Dad',
         bodyText: "Well done, you've made live lobster stir fry!",
-        nextButton: { text: 'Done!', href: '/taro-rice' }
+        nextButton: { text: 'Done!', href: '/live-lobster' }
       }
     }
   ]}
