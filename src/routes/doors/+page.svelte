@@ -31,7 +31,12 @@
         alt="kitchen of the taro fried rice recipe"
       />
     </Doors>
-    <Doors link="{base}/live-lobster/intro" aspectRatio="500 / 847">
+    <Doors
+      link="{base}/live-lobster/intro"
+      aspectRatio="500 / 847"
+      doorImgLeft="{base}/img/live-lobster/door-left.jpg"
+      doorImgRight="{base}/img/live-lobster/door-right.jpg"
+    >
       <img
         class="interior-img"
         slot="doorInside"
