@@ -33,6 +33,7 @@
   import Salt from './DragDropItems/Salt.svelte';
   import Shrimp from './DragDropItems/Shrimp.svelte';
   import ShrimpDropped from './DragDropItems/ShrimpDropped.svelte';
+  import SoySauce from './DragDropItems/SoySauce.svelte';
   import SpringOnion from './DragDropItems/SpringOnion.svelte';
   import SpringOnionDropped from './DragDropItems/SpringOnionDropped.svelte';
   import TeriyakiSauce from './DragDropItems/TeriyakiSauce.svelte';
@@ -288,12 +289,13 @@
         nextButton: { text: 'Continue' }
       },
       dropZone: WokMeatVegOnly,
-      dragItems: [BlackPepper, ChilliPowder, Salt, TeriyakiSauce, OysterSauce],
+      dragItems: [BlackPepper, ChilliPowder, Salt, TeriyakiSauce, OysterSauce, SoySauce],
       droppedItems: [
         DroppedBlackPepper,
         DroppedChilliPowder,
         DroppedSalt,
         DroppedTeriyaki,
+        DroppedOysterSauce,
         DroppedOysterSauce
       ]
     },
@@ -342,12 +344,13 @@
         nextButton: { text: "I'm finished now" }
       },
       dropZone: WokWithRice,
-      dragItems: [BlackPepper, ChilliPowder, Salt, TeriyakiSauce, OysterSauce],
+      dragItems: [BlackPepper, ChilliPowder, Salt, TeriyakiSauce, OysterSauce, SoySauce],
       droppedItems: [
         DroppedBlackPepper,
         DroppedChilliPowder,
         DroppedSalt,
         DroppedTeriyaki,
+        DroppedOysterSauce,
         DroppedOysterSauce
       ]
     },

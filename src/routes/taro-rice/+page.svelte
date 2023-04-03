@@ -85,6 +85,10 @@
           label: 'Salt',
           src: `${base}/img/taro-rice/salt.png`
         },
+                {
+          label: 'Soy sauce',
+          src: `${base}/img/taro-rice/soy-sauce.png`
+        },
         {
           label: 'Teriyaki sauce',
           src: `${base}/img/taro-rice/teriyaki-sauce.png`
