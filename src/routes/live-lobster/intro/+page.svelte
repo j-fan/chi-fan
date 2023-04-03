@@ -23,10 +23,13 @@
   import WineDropped from './DragDropItems/WineDropped.svelte';
   import { onMount } from 'svelte';
   import { soundSrc } from '$lib/sound/SoundStore';
-    import Lobster from './DragDropItems/Lobster.svelte';
-    import LobsterDropped from './DragDropItems/LobsterDropped.svelte';
-    import ChopLobsterHead from './ChopLobsterHead.svelte';
-    import ChopTail from './ChopTail.svelte';
+  import Lobster from './DragDropItems/Lobster.svelte';
+  import LobsterDropped from './DragDropItems/LobsterDropped.svelte';
+  import ChopLobsterHead from './ChopLobsterHead.svelte';
+  import ChopLobsterHead2 from './ChopLobsterHead2.svelte';
+  import ChopLobsterHead3 from './ChopLobsterHead3.svelte';
+  import ChopLobsterHead4 from './ChopLobsterHead4.svelte';
+  import ChopTail from './ChopTail.svelte';
 
   let windowWidth = 9999;
   $: isMobile = windowWidth < 500;
@@ -178,6 +181,90 @@
       dialogs: [
         {
           characterName: 'Dad',
+          bodyText:
+            'Get the carapace pieces and cut off the tip of the head including the thick antennae and eyes.',
+          nextButton: { text: 'Continue' }
+        },
+        {
+          characterName: 'Dad',
+          bodyText:
+            'Smash the thick antennae with the side of the knife to flatten it and break off the sharp spines on the shell.',
+          nextButton: { text: 'Continue' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Dad',
+        bodyText: "You haven't removed the antennae from the carapace yet."
+      },
+      successStep: {
+        characterName: 'Dad',
+        bodyText: "Let's continue with this part of the lobster.",
+        nextButton: { text: 'Ok' }
+      },
+      targetCount: 1,
+      totalItems: 1,
+      itemComponent: ChopLobsterHead2,
+      bgImage: `${base}/img/live-lobster/chopping-board.png`,
+      toolComponent: ChoppingKnife,
+      bottomPosition: 45
+    },
+    {
+      type: 'pick-items',
+      dialogs: [
+        {
+          characterName: 'Dad',
+          bodyText:
+            'Now, cut off the lower sections of the legs. You may discard them if there is not much meat inside.',
+          nextButton: { text: 'Continue' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Dad',
+        bodyText: 'Please trim the lower parts of the legs.'
+      },
+      successStep: {
+        characterName: 'Dad',
+        bodyText: "Let's continue with this part of the lobster.",
+        nextButton: { text: 'Ok' }
+      },
+      targetCount: 1,
+      totalItems: 1,
+      itemComponent: ChopLobsterHead3,
+      bgImage: `${base}/img/live-lobster/chopping-board.png`,
+      toolComponent: ChoppingKnife,
+      bottomPosition: 45
+    },
+    {
+      type: 'pick-items',
+      dialogs: [
+        {
+          characterName: 'Dad',
+          bodyText:
+            'This is the last step for the carapace. Take each half and cut it into a further 2 or 3 pieces.',
+          nextButton: { text: 'Continue' }
+        }
+      ],
+      errorStep: {
+        characterName: 'Dad',
+        bodyText: 'You need to cut the carapace into smaller pieces.'
+      },
+      successStep: {
+        characterName: 'Dad',
+        bodyText: 'Time to move onto the abdomen.',
+        nextButton: { text: 'Sure' }
+      },
+      targetCount: 1,
+      totalItems: 1,
+      itemComponent: ChopLobsterHead4,
+      bgImage: `${base}/img/live-lobster/chopping-board.png`,
+      toolComponent: ChoppingKnife,
+      bottomPosition: 45
+    },
+    {
+      type: 'pick-items',
+      dialogs: [
+        {
+          characterName: 'Dad',
           bodyText: 'Place the abdomen piece so that the bottom side is facing up.',
           nextButton: { text: 'Continue' }
         },
@@ -241,16 +328,16 @@
       ],
       errorStep: {
         characterName: 'Dad',
-        bodyText: "You haven't cut the abdomen into small enough pieced yet."
+        bodyText: "You haven't cut the abdomen into small enough pieces yet."
       },
       successStep: {
         characterName: 'Dad',
-        bodyText: 'Now that the lobster is in small pieces, we can cook it.',
+        bodyText: 'Now that the entire lobster is in small pieces, we can cook it.',
         nextButton: { text: "Let's do it!" }
       },
       targetCount: 1,
       totalItems: 1,
-      itemComponent: ChopTail, 
+      itemComponent: ChopTail,
       bgImage: `${base}/img/live-lobster/chopping-board.png`,
       toolComponent: ChoppingKnife,
       bottomPosition: 45
@@ -311,7 +398,17 @@
         nextButton: { text: 'We did it!' }
       },
       dropZone: Wok,
-      dragItems: [Oil, Ginger, SpringOnionWhite, Lobster, Salt, Wine, Slurry, SpringOnion, Coriander],
+      dragItems: [
+        Oil,
+        Ginger,
+        SpringOnionWhite,
+        Lobster,
+        Salt,
+        Wine,
+        Slurry,
+        SpringOnion,
+        Coriander
+      ],
       droppedItems: [
         OilDropped,
         GingerDropped,
