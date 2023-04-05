@@ -212,7 +212,7 @@
     </Section>
 
     <Section align="center" width="100%">
-      <Image src="{base}/img/live-lobster/photo-stir-fry.jpg" alt="Cutting sugar cane together" />
+      <Image src="{base}/img/live-lobster/photo-stir-fry.jpg" alt="Live lobster stir fry" />
     </Section>
 
     <Section align="left" width="100%">
@@ -243,7 +243,7 @@
     </Section>
 
     <Section align="center" width="100%">
-      <Image src="{base}/img/live-lobster/photo-finished2.jpg" alt="Cutting sugar cane together" />
+      <Image src="{base}/img/live-lobster/photo-finished2.jpg" alt="Finished lobster dish" />
     </Section>
   </SectionGroup>
 </Article>

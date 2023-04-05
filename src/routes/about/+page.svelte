@@ -16,7 +16,7 @@
     <Section width="100%">
       <div class="image-showcase">
         <img src="{base}/img/taro-rice/completed.png" alt="Taro fried rice" />
-        <img src="{base}/img/sugar-cane-water/completed.png" alt="Sugar cane water" />
+        <img src="{base}/img/sugar-cane-water/completed.png" alt="Sugarcane water" />
         <img src="{base}/img/live-lobster/lobster-dish.png" alt="Live lobster stir fry" />
       </div>
     </Section>

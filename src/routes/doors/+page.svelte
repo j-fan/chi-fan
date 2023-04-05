@@ -15,7 +15,7 @@
         class="interior-img"
         slot="doorInside"
         src="{base}/img/sugar-cane-water/interior.jpg"
-        alt="kitchen of the sugar cane water recipe"
+        alt="kitchen of the sugarcane water recipe"
       />
     </Doors>
     <Doors

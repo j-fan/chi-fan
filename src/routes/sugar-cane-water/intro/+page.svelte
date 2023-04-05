@@ -39,7 +39,7 @@
       dialogs: [
         {
           characterName: 'Grandpa',
-          bodyText: 'First you need to pick some sugar cane',
+          bodyText: 'First you need to pick some sugarcane',
           nextButton: { text: 'How many do I pick?' }
         },
         {
@@ -143,7 +143,7 @@
       dialogs: [
         {
           characterName: 'Grandpa',
-          bodyText: 'Use the hedge shears to trim the sugar cane into 15cm lengths',
+          bodyText: 'Use the hedge shears to trim the sugarcane into 15cm lengths',
           nextButton: { text: 'Got it' }
         }
       ],
@@ -186,7 +186,7 @@
       ],
       errorStep: {
         characterName: 'Grandpa',
-        bodyText: 'Keep going, we need the sugar cane nicely split open.'
+        bodyText: 'Keep going, we need the sugarcane nicely split open.'
       },
       successStep: {
         characterName: 'Grandpa',
@@ -210,7 +210,7 @@
         },
         {
           characterName: 'Grandpa',
-          bodyText: 'We need the sugar cane pieces, 4 carrots chopped into chunks...',
+          bodyText: 'We need the sugarcane pieces, 4 carrots chopped into chunks...',
           nextButton: { text: 'Continue' }
         },
         {
@@ -248,10 +248,10 @@
     {
       type: 'finished',
       heroImage: `${base}/img/sugar-cane-water/completed.png`,
-      title: '☆ Sugar cane water ☆',
+      title: '☆ Sugarcane water ☆',
       successStep: {
         characterName: 'Grandpa',
-        bodyText: "Well done, you've made sugar cane water!",
+        bodyText: "Well done, you've made sugarcane water!",
         nextButton: { text: 'Done!', href: '/sugar-cane-water' }
       }
     }

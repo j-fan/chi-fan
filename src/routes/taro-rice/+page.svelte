@@ -11,12 +11,12 @@
 </script>
 
 <svelte:head>
-  <title>Chi Fan - Taro fried rice</title>
+  <title>Chi Fan - Taro fried rice - 芋頭飯</title>
 </svelte:head>
 
 <Article>
   <FullWidthBanner src="{base}/img/sugar-cane-water/interior.jpg" alt="kitchen interior" />
-  <RedTitle>Taro fried rice</RedTitle>
+  <RedTitle>Taro fried rice - 芋頭飯</RedTitle>
   <SectionGroup gap="4rem">
     <Section align="center" width="100%"
       >By Tammy Dang, Thao Nhi La (Mum), Huong Tang - 唐香 (Grandma)</Section
@@ -190,7 +190,7 @@
     <Section align="center" width="100%">
       <Image
         src="{base}/img/taro-rice/photo-chopped-ingredients.jpg"
-        alt="Cutting sugar cane together"
+        alt="Taro rice ingredients chopped"
       />
     </Section>
 
@@ -222,7 +222,7 @@
     </Section>
 
     <Section align="center" width="100%">
-      <Image src="{base}/img/taro-rice/photo-wok.jpg" alt="Cutting sugar cane together" />
+      <Image src="{base}/img/taro-rice/photo-wok.jpg" alt="Taro rice in the wok" />
     </Section>
   </SectionGroup>
 </Article>

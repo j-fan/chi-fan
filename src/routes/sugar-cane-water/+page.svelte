@@ -11,12 +11,12 @@
 </script>
 
 <svelte:head>
-  <title>Chi Fan - 蔗水 (sugarcane water)</title>
+  <title>Chi Fan - Sugarcane water - 蔗水</title>
 </svelte:head>
 
 <Article>
   <FullWidthBanner src="{base}/img/sugar-cane-water/interior.jpg" alt="kitchen interior" />
-  <RedTitle>蔗水</RedTitle>
+  <RedTitle>Sugarcane water - 蔗水</RedTitle>
   <SectionGroup gap="4rem">
     <Section align="center" width="100%"
       >By Dylan Goh, Joseph Tsang (曾廣棟) & Lipoha Tsang (李寶霞)</Section
@@ -154,7 +154,7 @@
     <Section align="center" width="100%">
       <Image
         src="{base}/img/sugar-cane-water/cane-cutting-equipment.jpg"
-        alt="Cutting sugar cane together"
+        alt="Cutting sugarcane together"
       />
     </Section>
 
@@ -192,7 +192,7 @@
     <Section align="center" width="100%">
       <Image
         src="{base}/img/sugar-cane-water/save-for-later.jpg"
-        alt="Cutting sugar cane together"
+        alt="Cutting sugarcane together"
       />
     </Section>
   </SectionGroup>
