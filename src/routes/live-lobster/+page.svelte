@@ -18,7 +18,7 @@
   <FullWidthBanner src="{base}/img/sugar-cane-water/interior.jpg" alt="kitchen interior" />
   <RedTitle>Live lobster stir fry</RedTitle>
   <SectionGroup gap="4rem">
-    <Section align="center" width="100%">By Jane Fan</Section>
+    <Section align="center" width="100%">By Jane Fan and Guang Zhong Fan (Dad)</Section>
     <SectionWithImage
       imageAlign="right"
       imageSrc="{base}/img/live-lobster/photo-finished.jpg"

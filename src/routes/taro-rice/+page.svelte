@@ -18,7 +18,9 @@
   <FullWidthBanner src="{base}/img/sugar-cane-water/interior.jpg" alt="kitchen interior" />
   <RedTitle>Taro fried rice</RedTitle>
   <SectionGroup gap="4rem">
-    <Section align="center" width="100%">By Tammy Dang</Section>
+    <Section align="center" width="100%"
+      >By Tammy Dang, Thao Nhi La (Mum), Huong Tang - 唐香 (Grandma)</Section
+    >
     <SectionWithImage
       imageAlign="right"
       imageSrc="{base}/img/taro-rice/photo-dish.jpg"
@@ -85,7 +87,7 @@
           label: 'Salt',
           src: `${base}/img/taro-rice/salt.png`
         },
-                {
+        {
           label: 'Soy sauce',
           src: `${base}/img/taro-rice/soy-sauce.png`
         },
