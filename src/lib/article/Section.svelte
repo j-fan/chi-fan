@@ -17,7 +17,7 @@
 <section
   class={align}
   style="width: {width}; background: {backgroundColor};"
-  data-aos={aos}
+  data-aos={aos && aos !== 'none' ? aos : undefined}
   data-aos-anchor-placement={aosPlacement}
   data-aos-delay={aosDelay}
   data-aos-offset={aosOffset}

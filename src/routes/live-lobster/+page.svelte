@@ -5,6 +5,7 @@
   import Image from '$lib/article/Image.svelte';
   import Inventory from '$lib/article/Inventory.svelte';
   import Section from '$lib/article/Section.svelte';
+  import SectionFullImage from '$lib/article/SectionFullImage.svelte';
   import SectionGroup from '$lib/article/SectionGroup.svelte';
   import SectionWithImage from '$lib/article/SectionWithImage.svelte';
   import RedTitle from '$lib/text/RedTitle.svelte';
@@ -15,10 +16,10 @@
 </svelte:head>
 
 <Article>
-  <FullWidthBanner src="{base}/img/sugar-cane-water/interior.jpg" alt="kitchen interior" />
+  <FullWidthBanner src="{base}/img/live-lobster/kitchen.jpg" alt="kitchen interior" />
   <RedTitle>Live lobster stir fry</RedTitle>
   <SectionGroup gap="4rem">
-    <Section align="center" width="100%">By Jane Fan and Guang Zhong Fan (Dad)</Section>
+    <Section align="center" width="100%" aos="none">By Jane Fan and Guang Zhong Fan (Dad)</Section>
     <SectionWithImage
       imageAlign="right"
       imageSrc="{base}/img/live-lobster/photo-finished.jpg"
@@ -83,7 +84,8 @@
     <SectionWithImage
       imageAlign="left"
       imageSrc="{base}/img/live-lobster/photo-ingredients.jpg"
-      alt="Prepped herbs and spices on a plate"
+      alt="Prepared herbs and spices on a plate"
+      caption="Prepared herbs and spices on a plate"
     >
       <ul>
         <li>1 live spiny/rock lobster</li>
@@ -129,7 +131,8 @@
     <SectionWithImage
       imageAlign="right"
       imageSrc="{base}/img/live-lobster/photo-cutting-lobster.jpg"
-      alt="Cutting up the lobster"
+      alt="Cutting up the lobster carapace"
+      caption="Cutting up the lobster carapace"
     >
       <ul>
         <li>Large heavy sharp knife, like a Chinese cleaver</li>
@@ -152,12 +155,11 @@
       </ol>
     </Section>
 
-    <Section align="center" width="100%">
-      <Image
-        src="{base}/img/live-lobster/photo-cleaning-head.jpg"
-        alt="Cut lobster pieces on a plate"
-      />
-    </Section>
+    <SectionFullImage
+      src="{base}/img/live-lobster/photo-cleaning-head.jpg"
+      alt="Cleaning the lobster carapace"
+      caption="Cleaning the lobster carapace"
+    />
 
     <Section align="left" width="100%">
       <p>Butcher the live lobster:</p>
@@ -211,9 +213,11 @@
       </ol>
     </Section>
 
-    <Section align="center" width="100%">
-      <Image src="{base}/img/live-lobster/photo-stir-fry.jpg" alt="Live lobster stir fry" />
-    </Section>
+    <SectionFullImage
+      src="{base}/img/live-lobster/photo-stir-fry.jpg"
+      alt="Stir frying the lobster with herbs and spices"
+      caption="Stir frying the lobster with herbs and spices"
+    />
 
     <Section align="left" width="100%">
       <p>Stir fry the lobster:</p>
@@ -242,8 +246,9 @@
       </ol>
     </Section>
 
-    <Section align="center" width="100%">
-      <Image src="{base}/img/live-lobster/photo-finished2.jpg" alt="Finished lobster dish" />
-    </Section>
+    <SectionFullImage
+      src="{base}/img/live-lobster/photo-finished2.jpg"
+      alt="Finished lobster dish"
+    />
   </SectionGroup>
 </Article>

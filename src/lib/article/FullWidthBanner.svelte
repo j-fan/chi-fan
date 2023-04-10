@@ -6,7 +6,7 @@
   export let alt: string;
 </script>
 
-<Section aos="fade" aosDuration={800} width="100%"><img {src} {alt} /></Section>
+<Section aos="none" width="100%"><img {src} {alt} /></Section>
 
 <style>
   img {
@@ -14,6 +14,7 @@
     height: 70vh;
     width: 100%;
     object-position: center;
+    border-bottom: 3px solid black;
   }
 
   @media (max-width: 600px) {

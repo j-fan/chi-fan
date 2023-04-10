@@ -25,4 +25,5 @@ export type AosType =
   | 'zoom-out-up'
   | 'zoom-out-down'
   | 'zoom-out-left'
-  | 'zoom-out-right';
+  | 'zoom-out-right'
+  | 'none';

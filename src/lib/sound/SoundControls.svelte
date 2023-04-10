@@ -90,8 +90,15 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding: 1rem;
+    margin: 1rem;
     z-index: 101;
+    background-color: white;
+    border-radius: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
   }
 
   img {

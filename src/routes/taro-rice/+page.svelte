@@ -5,6 +5,7 @@
   import Image from '$lib/article/Image.svelte';
   import Inventory from '$lib/article/Inventory.svelte';
   import Section from '$lib/article/Section.svelte';
+  import SectionFullImage from '$lib/article/SectionFullImage.svelte';
   import SectionGroup from '$lib/article/SectionGroup.svelte';
   import SectionWithImage from '$lib/article/SectionWithImage.svelte';
   import RedTitle from '$lib/text/RedTitle.svelte';
@@ -15,10 +16,10 @@
 </svelte:head>
 
 <Article>
-  <FullWidthBanner src="{base}/img/sugar-cane-water/interior.jpg" alt="kitchen interior" />
+  <FullWidthBanner src="{base}/img/taro-rice/kitchen.jpg" alt="kitchen interior" />
   <RedTitle>Taro fried rice - 芋頭飯</RedTitle>
   <SectionGroup gap="4rem">
-    <Section align="center" width="100%"
+    <Section align="center" width="100%" aos="none"
       >By Tammy Dang, Thao Nhi La (Mum), Huong Tang - 唐香 (Grandma)</Section
     >
     <SectionWithImage
@@ -106,6 +107,7 @@
       imageAlign="left"
       imageSrc="{base}/img/taro-rice/photo-ingredients.jpg"
       alt="Ingredients laid out on the kitchen table"
+      caption="Ingredients laid out on the kitchen table"
     >
       <ul>
         <li>Rice</li>
@@ -150,7 +152,8 @@
     <SectionWithImage
       imageAlign="right"
       imageSrc="{base}/img/taro-rice/photo-scallions-knife.jpg"
-      alt="chopping board with knife and scallions"
+      alt="Chopping board with knife and scallions"
+      caption="Chopping board with knife and scallions"
     >
       <ul>
         <li>Cleaver</li>
@@ -187,12 +190,11 @@
       </ol>
     </Section>
 
-    <Section align="center" width="100%">
-      <Image
-        src="{base}/img/taro-rice/photo-chopped-ingredients.jpg"
-        alt="Taro rice ingredients chopped"
-      />
-    </Section>
+    <SectionFullImage
+      src="{base}/img/taro-rice/photo-chopped-ingredients.jpg"
+      alt="All the taro rice ingredients chopped up"
+      caption="All the taro rice ingredients chopped up"
+    />
 
     <Section align="left" width="100%">
       <p>Stir frying the rice:</p>
@@ -221,8 +223,10 @@
       </ol>
     </Section>
 
-    <Section align="center" width="100%">
-      <Image src="{base}/img/taro-rice/photo-wok.jpg" alt="Taro rice in the wok" />
-    </Section>
+    <SectionFullImage
+      src="{base}/img/taro-rice/photo-wok.jpg"
+      alt="Taro rice cooking in the wok"
+      caption="Taro rice cooking in the wok"
+    />
   </SectionGroup>
 </Article>

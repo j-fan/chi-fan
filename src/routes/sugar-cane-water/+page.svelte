@@ -5,6 +5,7 @@
   import Image from '$lib/article/Image.svelte';
   import Inventory from '$lib/article/Inventory.svelte';
   import Section from '$lib/article/Section.svelte';
+  import SectionFullImage from '$lib/article/SectionFullImage.svelte';
   import SectionGroup from '$lib/article/SectionGroup.svelte';
   import SectionWithImage from '$lib/article/SectionWithImage.svelte';
   import RedTitle from '$lib/text/RedTitle.svelte';
@@ -15,10 +16,10 @@
 </svelte:head>
 
 <Article>
-  <FullWidthBanner src="{base}/img/sugar-cane-water/interior.jpg" alt="kitchen interior" />
+  <FullWidthBanner src="{base}/img/sugar-cane-water/kitchen.jpg" alt="kitchen interior" />
   <RedTitle>Sugarcane water - 蔗水</RedTitle>
   <SectionGroup gap="4rem">
-    <Section align="center" width="100%"
+    <Section aos="none" align="center" width="100%"
       >By Dylan Goh, Joseph Tsang (曾廣棟) & Lipoha Tsang (李寶霞)</Section
     >
 
@@ -76,7 +77,8 @@
     <SectionWithImage
       imageAlign="left"
       imageSrc="{base}/img/sugar-cane-water/cooking-in-pot.jpg"
-      alt="Ingredients all boiling in the pot"
+      alt="Sugar cane ingredients all boiling in the pot"
+      caption="Sugar cane ingredients all boiling in the pot"
     >
       <ul>
         <li>3kg x fresh sugarcane</li>
@@ -121,7 +123,8 @@
     <SectionWithImage
       imageAlign="right"
       imageSrc="{base}/img/sugar-cane-water/cutting-cane.jpg"
-      alt="Cutting up the cane"
+      alt="Cutting up the sugarcane"
+      caption="Cutting up the sugarcane into 15cm pieces"
     >
       <ul>
         <li>Saw</li>
@@ -151,12 +154,11 @@
       </ol>
     </Section>
 
-    <Section align="center" width="100%">
-      <Image
-        src="{base}/img/sugar-cane-water/cane-cutting-equipment.jpg"
-        alt="Cutting sugarcane together"
-      />
-    </Section>
+    <SectionFullImage
+      src="{base}/img/sugar-cane-water/cane-cutting-equipment.jpg"
+      alt="Hedge shears are used for cutting the sugarcane"
+      caption="Hedge shears are used for cutting the sugarcane"
+    />
 
     <Section align="left" width="100%">
       <p>Making sugarcane water (10L):</p>
@@ -189,11 +191,10 @@
       bag and place into the freezer.
     </Section>
 
-    <Section align="center" width="100%">
-      <Image
-        src="{base}/img/sugar-cane-water/save-for-later.jpg"
-        alt="Cutting sugarcane together"
-      />
-    </Section>
+    <SectionFullImage
+      src="{base}/img/sugar-cane-water/save-for-later.jpg"
+      alt="Store excess sugar cane in the freezer"
+      caption="Store excess sugar cane in the freezer"
+    />
   </SectionGroup>
 </Article>

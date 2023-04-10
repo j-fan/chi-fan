@@ -14,7 +14,7 @@
       <img
         class="interior-img"
         slot="doorInside"
-        src="{base}/img/sugar-cane-water/interior.jpg"
+        src="{base}/img/sugar-cane-water/kitchen.jpg"
         alt="kitchen of the sugarcane water recipe"
       />
     </Doors>
@@ -27,7 +27,7 @@
       <img
         class="interior-img"
         slot="doorInside"
-        src="{base}/img/sugar-cane-water/interior.jpg"
+        src="{base}/img/taro-rice/kitchen.jpg"
         alt="kitchen of the taro fried rice recipe"
       />
     </Doors>
@@ -40,7 +40,7 @@
       <img
         class="interior-img"
         slot="doorInside"
-        src="{base}/img/sugar-cane-water/interior.jpg"
+        src="{base}/img/live-lobster/kitchen.jpg"
         alt="kitchen of the live lobster stir fry recipe"
       />
     </Doors>

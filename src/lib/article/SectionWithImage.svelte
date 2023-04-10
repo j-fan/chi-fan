@@ -56,6 +56,7 @@
 
   figcaption {
     color: var(--c-pink);
+    text-align: center;
   }
 
   @media (max-width: 700px) {
