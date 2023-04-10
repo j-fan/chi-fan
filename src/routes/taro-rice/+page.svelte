@@ -22,17 +22,18 @@
     <Section align="center" width="100%" aos="none"
       >By Tammy Dang, Thao Nhi La (Mum), Huong Tang - 唐香 (Grandma)</Section
     >
-    <SectionWithImage
-      imageAlign="right"
-      imageSrc="{base}/img/taro-rice/photo-dish.jpg"
-      alt="Cooked dish of taro fried rice"
-    >
+    <Section aos="none">
       Taro rice is a recipe that’s been passed down our family for 4 generations (great grandma,
       grandma, mum and me). We’re a Teochew family who fled to Vietnam during times of political
       unrest before going to Australia. So, the recipe has some Vietnamese touches as well. There
       isn’t a “true recipe” for this, kind of like fried rice. Instead, you use what ingredients you
       have to make it yummy and to your liking.
-    </SectionWithImage>
+    </Section>
+
+    <SectionFullImage
+      src="{base}/img/taro-rice/photo-dish.jpg"
+      alt="Cooked dish of taro fried rice"
+    />
 
     <Section width="100%">
       Taro rice first came into our family when there was political unrest and war. During those

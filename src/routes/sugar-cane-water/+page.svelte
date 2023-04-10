@@ -20,10 +20,11 @@
   <RedTitle>Sugarcane water - 蔗水</RedTitle>
   <SectionGroup gap="4rem">
     <Section aos="none" align="center" width="100%"
-      >By Dylan Goh, Joseph Tsang (曾廣棟) & Lipoha Tsang (李寶霞)</Section
+      >By Dylan Goh, Joseph Tsang - 曾廣棟 (Grandpa) & Lipoha Tsang - 李寶霞 (Grandma)</Section
     >
 
     <SectionWithImage
+      aos="none"
       imageAlign="right"
       imageSrc="{base}/img/sugar-cane-water/grandpa.jpg"
       alt="Grandpa sitting in a chair"

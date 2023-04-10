@@ -20,15 +20,13 @@
   <RedTitle>Live lobster stir fry</RedTitle>
   <SectionGroup gap="4rem">
     <Section align="center" width="100%" aos="none">By Jane Fan and Guang Zhong Fan (Dad)</Section>
-    <SectionWithImage
-      imageAlign="right"
-      imageSrc="{base}/img/live-lobster/photo-finished.jpg"
-      alt="Finished dish"
-    >
+    <Section aos="none">
       I interviewed my Dad about his recipe for Live Lobster. It is a banquet dish in Cantonese
       cuisine that exemplifies the features of this culture: freshness and subtlety of flavours. He
       is a chef with 3 decades of experience and preparing fresh seafood well is one of his skills.
-    </SectionWithImage>
+    </Section>
+
+    <SectionFullImage src="{base}/img/live-lobster/photo-finished.jpg" alt="Finished dish" />
 
     <Section width="100%">
       My family is lucky to be spoiled with a Cantonese traditional dinner every week on his day
