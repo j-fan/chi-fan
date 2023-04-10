@@ -1,4 +1,12 @@
 {
+  "RedTitle.css": {
+    "file": "_app/immutable/assets/RedTitle-eff5c1de.css",
+    "src": "RedTitle.css"
+  },
+  "src/routes/about/+page.css": {
+    "file": "_app/immutable/assets/_page-1c8430b3.css",
+    "src": "src/routes/about/+page.css"
+  },
   "Button.css": {
     "file": "_app/immutable/assets/Button-8ca56c60.css",
     "src": "Button.css"
@@ -15,13 +23,9 @@
     "file": "_app/immutable/assets/_page-539ad827.css",
     "src": "src/routes/doors/+page.css"
   },
-  "src/routes/about/+page.css": {
-    "file": "_app/immutable/assets/_page-1c8430b3.css",
-    "src": "src/routes/about/+page.css"
-  },
-  "RedTitle.css": {
-    "file": "_app/immutable/assets/RedTitle-eff5c1de.css",
-    "src": "RedTitle.css"
+  "src/routes/sugar-cane-water/intro/+page.css": {
+    "file": "_app/immutable/assets/_page-7121ee61.css",
+    "src": "src/routes/sugar-cane-water/intro/+page.css"
   },
   "SingleChopItem.css": {
     "file": "_app/immutable/assets/SingleChopItem-f779eaea.css",
@@ -35,43 +39,15 @@
     "file": "_app/immutable/assets/ChoppingKnife-04fb2eee.css",
     "src": "ChoppingKnife.css"
   },
-  "src/routes/sugar-cane-water/intro/+page.css": {
-    "file": "_app/immutable/assets/_page-7121ee61.css",
-    "src": "src/routes/sugar-cane-water/intro/+page.css"
-  },
   "src/routes/+layout.css": {
     "file": "_app/immutable/assets/_layout-ebc186bf.css",
     "src": "src/routes/+layout.css"
   },
-  "__page-3afc52e2.js": {
-    "file": "_app/immutable/chunks/_page-3afc52e2.js"
-  },
-  "__layout-da46b06b.js": {
-    "file": "_app/immutable/chunks/_layout-da46b06b.js"
-  },
-  ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-ba04493b.js",
-    "src": ".svelte-kit/generated/nodes/0.js",
-    "isDynamicEntry": true,
+  "_singletons-d8a5f2c8.js": {
+    "file": "_app/immutable/chunks/singletons-d8a5f2c8.js",
     "imports": [
-      "__layout-da46b06b.js",
-      "src/routes/+layout.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-8c8f5e36.js",
-    "src": ".svelte-kit/generated/nodes/1.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.4/node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-4650dfab.js",
-    "src": ".svelte-kit/generated/nodes/2.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/+page.svelte"
+      "_index-063f407b.js",
+      "_paths-991fe185.js"
     ]
   },
   "_stores-06a8da20.js": {
@@ -81,17 +57,9 @@
       "_singletons-d8a5f2c8.js"
     ]
   },
-  "_SoundStore-b7e76b40.js": {
-    "file": "_app/immutable/chunks/SoundStore-b7e76b40.js",
+  "_index-063f407b.js": {
+    "file": "_app/immutable/chunks/index-063f407b.js",
     "imports": [
-      "_paths-991fe185.js",
-      "_index-063f407b.js"
-    ]
-  },
-  "_singletons-d8a5f2c8.js": {
-    "file": "_app/immutable/chunks/singletons-d8a5f2c8.js",
-    "imports": [
-      "_index-063f407b.js",
       "_paths-991fe185.js"
     ]
   },
@@ -104,220 +72,27 @@
       "_stores-06a8da20.js"
     ]
   },
-  ".svelte-kit/generated/nodes/9.js": {
-    "file": "_app/immutable/chunks/9-4e76aba7.js",
-    "src": ".svelte-kit/generated/nodes/9.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/taro-rice/+page.svelte"
-    ]
-  },
   "_index-c1b68916.js": {
     "file": "_app/immutable/chunks/index-c1b68916.js",
     "imports": [
       "_paths-991fe185.js"
     ]
   },
-  ".svelte-kit/generated/nodes/8.js": {
-    "file": "_app/immutable/chunks/8-c07f65b6.js",
-    "src": ".svelte-kit/generated/nodes/8.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/sugar-cane-water/intro/+page.svelte"
-    ]
+  "__layout-da46b06b.js": {
+    "file": "_app/immutable/chunks/_layout-da46b06b.js"
   },
-  "src/routes/about/+page.ts": {
-    "file": "_app/immutable/modules/pages/about/_page.ts-08c78b37.js",
-    "src": "src/routes/about/+page.ts",
-    "isEntry": true,
-    "imports": [
-      "__page-3afc52e2.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/6.js": {
-    "file": "_app/immutable/chunks/6-1008538f.js",
-    "src": ".svelte-kit/generated/nodes/6.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/live-lobster/intro/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-498283f8.js",
-    "src": ".svelte-kit/generated/nodes/5.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/live-lobster/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-042f314d.js",
-    "src": ".svelte-kit/generated/nodes/4.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/doors/+page.svelte"
-    ]
-  },
-  "_index-063f407b.js": {
-    "file": "_app/immutable/chunks/index-063f407b.js",
-    "imports": [
-      "_paths-991fe185.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/7.js": {
-    "file": "_app/immutable/chunks/7-022dfa02.js",
-    "src": ".svelte-kit/generated/nodes/7.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/sugar-cane-water/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-9c4c1c3f.js",
-    "src": ".svelte-kit/generated/nodes/3.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-3afc52e2.js",
-      "src/routes/about/+page.svelte"
-    ]
-  },
-  "src/routes/taro-rice/+page.svelte": {
-    "file": "_app/immutable/components/pages/taro-rice/_page.svelte-84b076aa.js",
-    "src": "src/routes/taro-rice/+page.svelte",
-    "isEntry": true,
+  "_SoundStore-b7e76b40.js": {
+    "file": "_app/immutable/chunks/SoundStore-b7e76b40.js",
     "imports": [
       "_paths-991fe185.js",
-      "_RedTitle-a5fc5555.js",
-      "_SectionWithImage-154b5d1e.js"
+      "_index-063f407b.js"
     ]
   },
-  "src/routes/+layout.ts": {
-    "file": "_app/immutable/modules/pages/_layout.ts-9cbb603b.js",
-    "src": "src/routes/+layout.ts",
-    "isEntry": true,
-    "imports": [
-      "__layout-da46b06b.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/10.js": {
-    "file": "_app/immutable/chunks/10-b6853f48.js",
-    "src": ".svelte-kit/generated/nodes/10.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/taro-rice/intro/+page.svelte"
-    ]
-  },
-  "_paths-991fe185.js": {
-    "file": "_app/immutable/chunks/paths-991fe185.js"
-  },
-  "src/routes/sugar-cane-water/+page.svelte": {
-    "file": "_app/immutable/components/pages/sugar-cane-water/_page.svelte-034af2b6.js",
-    "src": "src/routes/sugar-cane-water/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_paths-991fe185.js",
-      "_RedTitle-a5fc5555.js",
-      "_SectionWithImage-154b5d1e.js"
-    ]
-  },
-  "_RedTitle-a5fc5555.js": {
-    "file": "_app/immutable/chunks/RedTitle-a5fc5555.js",
-    "imports": [
-      "_paths-991fe185.js"
-    ],
-    "css": [
-      "_app/immutable/assets/RedTitle-eff5c1de.css"
-    ]
-  },
-  "_SingleChopItem-b1555f17.js": {
-    "file": "_app/immutable/chunks/SingleChopItem-b1555f17.js",
-    "imports": [
-      "_paths-991fe185.js"
-    ],
-    "css": [
-      "_app/immutable/assets/SingleChopItem-f779eaea.css"
-    ]
-  },
-  "_Button-b275a711.js": {
-    "file": "_app/immutable/chunks/Button-b275a711.js",
-    "imports": [
-      "_paths-991fe185.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Button-8ca56c60.css"
-    ]
-  },
-  "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-40085ee7.js",
-    "src": "src/routes/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_paths-991fe185.js",
-      "_Button-b275a711.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-ac211827.css"
-    ]
-  },
-  "src/routes/live-lobster/+page.svelte": {
-    "file": "_app/immutable/components/pages/live-lobster/_page.svelte-7369dade.js",
-    "src": "src/routes/live-lobster/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_paths-991fe185.js",
-      "_RedTitle-a5fc5555.js",
-      "_SectionWithImage-154b5d1e.js"
-    ]
-  },
-  "src/routes/doors/+page.svelte": {
-    "file": "_app/immutable/components/pages/doors/_page.svelte-5bb9355b.js",
-    "src": "src/routes/doors/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_paths-991fe185.js",
-      "_singletons-d8a5f2c8.js",
-      "_Button-b275a711.js",
-      "_index-c1b68916.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-539ad827.css"
-    ]
-  },
-  "src/routes/about/+page.svelte": {
-    "file": "_app/immutable/components/pages/about/_page.svelte-daddfe43.js",
-    "src": "src/routes/about/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_paths-991fe185.js",
-      "_RedTitle-a5fc5555.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-1c8430b3.css"
-    ]
-  },
-  "src/routes/live-lobster/intro/+page.svelte": {
-    "file": "_app/immutable/components/pages/live-lobster/intro/_page.svelte-3458e3bd.js",
-    "src": "src/routes/live-lobster/intro/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_paths-991fe185.js",
-      "_ChoppingKnife-780c72ec.js",
-      "_SingleChopItem-b1555f17.js",
-      "_SoundStore-b7e76b40.js"
-    ]
-  },
-  "_SectionWithImage-154b5d1e.js": {
-    "file": "_app/immutable/chunks/SectionWithImage-154b5d1e.js",
-    "imports": [
-      "_paths-991fe185.js",
-      "_RedTitle-a5fc5555.js"
-    ],
-    "css": [
-      "_app/immutable/assets/SectionWithImage-9d697f40.css"
-    ]
+  "__page-3afc52e2.js": {
+    "file": "_app/immutable/chunks/_page-3afc52e2.js"
   },
   "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.4/node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-085bc5ca.js",
+    "file": "_app/immutable/start-9307cf8b.js",
     "src": "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.4/node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -338,18 +113,229 @@
       ".svelte-kit/generated/nodes/10.js"
     ]
   },
-  "src/routes/taro-rice/intro/+page.svelte": {
-    "file": "_app/immutable/components/pages/taro-rice/intro/_page.svelte-0e28ed85.js",
-    "src": "src/routes/taro-rice/intro/+page.svelte",
+  "src/routes/live-lobster/+page.svelte": {
+    "file": "_app/immutable/components/pages/live-lobster/_page.svelte-d5dfb8f6.js",
+    "src": "src/routes/live-lobster/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_paths-991fe185.js",
+      "_RedTitle-a5fc5555.js",
+      "_SectionWithImage-e4fae3bf.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/7.js": {
+    "file": "_app/immutable/chunks/7-87a3cbf3.js",
+    "src": ".svelte-kit/generated/nodes/7.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/sugar-cane-water/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-4650dfab.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-ba04493b.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__layout-da46b06b.js",
+      "src/routes/+layout.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-8c8f5e36.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.589_svelte@3.55.0+vite@4.0.4/node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/5.js": {
+    "file": "_app/immutable/chunks/5-477f6f06.js",
+    "src": ".svelte-kit/generated/nodes/5.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/live-lobster/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/6.js": {
+    "file": "_app/immutable/chunks/6-1008538f.js",
+    "src": ".svelte-kit/generated/nodes/6.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/live-lobster/intro/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/3.js": {
+    "file": "_app/immutable/chunks/3-9c4c1c3f.js",
+    "src": ".svelte-kit/generated/nodes/3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-3afc52e2.js",
+      "src/routes/about/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/4.js": {
+    "file": "_app/immutable/chunks/4-042f314d.js",
+    "src": ".svelte-kit/generated/nodes/4.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/doors/+page.svelte"
+    ]
+  },
+  "_paths-991fe185.js": {
+    "file": "_app/immutable/chunks/paths-991fe185.js"
+  },
+  ".svelte-kit/generated/nodes/9.js": {
+    "file": "_app/immutable/chunks/9-9197d8cb.js",
+    "src": ".svelte-kit/generated/nodes/9.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/taro-rice/+page.svelte"
+    ]
+  },
+  "src/routes/+layout.ts": {
+    "file": "_app/immutable/modules/pages/_layout.ts-9cbb603b.js",
+    "src": "src/routes/+layout.ts",
+    "isEntry": true,
+    "imports": [
+      "__layout-da46b06b.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/10.js": {
+    "file": "_app/immutable/chunks/10-b6853f48.js",
+    "src": ".svelte-kit/generated/nodes/10.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/taro-rice/intro/+page.svelte"
+    ]
+  },
+  "src/routes/sugar-cane-water/+page.svelte": {
+    "file": "_app/immutable/components/pages/sugar-cane-water/_page.svelte-cdddf12b.js",
+    "src": "src/routes/sugar-cane-water/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_paths-991fe185.js",
+      "_RedTitle-a5fc5555.js",
+      "_SectionWithImage-e4fae3bf.js"
+    ]
+  },
+  "src/routes/live-lobster/intro/+page.svelte": {
+    "file": "_app/immutable/components/pages/live-lobster/intro/_page.svelte-3458e3bd.js",
+    "src": "src/routes/live-lobster/intro/+page.svelte",
     "isEntry": true,
     "imports": [
       "_paths-991fe185.js",
       "_ChoppingKnife-780c72ec.js",
-      "_SoundStore-b7e76b40.js",
-      "_SingleChopItem-b1555f17.js"
+      "_SingleChopItem-b1555f17.js",
+      "_SoundStore-b7e76b40.js"
+    ]
+  },
+  "src/routes/about/+page.ts": {
+    "file": "_app/immutable/modules/pages/about/_page.ts-08c78b37.js",
+    "src": "src/routes/about/+page.ts",
+    "isEntry": true,
+    "imports": [
+      "__page-3afc52e2.js"
+    ]
+  },
+  "_RedTitle-a5fc5555.js": {
+    "file": "_app/immutable/chunks/RedTitle-a5fc5555.js",
+    "imports": [
+      "_paths-991fe185.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-151f1849.css"
+      "_app/immutable/assets/RedTitle-eff5c1de.css"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-40085ee7.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_paths-991fe185.js",
+      "_Button-b275a711.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-ac211827.css"
+    ]
+  },
+  ".svelte-kit/generated/nodes/8.js": {
+    "file": "_app/immutable/chunks/8-c07f65b6.js",
+    "src": ".svelte-kit/generated/nodes/8.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/sugar-cane-water/intro/+page.svelte"
+    ]
+  },
+  "_Button-b275a711.js": {
+    "file": "_app/immutable/chunks/Button-b275a711.js",
+    "imports": [
+      "_paths-991fe185.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Button-8ca56c60.css"
+    ]
+  },
+  "src/routes/taro-rice/+page.svelte": {
+    "file": "_app/immutable/components/pages/taro-rice/_page.svelte-865796db.js",
+    "src": "src/routes/taro-rice/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_paths-991fe185.js",
+      "_RedTitle-a5fc5555.js",
+      "_SectionWithImage-e4fae3bf.js"
+    ]
+  },
+  "_SectionWithImage-e4fae3bf.js": {
+    "file": "_app/immutable/chunks/SectionWithImage-e4fae3bf.js",
+    "imports": [
+      "_paths-991fe185.js",
+      "_RedTitle-a5fc5555.js"
+    ],
+    "css": [
+      "_app/immutable/assets/SectionWithImage-9d697f40.css"
+    ]
+  },
+  "src/routes/about/+page.svelte": {
+    "file": "_app/immutable/components/pages/about/_page.svelte-daddfe43.js",
+    "src": "src/routes/about/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_paths-991fe185.js",
+      "_RedTitle-a5fc5555.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-1c8430b3.css"
+    ]
+  },
+  "src/routes/doors/+page.svelte": {
+    "file": "_app/immutable/components/pages/doors/_page.svelte-5bb9355b.js",
+    "src": "src/routes/doors/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_paths-991fe185.js",
+      "_singletons-d8a5f2c8.js",
+      "_Button-b275a711.js",
+      "_index-c1b68916.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-539ad827.css"
+    ]
+  },
+  "_SingleChopItem-b1555f17.js": {
+    "file": "_app/immutable/chunks/SingleChopItem-b1555f17.js",
+    "imports": [
+      "_paths-991fe185.js"
+    ],
+    "css": [
+      "_app/immutable/assets/SingleChopItem-f779eaea.css"
     ]
   },
   "src/routes/sugar-cane-water/intro/+page.svelte": {
@@ -365,6 +351,31 @@
       "_app/immutable/assets/_page-7121ee61.css"
     ]
   },
+  "src/routes/taro-rice/intro/+page.svelte": {
+    "file": "_app/immutable/components/pages/taro-rice/intro/_page.svelte-0e28ed85.js",
+    "src": "src/routes/taro-rice/intro/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_paths-991fe185.js",
+      "_ChoppingKnife-780c72ec.js",
+      "_SoundStore-b7e76b40.js",
+      "_SingleChopItem-b1555f17.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-151f1849.css"
+    ]
+  },
+  "_ChoppingKnife-780c72ec.js": {
+    "file": "_app/immutable/chunks/ChoppingKnife-780c72ec.js",
+    "imports": [
+      "_paths-991fe185.js",
+      "_Button-b275a711.js",
+      "_index-c1b68916.js"
+    ],
+    "css": [
+      "_app/immutable/assets/ChoppingKnife-04fb2eee.css"
+    ]
+  },
   "src/routes/+layout.svelte": {
     "file": "_app/immutable/components/pages/_layout.svelte-b83d515a.js",
     "src": "src/routes/+layout.svelte",
@@ -377,17 +388,6 @@
     ],
     "css": [
       "_app/immutable/assets/_layout-ebc186bf.css"
-    ]
-  },
-  "_ChoppingKnife-780c72ec.js": {
-    "file": "_app/immutable/chunks/ChoppingKnife-780c72ec.js",
-    "imports": [
-      "_paths-991fe185.js",
-      "_Button-b275a711.js",
-      "_index-c1b68916.js"
-    ],
-    "css": [
-      "_app/immutable/assets/ChoppingKnife-04fb2eee.css"
     ]
   }
 }
