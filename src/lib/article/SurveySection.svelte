@@ -6,7 +6,7 @@
 <SectionWithImage
   title="Your feedback"
   imageAlign="right"
-  imageSrc="{base}/img/qr-code.jpg"
+  imageSrc="{base}/img/qr-code-survey.jpg"
   alt="Survey QR code"
 >
   The 吃饭 (Chi-Fan) team is conducting research about how audiences are experiencing 饭 (Chi-Fan).
