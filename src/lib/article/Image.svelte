@@ -6,8 +6,8 @@
   export let imageBgColor: string | undefined = 'black';
 </script>
 
-<div class="image-wrapper" style="width: {width}">
-  <img {src} {alt} style="--object-fit:{imageObjectFit}; --bg-color:{imageBgColor}" />
+<div class="image-wrapper" style="width: {width}; --bg-color:{imageBgColor};">
+  <img {src} {alt} style="--object-fit:{imageObjectFit};" />
 </div>
 
 <style>
