@@ -15,31 +15,31 @@
 <Article>
   <div class="top-buffer" />
   <SectionGroup gap="4rem">
-    <Section width="100%">
+    <Section width="100%" aos="none">
       <div class="image-showcase">
         <img src="{base}/img/taro-rice/completed.png" alt="Taro fried rice" />
         <img src="{base}/img/sugar-cane-water/completed.png" alt="Sugarcane water" />
         <img src="{base}/img/live-lobster/lobster-dish.png" alt="Live lobster stir fry" />
       </div>
     </Section>
-    <Section width="100%">
+    <Section width="100%" aos="none">
       <RedTitle>About this project</RedTitle>
       吃饭 (Chi-Fan) is a visual arts / heritage studies project tracing the intimate stories and migration
       of family recipes across the contested “Chinese diaspora”.
     </Section>
-    <Section width="100%">
+    <Section width="100%" aos="none">
       Materialising as a minigame, audiences enter animated kitchens which are vivified by
       interviews between young people who identify as a member of the Chinese diaspora and their
       relatives about a family recipe. Each kitchen features: audio ruminations about the recipe;
       photo essays of the cooking methodology; the dish’s cultural significance; and intimate
       vignettes of domestic spaces.
     </Section>
-    <Section width="100%">
+    <Section width="100%" aos="none">
       By playfully weaving these interpretations of a ‘family recipe’, 吃饭 (Chi-Fan) presents an
       alternative version of the ‘Chinese diaspora’ - beyond surnames, passports or dialects. The
       project gives licence for the interrogation of who defines cultural history.
     </Section>
-    <Section width="100%">
+    <Section width="100%" aos="none">
       <div class="image-showcase">
         <img src="{base}/img/sugar-cane-water/almond-bowl.png" alt="Almonds in a bowl" />
         <img src="{base}/img/taro-rice/mint.png" alt="Mint" />
@@ -54,6 +54,7 @@
       imageAlign="left"
       imageSrc="{base}/img/dylan-goh.jpg"
       alt="Dylan Goh"
+      aos="none"
     >
       <p>
         Born on unceded Bidjigal lands, Dylan Goh is a cultural practitioner with 7 years’
@@ -70,6 +71,7 @@
       imageAlign="right"
       imageSrc="{base}/img/amy-ge.jpg"
       alt="Amy Ge"
+      aos="none"
     >
       <p>
         Amy Ge is a Chinese-Australian artist and illustrator from Noongar country (Perth, Western
@@ -85,6 +87,7 @@
       imageAlign="left"
       imageSrc="{base}/img/jane-fan.jpg"
       alt="Jane Fan"
+      aos="none"
     >
       <p>
         Jane Fan is a software engineer and digital artist based in Sydney, Australia. Her works
@@ -95,7 +98,7 @@
         spaces. She is part of the Sydney based New Media Arts group known as Origin Collective.
       </p>
     </SectionWithImage>
-    <Section width="100%">
+    <Section width="100%" aos="none">
       <div class="image-showcase">
         <img src="{base}/img/wok.png" alt="Wok" />
         <img src="{base}/img/live-lobster/chopsticks.png" alt="Chopsticks" />
@@ -103,7 +106,7 @@
         <img src="{base}/img/taro-rice/rice-cooker.png" alt="Rice cooker" />
       </div>
     </Section>
-    <SurveySection />
+    <SurveySection aos="none" />
   </SectionGroup>
 </Article>
 
