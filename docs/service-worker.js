@@ -1,53 +1,53 @@
 const p = [
-  "/chi-fan/_app/immutable/assets/RedTitle-eff5c1de.css",
   "/chi-fan/_app/immutable/assets/_page-1c8430b3.css",
   "/chi-fan/_app/immutable/assets/Button-8ca56c60.css",
   "/chi-fan/_app/immutable/assets/_page-ac211827.css",
-  "/chi-fan/_app/immutable/assets/SectionWithImage-9d697f40.css",
+  "/chi-fan/_app/immutable/assets/RedTitle-ba0abcf6.css",
+  "/chi-fan/_app/immutable/assets/SectionFullImage-6498e276.css",
   "/chi-fan/_app/immutable/assets/_page-539ad827.css",
-  "/chi-fan/_app/immutable/assets/_page-7121ee61.css",
-  "/chi-fan/_app/immutable/assets/SingleChopItem-f779eaea.css",
   "/chi-fan/_app/immutable/assets/_page-151f1849.css",
+  "/chi-fan/_app/immutable/assets/SingleChopItem-f779eaea.css",
   "/chi-fan/_app/immutable/assets/ChoppingKnife-04fb2eee.css",
-  "/chi-fan/_app/immutable/assets/_layout-ebc186bf.css",
-  "/chi-fan/_app/immutable/chunks/singletons-d8a5f2c8.js",
-  "/chi-fan/_app/immutable/chunks/stores-06a8da20.js",
-  "/chi-fan/_app/immutable/chunks/index-063f407b.js",
-  "/chi-fan/_app/immutable/components/error.svelte-1d2f1a7a.js",
-  "/chi-fan/_app/immutable/chunks/index-c1b68916.js",
-  "/chi-fan/_app/immutable/chunks/_layout-da46b06b.js",
-  "/chi-fan/_app/immutable/chunks/SoundStore-b7e76b40.js",
-  "/chi-fan/_app/immutable/chunks/_page-3afc52e2.js",
-  "/chi-fan/_app/immutable/start-9307cf8b.js",
-  "/chi-fan/_app/immutable/components/pages/live-lobster/_page.svelte-d5dfb8f6.js",
-  "/chi-fan/_app/immutable/chunks/7-87a3cbf3.js",
+  "/chi-fan/_app/immutable/assets/_page-7121ee61.css",
+  "/chi-fan/_app/immutable/assets/_layout-6902d250.css",
   "/chi-fan/_app/immutable/chunks/2-4650dfab.js",
-  "/chi-fan/_app/immutable/chunks/0-ba04493b.js",
-  "/chi-fan/_app/immutable/chunks/1-8c8f5e36.js",
-  "/chi-fan/_app/immutable/chunks/5-477f6f06.js",
-  "/chi-fan/_app/immutable/chunks/6-1008538f.js",
-  "/chi-fan/_app/immutable/chunks/3-9c4c1c3f.js",
-  "/chi-fan/_app/immutable/chunks/4-042f314d.js",
-  "/chi-fan/_app/immutable/chunks/paths-991fe185.js",
-  "/chi-fan/_app/immutable/chunks/9-9197d8cb.js",
-  "/chi-fan/_app/immutable/modules/pages/_layout.ts-9cbb603b.js",
+  "/chi-fan/_app/immutable/chunks/SoundStore-b7e76b40.js",
+  "/chi-fan/_app/immutable/chunks/0-c3e30731.js",
+  "/chi-fan/_app/immutable/chunks/index-063f407b.js",
   "/chi-fan/_app/immutable/chunks/10-b6853f48.js",
-  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/_page.svelte-cdddf12b.js",
-  "/chi-fan/_app/immutable/components/pages/live-lobster/intro/_page.svelte-3458e3bd.js",
+  "/chi-fan/_app/immutable/chunks/_layout-da46b06b.js",
+  "/chi-fan/_app/immutable/chunks/7-5e089098.js",
+  "/chi-fan/_app/immutable/modules/pages/_layout.ts-9cbb603b.js",
+  "/chi-fan/_app/immutable/chunks/1-8c8f5e36.js",
+  "/chi-fan/_app/immutable/chunks/3-0e4f6724.js",
+  "/chi-fan/_app/immutable/chunks/stores-06a8da20.js",
+  "/chi-fan/_app/immutable/chunks/singletons-d8a5f2c8.js",
+  "/chi-fan/_app/immutable/chunks/5-64693cf8.js",
+  "/chi-fan/_app/immutable/chunks/_page-3afc52e2.js",
+  "/chi-fan/_app/immutable/chunks/6-1008538f.js",
   "/chi-fan/_app/immutable/modules/pages/about/_page.ts-08c78b37.js",
-  "/chi-fan/_app/immutable/chunks/RedTitle-a5fc5555.js",
-  "/chi-fan/_app/immutable/components/pages/_page.svelte-40085ee7.js",
+  "/chi-fan/_app/immutable/chunks/SingleChopItem-b1555f17.js",
+  "/chi-fan/_app/immutable/chunks/paths-991fe185.js",
   "/chi-fan/_app/immutable/chunks/8-c07f65b6.js",
   "/chi-fan/_app/immutable/chunks/Button-b275a711.js",
-  "/chi-fan/_app/immutable/components/pages/taro-rice/_page.svelte-865796db.js",
-  "/chi-fan/_app/immutable/chunks/SectionWithImage-e4fae3bf.js",
-  "/chi-fan/_app/immutable/components/pages/about/_page.svelte-daddfe43.js",
+  "/chi-fan/_app/immutable/chunks/SectionFullImage-d56d34f3.js",
+  "/chi-fan/_app/immutable/chunks/9-5424d80d.js",
+  "/chi-fan/_app/immutable/components/pages/_page.svelte-40085ee7.js",
+  "/chi-fan/_app/immutable/components/pages/about/_page.svelte-8863f03b.js",
   "/chi-fan/_app/immutable/components/pages/doors/_page.svelte-5bb9355b.js",
-  "/chi-fan/_app/immutable/chunks/SingleChopItem-b1555f17.js",
   "/chi-fan/_app/immutable/components/pages/sugar-cane-water/intro/_page.svelte-4960320e.js",
+  "/chi-fan/_app/immutable/components/error.svelte-1d2f1a7a.js",
+  "/chi-fan/_app/immutable/chunks/RedTitle-978d9b3f.js",
+  "/chi-fan/_app/immutable/start-9116dc00.js",
+  "/chi-fan/_app/immutable/chunks/index-c1b68916.js",
+  "/chi-fan/_app/immutable/components/pages/live-lobster/intro/_page.svelte-3458e3bd.js",
+  "/chi-fan/_app/immutable/components/pages/live-lobster/_page.svelte-43740aa5.js",
+  "/chi-fan/_app/immutable/chunks/4-042f314d.js",
   "/chi-fan/_app/immutable/components/pages/taro-rice/intro/_page.svelte-0e28ed85.js",
-  "/chi-fan/_app/immutable/chunks/ChoppingKnife-780c72ec.js",
-  "/chi-fan/_app/immutable/components/pages/_layout.svelte-b83d515a.js"
+  "/chi-fan/_app/immutable/components/pages/sugar-cane-water/_page.svelte-e2ea643a.js",
+  "/chi-fan/_app/immutable/components/pages/taro-rice/_page.svelte-644952af.js",
+  "/chi-fan/_app/immutable/components/pages/_layout.svelte-0ecbcbe0.js",
+  "/chi-fan/_app/immutable/chunks/ChoppingKnife-780c72ec.js"
 ], h = [
   "/chi-fan/.nojekyll",
   "/chi-fan/favicon.png",
@@ -55,10 +55,13 @@ const p = [
   "/chi-fan/icon/icon-256x256.png",
   "/chi-fan/icon/icon-384x384.png",
   "/chi-fan/icon/icon-512x512.png",
+  "/chi-fan/img/amy-ge.jpg",
   "/chi-fan/img/board-bg.jpg",
+  "/chi-fan/img/dylan-goh.jpg",
   "/chi-fan/img/home-banner.jpg",
   "/chi-fan/img/home-banner.png",
   "/chi-fan/img/home-bg.jpg",
+  "/chi-fan/img/jane-fan.jpg",
   "/chi-fan/img/live-lobster/chicken-stock.png",
   "/chi-fan/img/live-lobster/chopped-spring-onion-white.png",
   "/chi-fan/img/live-lobster/chopping-board.png",
@@ -104,6 +107,7 @@ const p = [
   "/chi-fan/img/live-lobster/wok-oil.png",
   "/chi-fan/img/live-lobster/wok-slurry.png",
   "/chi-fan/img/live-lobster/wok-spring-onion-white.png",
+  "/chi-fan/img/qr-code.jpg",
   "/chi-fan/img/speaker-off.png",
   "/chi-fan/img/speaker-on.png",
   "/chi-fan/img/spiky-circle.png",
@@ -209,7 +213,7 @@ const p = [
   "/chi-fan/sound/lobster.mp3",
   "/chi-fan/sound/sugar-cane.mp3",
   "/chi-fan/sound/taro-rice.mp3"
-], s = "1681094741744", c = self, r = `cache${s}`, g = p.concat(
+], s = "1681213444806", c = self, r = `cache${s}`, g = p.concat(
   // Exclude this github pages related file, breaks the service worker
   h.filter((a) => a !== "/.nojekyll")
 ), m = new Set(g);
@@ -241,7 +245,7 @@ c.addEventListener("activate", (a) => {
     })
   );
 });
-async function f(a) {
+async function l(a) {
   const i = await caches.open(`offline${s}`);
   try {
     const e = await fetch(a);
@@ -258,6 +262,6 @@ c.addEventListener("fetch", (a) => {
     return;
   const i = new URL(a.request.url), e = i.protocol.startsWith("http"), n = i.hostname === self.location.hostname && i.port !== self.location.port, t = i.host === self.location.host && m.has(i.pathname), o = a.request.cache === "only-if-cached" && !t;
   e && !n && !o && a.respondWith(
-    (async () => t && await caches.match(a.request) || f(a.request))()
+    (async () => t && await caches.match(a.request) || l(a.request))()
   );
 });
