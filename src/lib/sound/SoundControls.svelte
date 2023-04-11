@@ -110,5 +110,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    padding: 0;
+    margin: 0;
   }
 </style>
