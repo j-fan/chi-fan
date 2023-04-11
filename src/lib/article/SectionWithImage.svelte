@@ -5,6 +5,8 @@
 
   export let aos: AosType | undefined = undefined;
   export let imageSrc: string;
+  export let imageObjectFit: string | undefined = undefined;
+  export let imageBgColor: string | undefined = undefined;
   export let alt: string;
   export let imageAlign: 'left' | 'right' = 'left';
   export let caption: string | undefined = undefined;
@@ -15,7 +17,7 @@
   <div class="content">
     {#if imageAlign === 'left'}
       <figure>
-        <Image src={imageSrc} {alt} width="auto" />
+        <Image src={imageSrc} {alt} width="auto" {imageObjectFit} {imageBgColor} />
         {#if caption}
           <figcaption>{caption}</figcaption>
         {/if}
@@ -28,7 +30,7 @@
         <slot />
       </div>
       <figure>
-        <Image src={imageSrc} {alt} width="auto" />
+        <Image src={imageSrc} {alt} width="auto" {imageObjectFit} {imageBgColor} />
         {#if caption}
           <figcaption>{caption}</figcaption>
         {/if}

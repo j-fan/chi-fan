@@ -2,10 +2,12 @@
   export let src: string;
   export let alt: string;
   export let width = '100%';
+  export let imageObjectFit: string | undefined = 'cover';
+  export let imageBgColor: string | undefined = 'black';
 </script>
 
 <div class="image-wrapper" style="width: {width}">
-  <img {src} {alt} />
+  <img {src} {alt} style="--object-fit:{imageObjectFit}; --bg-color:{imageBgColor}" />
 </div>
 
 <style>
@@ -14,7 +16,7 @@
     flex-shrink: 0;
     position: relative;
     border-radius: 2rem;
-    background-color: var(--c-black);
+    background-color: var(--bg-color);
     box-shadow: var(--drop-shadow-md);
     border: 2px solid var(--c-dark-green);
     margin-bottom: 1rem;
@@ -29,7 +31,7 @@
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: var(--object-fit);
     border-radius: 2rem;
   }
 </style>
