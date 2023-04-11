@@ -5,7 +5,7 @@
 
 <SectionWithImage
   title="Your feedback"
-  imageAlign="left"
+  imageAlign="right"
   imageSrc="{base}/img/qr-code.jpg"
   alt="Survey QR code"
 >

@@ -80,7 +80,7 @@
     />
 
     <SectionWithImage
-      imageAlign="left"
+      imageAlign="right"
       imageSrc="{base}/img/live-lobster/photo-ingredients.jpg"
       alt="Prepared herbs and spices on a plate"
       caption="Prepared herbs and spices on a plate"
@@ -127,7 +127,7 @@
     />
 
     <SectionWithImage
-      imageAlign="right"
+      imageAlign="left"
       imageSrc="{base}/img/live-lobster/photo-cutting-lobster.jpg"
       alt="Cutting up the lobster carapace"
       caption="Cutting up the lobster carapace"

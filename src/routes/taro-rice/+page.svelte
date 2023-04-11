@@ -106,7 +106,7 @@
     />
 
     <SectionWithImage
-      imageAlign="left"
+      imageAlign="right"
       imageSrc="{base}/img/taro-rice/photo-ingredients.jpg"
       alt="Ingredients laid out on the kitchen table"
       caption="Ingredients laid out on the kitchen table"
@@ -152,7 +152,7 @@
     />
 
     <SectionWithImage
-      imageAlign="right"
+      imageAlign="left"
       imageSrc="{base}/img/taro-rice/photo-scallions-knife.jpg"
       alt="Chopping board with knife and scallions"
       caption="Chopping board with knife and scallions"

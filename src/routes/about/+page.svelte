@@ -51,7 +51,7 @@
     <RedTitle>The team</RedTitle>
     <SectionWithImage
       title="Dylan Goh - Curator"
-      imageAlign="right"
+      imageAlign="left"
       imageSrc="{base}/img/dylan-goh.jpg"
       alt="Dylan Goh"
     >
@@ -67,7 +67,7 @@
     </SectionWithImage>
     <SectionWithImage
       title="Amy Ge - Illustrator"
-      imageAlign="left"
+      imageAlign="right"
       imageSrc="{base}/img/amy-ge.jpg"
       alt="Amy Ge"
     >
@@ -82,7 +82,7 @@
     </SectionWithImage>
     <SectionWithImage
       title="Jane Fan - Web developer"
-      imageAlign="right"
+      imageAlign="left"
       imageSrc="{base}/img/jane-fan.jpg"
       alt="Jane Fan"
     >

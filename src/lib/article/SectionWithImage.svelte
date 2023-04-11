@@ -14,25 +14,25 @@
 <Section {aos} width="100%" {title}>
   <div class="content">
     {#if imageAlign === 'left'}
-      <div>
-        <slot />
-      </div>
       <figure>
         <Image src={imageSrc} {alt} width="auto" />
         {#if caption}
           <figcaption>{caption}</figcaption>
         {/if}
       </figure>
+      <div>
+        <slot />
+      </div>
     {:else}
+      <div>
+        <slot />
+      </div>
       <figure>
         <Image src={imageSrc} {alt} width="auto" />
         {#if caption}
           <figcaption>{caption}</figcaption>
         {/if}
       </figure>
-      <div>
-        <slot />
-      </div>
     {/if}
   </div>
 </Section>

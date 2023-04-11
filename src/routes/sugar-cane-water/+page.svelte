@@ -26,7 +26,7 @@
 
     <SectionWithImage
       aos="none"
-      imageAlign="right"
+      imageAlign="left"
       imageSrc="{base}/img/sugar-cane-water/grandpa.jpg"
       alt="Grandpa sitting in a chair"
       caption="Grandpa - Joseph Tsang (曾廣棟)"
@@ -39,7 +39,7 @@
     </SectionWithImage>
 
     <SectionWithImage
-      imageAlign="left"
+      imageAlign="right"
       imageSrc="{base}/img/sugar-cane-water/grandma.jpg"
       alt="Grandma holding up fruits"
       caption="Grandma - Lipoha Tsang (李寶霞)"
@@ -79,7 +79,7 @@
     />
 
     <SectionWithImage
-      imageAlign="left"
+      imageAlign="right"
       imageSrc="{base}/img/sugar-cane-water/cooking-in-pot.jpg"
       alt="Sugar cane ingredients all boiling in the pot"
       caption="Sugar cane ingredients all boiling in the pot"
@@ -125,7 +125,7 @@
     />
 
     <SectionWithImage
-      imageAlign="right"
+      imageAlign="left"
       imageSrc="{base}/img/sugar-cane-water/cutting-cane.jpg"
       alt="Cutting up the sugarcane"
       caption="Cutting up the sugarcane into 15cm pieces"
