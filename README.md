@@ -1,18 +1,20 @@
-# create-svelte
+# About
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Collaborators: Dylan Goh, Amy Ge and Jane Fan
 
-## Creating a project
+[Link to website](https://j-fan.github.io/chi-fan/)
 
-If you're seeing this, you've probably already done this step. Congrats!
+吃饭 (Chi-Fan) is a visual arts / heritage studies project tracing the intimate stories and migration of family recipes across the contested “Chinese diaspora”.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Materialising as a minigame, audiences enter animated kitchens which are vivified by
+interviews between young people who identify as a member of the Chinese diaspora and their
+relatives about a family recipe. Each kitchen features: audio ruminations about the recipe;
+photo essays of the cooking methodology; the dish’s cultural significance; and intimate
+vignettes of domestic spaces.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+By playfully weaving these interpretations of a ‘family recipe’, 吃饭 (Chi-Fan) presents an
+alternative version of the ‘Chinese diaspora’ - beyond surnames, passports or dialects. The
+project gives licence for the interrogation of who defines cultural history.
 
 ## Developing
 
@@ -34,5 +36,3 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
