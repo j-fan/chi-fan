@@ -8,6 +8,7 @@
   import SectionFullImage from '$lib/article/SectionFullImage.svelte';
   import SectionGroup from '$lib/article/SectionGroup.svelte';
   import SectionWithImage from '$lib/article/SectionWithImage.svelte';
+  import SurveySection from '$lib/article/SurveySection.svelte';
   import RedTitle from '$lib/text/RedTitle.svelte';
 </script>
 
@@ -31,9 +32,10 @@
       caption="Grandpa - Joseph Tsang (曾廣棟)"
     >
       蔗水 (sugarcane water) has been produced in my family for as long as I can remember. Grandpa
-      is really proud of his garden. From winter melon to bamboo, he grows a lot of different
-      plants. He also harvests and prepares the sugarcane which my grandma uses to boil sugarcane
-      water.
+      is really proud of his garden which he has lovingly cultivated since migrating to Australia
+      from Solomon Islands and Hong Kong. From winter melon to bamboo, kumquat, mango, guava,
+      macadamia, dragonfruit and mandarins, he grows a lot of different plants. He also harvests and
+      prepares the sugarcane which my grandma uses to boil sugarcane water.
     </SectionWithImage>
 
     <SectionWithImage
@@ -42,11 +44,12 @@
       alt="Grandma holding up fruits"
       caption="Grandma - Lipoha Tsang (李寶霞)"
     >
-      During COVID-19 lockdown in Sydney, my grandma would also boil sugarcane water and cook dishes
-      to give to us. We would call ahead and she would fill repurposed juice bottles and takeaway
-      containers to be left outside the front door. When we saw each other through the clear windows
-      of the door, we would perform this strange dance. As we approached the door, she retreated
-      further inside. Once we retreated into our cars, she would step forward again to wave at us.
+      During COVID-19 lockdown in Sydney, my grandma would also boil sugarcane water and cook side
+      dishes for us. We would call ahead and she would fill repurposed juice bottles and takeaway
+      containers which were then left outside the front door. When we saw each other through the
+      transparent windows of the door, we would perform this strange dance. We’d approach the door
+      and she would retreat inside. Once we retreated into our cars, she’d step forward to wave from
+      afar.
     </SectionWithImage>
 
     <Inventory
@@ -197,5 +200,7 @@
       alt="Store excess sugar cane in the freezer"
       caption="Store excess sugar cane in the freezer"
     />
+
+    <SurveySection />
   </SectionGroup>
 </Article>

@@ -2,12 +2,12 @@
   import { base } from '$app/paths';
   import Article from '$lib/article/Article.svelte';
   import FullWidthBanner from '$lib/article/FullWidthBanner.svelte';
-  import Image from '$lib/article/Image.svelte';
   import Inventory from '$lib/article/Inventory.svelte';
   import Section from '$lib/article/Section.svelte';
   import SectionFullImage from '$lib/article/SectionFullImage.svelte';
   import SectionGroup from '$lib/article/SectionGroup.svelte';
   import SectionWithImage from '$lib/article/SectionWithImage.svelte';
+  import SurveySection from '$lib/article/SurveySection.svelte';
   import RedTitle from '$lib/text/RedTitle.svelte';
 </script>
 
@@ -248,5 +248,7 @@
       src="{base}/img/live-lobster/photo-finished2.jpg"
       alt="Finished lobster dish"
     />
+
+    <SurveySection />
   </SectionGroup>
 </Article>

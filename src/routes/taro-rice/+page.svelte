@@ -8,6 +8,7 @@
   import SectionFullImage from '$lib/article/SectionFullImage.svelte';
   import SectionGroup from '$lib/article/SectionGroup.svelte';
   import SectionWithImage from '$lib/article/SectionWithImage.svelte';
+  import SurveySection from '$lib/article/SurveySection.svelte';
   import RedTitle from '$lib/text/RedTitle.svelte';
 </script>
 
@@ -229,5 +230,7 @@
       alt="Taro rice cooking in the wok"
       caption="Taro rice cooking in the wok"
     />
+
+    <SurveySection />
   </SectionGroup>
 </Article>

@@ -3,6 +3,8 @@
   import Article from '$lib/article/Article.svelte';
   import Section from '$lib/article/Section.svelte';
   import SectionGroup from '$lib/article/SectionGroup.svelte';
+  import SectionWithImage from '$lib/article/SectionWithImage.svelte';
+  import SurveySection from '$lib/article/SurveySection.svelte';
   import RedTitle from '$lib/text/RedTitle.svelte';
 </script>
 
@@ -46,41 +48,29 @@
         <img src="{base}/img/taro-rice/spring-onion-2.png" alt="Ham" />
       </div>
     </Section>
-    <Section width="100%">
-      <RedTitle>The team</RedTitle>
-      <h2>Dylan Goh - Curator</h2>
+    <RedTitle>The team</RedTitle>
+    <SectionWithImage
+      title="Dylan Goh - Curator"
+      imageAlign="right"
+      imageSrc="{base}/img/dylan-goh.jpg"
+      alt="Dylan Goh"
+    >
       <p>
         Born on unceded Bidjigal lands, Dylan Goh is a cultural practitioner with 7 years’
-        experience as an artist, curator, dancer and museum worker.
+        experience as an artist, curator, dancer and museum worker. Drawing upon his upbringing as a
+        2nd generation Asian Australian, Dylan’s practice centres around intimate vignettes of
+        culture in everyday life. Often working with family and communities, he accumulates these
+        acutely rendered stories to disarm audiences and engender empathy. As the New Colombo Plan
+        Fellow (Republic of Korea), Dylan is undertaking a fellowship in South Korea to explore the
+        role of street dance in cultural diplomacy.
       </p>
-      <br />
-      <p>
-        Drawing upon his upbringing as a 2nd generation Asian Australian, Dylan’s practice centres
-        around intimate vignettes of culture in everyday life. Often working with family and
-        communities, he accumulates these acutely rendered stories to disarm audiences and engender
-        empathy.
-      </p>
-      <br />
-      <p>
-        Selected projects include: “Interrogating Archives: Where is the Bubble Tea?” (2022) – an
-        essay advocating for grassroot communities like Subtle Asian Traits to curate national
-        archives; “Queer Haymarket Tour” (2022) – a walking tour employing dance, readings and
-        performances to re-imagine Haymarket, Sydney into a precinct visibly celebrating queer
-        Asian-Australians; and “Porpor and I (婆婆和我): the interview” (2020-21) – a video
-        installation about intergenerational language barriers and food as a vehicle for love during
-        the pandemic.
-      </p>
-      <br />
-      <p>
-        In a recent talk for Museums & Galleries of NSW, Dylan championed the idea of museums as
-        spaces purely for the cultural practices of living communities – as opposed to storage
-        facilities for object-based collections. As a New Colombo Plan Scholar, he is undertaking a
-        16-month fellowship in South Korea to explore the role of street dance in cultural
-        diplomacy.
-      </p>
-    </Section>
-    <Section width="100%">
-      <h2>Amy Ge - Illustrator</h2>
+    </SectionWithImage>
+    <SectionWithImage
+      title="Amy Ge - Illustrator"
+      imageAlign="left"
+      imageSrc="{base}/img/amy-ge.jpg"
+      alt="Amy Ge"
+    >
       <p>
         Amy Ge is a Chinese-Australian artist and illustrator from Noongar country (Perth, Western
         Australia) currently living and practicing on Gadigal land (Sydney, New South Wales). Her
@@ -89,9 +79,13 @@
         Museum, Sydney Design Festival, Lane Cove Gallery, UNSW Galleries, Kudos Gallery and in
         publications such as Voiceworks Australia.
       </p>
-    </Section>
-    <Section width="100%">
-      <h2>Jane Fan - Web developer</h2>
+    </SectionWithImage>
+    <SectionWithImage
+      title="Jane Fan - Web developer"
+      imageAlign="right"
+      imageSrc="{base}/img/jane-fan.jpg"
+      alt="Jane Fan"
+    >
       <p>
         Jane Fan is a software engineer and digital artist based in Sydney, Australia. Her works
         span a variety of mediums including illustration, 3D computer graphics, generative and
@@ -100,7 +94,7 @@
         as an interface, surveillance, artificial intelligence and minority identities in digital
         spaces. She is part of the Sydney based New Media Arts group known as Origin Collective.
       </p>
-    </Section>
+    </SectionWithImage>
     <Section width="100%">
       <div class="image-showcase">
         <img src="{base}/img/wok.png" alt="Wok" />
@@ -109,6 +103,7 @@
         <img src="{base}/img/taro-rice/rice-cooker.png" alt="Rice cooker" />
       </div>
     </Section>
+    <SurveySection />
   </SectionGroup>
 </Article>
 

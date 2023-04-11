@@ -8,9 +8,10 @@
   export let alt: string;
   export let imageAlign: 'left' | 'right' = 'left';
   export let caption: string | undefined = undefined;
+  export let title: string | undefined = undefined;
 </script>
 
-<Section {aos} width="100%">
+<Section {aos} width="100%" {title}>
   <div class="content">
     {#if imageAlign === 'left'}
       <div>
