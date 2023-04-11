@@ -66,6 +66,9 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-size: 1.25rem;
+
+  /* Prevent pinch to zoom on iOS Safari */
+  touch-action: pan-x pan-y;
 }
 
 /*
