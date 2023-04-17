@@ -73,7 +73,7 @@
 
   @media (max-width: 600px) {
     .progress-text {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 </style>
