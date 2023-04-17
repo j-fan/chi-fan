@@ -54,5 +54,9 @@
     .slide-content {
       background-size: 100vw;
     }
+
+    .progress {
+      top: 100px;
+    }
   }
 </style>

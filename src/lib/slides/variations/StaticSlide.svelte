@@ -53,6 +53,7 @@
 
   @media (max-width: 800px) {
     .center-content {
+      padding-top: 4rem;
       justify-content: flex-start;
     }
   }

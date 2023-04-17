@@ -32,4 +32,11 @@
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
     transform: scale(0.9) rotate(75deg) translateY(30%);
   }
+
+  @media (max-width: 600px) {
+    .wrapper {
+      height: calc(250px * 1);
+      width: calc(125px * 1);
+    }
+  }
 </style>

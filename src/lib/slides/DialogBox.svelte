@@ -83,6 +83,7 @@
     .dialog {
       margin: 2rem 1.5rem;
       width: 100%;
+      font-size: 1rem;
     }
   }
 

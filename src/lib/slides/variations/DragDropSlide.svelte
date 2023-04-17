@@ -141,7 +141,7 @@
   .pending-items-container {
     display: flex;
     flex-wrap: wrap;
-    min-width: 800px;
+    min-width: 70%;
     max-width: calc(100% - 3rem);
     gap: 0.5rem;
     padding: 1rem;
@@ -242,6 +242,10 @@
     .pending-item {
       width: 70px;
       height: 70px;
+    }
+
+    .pending-items-container {
+      width: calc(100% - 3rem);
     }
   }
 </style>

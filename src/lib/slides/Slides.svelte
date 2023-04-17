@@ -74,5 +74,12 @@
     position: absolute;
     top: 1.5rem;
     right: 1rem;
+    z-index: 2;
+  }
+
+  @media (max-width: 600px) {
+    .skip-button {
+      font-size: 1rem;
+    }
   }
 </style>

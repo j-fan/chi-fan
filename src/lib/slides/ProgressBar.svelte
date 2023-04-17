@@ -70,4 +70,10 @@
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
+  @media (max-width: 600px) {
+    .progress-text {
+      font-size: 1rem;
+    }
+  }
 </style>
