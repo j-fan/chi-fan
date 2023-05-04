@@ -45,7 +45,7 @@
           src: `${base}/img/live-lobster/lobster1.png`
         },
         {
-          label: 'Chicken stick',
+          label: 'Chicken stock',
           src: `${base}/img/live-lobster/chicken-stock.png`
         },
         {
